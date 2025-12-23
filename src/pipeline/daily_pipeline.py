@@ -100,7 +100,9 @@ def main():
             logger.warning("⚠ No stock recommendations found in news articles")
             logger.warning("This could be due to:")
             logger.warning("  - Weekend/holiday with no relevant news")
-            logger.warning("  - News articles not containing stock-specific information")
+            logger.warning(
+                "  - News articles not containing stock-specific information"
+            )
             logger.warning("  - LLM unable to extract stocks from available news")
             logger.info("\nSaving empty results and exiting gracefully...")
             output_file = save_daily_results(today, [], [])
