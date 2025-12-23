@@ -9,7 +9,6 @@ from typing import Dict, List, Optional, Tuple
 import numpy as np
 import pandas as pd
 
-from src.config.settings import Settings
 from src.config.constants import WINDOW_SIZE, FEATURE_COLS
 from src.data.stock_fetcher import fetch_stock_data
 from src.features.advanced_indicators import calculate_all_features
