@@ -93,7 +93,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          uv pip install --system python-dotenv pytz
+          uv pip install --system python-dotenv pytz requests
 
       - name: Validate module imports
         run: |

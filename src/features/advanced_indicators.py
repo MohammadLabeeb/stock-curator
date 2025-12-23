@@ -137,7 +137,7 @@ def calculate_advanced_features(df: pd.DataFrame, nifty50_df: Optional[pd.DataFr
         try:
             poly = np.polyfit(np.log(lagvec), np.log(tau), 1)
             return poly[0]
-        except:
+        except Exception:
             return 0.5
 
     df['hurst_exponent'] = df['Close'].rolling(60).apply(

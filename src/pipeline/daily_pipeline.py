@@ -4,7 +4,6 @@ Coordinates: News scraping → LLM extraction → Validation → ML prediction �
 """
 
 import logging
-from pathlib import Path
 
 from src.config.settings import Settings
 from src.data.news_scraper import scrape_news
@@ -40,7 +39,7 @@ def main():
     # 1. Setup
     setup_logging(level="INFO")
     logger.info("="*80)
-    logger.info(f"STOCK CURATOR - DAILY PIPELINE")
+    logger.info("STOCK CURATOR - DAILY PIPELINE")
     logger.info(f"Started at: {format_ist_timestamp()}")
     logger.info("="*80)
 
@@ -84,7 +83,7 @@ def main():
             news_id = str(rec.get('news_id', ''))
             if news_id in news_url_map:
                 rec['news_url'] = news_url_map[news_id]
-        logger.info(f"✓ Added news URLs to recommendations")
+        logger.info("✓ Added news URLs to recommendations")
 
         # 6. Validate stocks
         logger.info("\n" + "="*80)

@@ -4,7 +4,6 @@ Helper utilities for the stock-curator project.
 
 import pytz
 from datetime import datetime
-from typing import Optional
 
 from src.config.constants import IST_TIMEZONE
 
