@@ -97,6 +97,7 @@ jobs:
 
       - name: Validate module imports
         run: |
+          export PYTHONPATH="${PYTHONPATH}:$(pwd)"
           python -c "
           print('Testing all module imports...')
           from src.config.settings import Settings
