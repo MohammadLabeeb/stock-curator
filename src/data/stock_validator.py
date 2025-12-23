@@ -364,10 +364,14 @@ def validate_stocks(llm_recommendations: List[Dict]) -> List[Dict]:
             validated.append(enriched_rec)
 
     success_count = sum(1 for r in validated if r["validated"])
-    logger.info(
-        f"Validation complete: {success_count}/{len(validated)} stocks validated "
-        f"({success_count / len(validated) * 100:.1f}%)"
-    )
+
+    if len(validated) > 0:
+        logger.info(
+            f"Validation complete: {success_count}/{len(validated)} stocks validated "
+            f"({success_count / len(validated) * 100:.1f}%)"
+        )
+    else:
+        logger.info("Validation complete: No stocks to validate (0 recommendations)")
 
     return validated
 

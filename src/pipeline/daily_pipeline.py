@@ -95,6 +95,21 @@ def main():
         validated_count = sum(1 for r in validated_recs if r.get("validated"))
         logger.info(f"✓ Validated {validated_count}/{len(validated_recs)} stocks")
 
+        # Handle case when no recommendations found
+        if len(validated_recs) == 0:
+            logger.warning("⚠ No stock recommendations found in news articles")
+            logger.warning("This could be due to:")
+            logger.warning("  - Weekend/holiday with no relevant news")
+            logger.warning("  - News articles not containing stock-specific information")
+            logger.warning("  - LLM unable to extract stocks from available news")
+            logger.info("\nSaving empty results and exiting gracefully...")
+            output_file = save_daily_results(today, [], [])
+            logger.info(f"✓ Empty results saved to {output_file}")
+            logger.info("=" * 80)
+            logger.info("Pipeline completed (no recommendations to process)")
+            logger.info("=" * 80)
+            return
+
         # 7. Fetch NIFTY 50 for market context
         logger.info("\n" + "=" * 80)
         logger.info("STEP 4/5: Fetching NIFTY 50 data")
