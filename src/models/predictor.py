@@ -18,8 +18,7 @@ logger = logging.getLogger(__name__)
 
 
 def prepare_stock_for_prediction(
-    symbol: str,
-    nifty50_df: Optional[pd.DataFrame] = None
+    symbol: str, nifty50_df: Optional[pd.DataFrame] = None
 ) -> Tuple[Optional[np.ndarray], Optional[float], str, Optional[pd.DataFrame]]:
     """
     Full pipeline: Fetch data → Calculate features → Prepare for model.
@@ -47,7 +46,9 @@ def prepare_stock_for_prediction(
         return None, None, symbol, None
 
     if len(df) < WINDOW_SIZE:
-        logger.warning(f"{symbol}: Not enough rows after feature engineering ({len(df)} < {WINDOW_SIZE})")
+        logger.warning(
+            f"{symbol}: Not enough rows after feature engineering ({len(df)} < {WINDOW_SIZE})"
+        )
         return None, None, symbol, None
 
     # 3. Extract last 60 days of features
@@ -59,15 +60,21 @@ def prepare_stock_for_prediction(
 
     # 4. Convert to array (shape: 60, 47)
     features_array = features_df.values
-    latest_close = df['Close'].iloc[-1]
+    latest_close = df["Close"].iloc[-1]
 
     # 5. Extract historical OHLCV data (last 60 days)
-    historical_ohlcv = df[['Date', 'Open', 'High', 'Low', 'Close', 'Volume']].tail(WINDOW_SIZE).copy()
+    historical_ohlcv = (
+        df[["Date", "Open", "High", "Low", "Close", "Volume"]].tail(WINDOW_SIZE).copy()
+    )
     # Convert Date to string format and set as index
-    historical_ohlcv['Date'] = pd.to_datetime(historical_ohlcv['Date']).dt.strftime('%Y-%m-%d')
-    historical_ohlcv = historical_ohlcv.set_index('Date')
+    historical_ohlcv["Date"] = pd.to_datetime(historical_ohlcv["Date"]).dt.strftime(
+        "%Y-%m-%d"
+    )
+    historical_ohlcv = historical_ohlcv.set_index("Date")
 
-    logger.debug(f"{symbol}: Successfully prepared features (shape: {features_array.shape})")
+    logger.debug(
+        f"{symbol}: Successfully prepared features (shape: {features_array.shape})"
+    )
     return features_array, latest_close, symbol, historical_ohlcv
 
 
@@ -107,17 +114,16 @@ def predict_stock_direction(features_array: np.ndarray, model, scaler) -> Dict:
     probabilities = model.predict_proba(X_flat)[0]  # [prob_down, prob_up]
 
     return {
-        'prediction': int(prediction),
-        'direction': 'UP' if prediction == 1 else 'DOWN',
-        'probability_up': float(probabilities[1]),
-        'probability_down': float(probabilities[0]),
-        'confidence': float(max(probabilities))
+        "prediction": int(prediction),
+        "direction": "UP" if prediction == 1 else "DOWN",
+        "probability_up": float(probabilities[1]),
+        "probability_down": float(probabilities[0]),
+        "confidence": float(max(probabilities)),
     }
 
 
 def predict_all_stocks(
-    validated_recommendations: List[Dict],
-    nifty50_df: Optional[pd.DataFrame] = None
+    validated_recommendations: List[Dict], nifty50_df: Optional[pd.DataFrame] = None
 ) -> List[Dict]:
     """
     Get ML predictions for all validated LLM stock recommendations.
@@ -133,11 +139,15 @@ def predict_all_stocks(
     model, scaler = load_model_and_scaler()
 
     # Extract unique symbols
-    symbols = list(set([
-        rec['trading_symbol']
-        for rec in validated_recommendations
-        if rec.get('validated') and rec.get('trading_symbol') != 'IPO_PENDING'
-    ]))
+    symbols = list(
+        set(
+            [
+                rec["trading_symbol"]
+                for rec in validated_recommendations
+                if rec.get("validated") and rec.get("trading_symbol") != "IPO_PENDING"
+            ]
+        )
+    )
 
     logger.info(f"Predicting for {len(symbols)} stocks...")
 
@@ -147,20 +157,24 @@ def predict_all_stocks(
         logger.info(f"[{i}/{len(symbols)}] Processing {symbol}...")
 
         # Prepare features
-        features, latest_close, _, historical_ohlcv = prepare_stock_for_prediction(symbol, nifty50_df)
+        features, latest_close, _, historical_ohlcv = prepare_stock_for_prediction(
+            symbol, nifty50_df
+        )
 
         if features is None:
-            results.append({
-                'symbol': symbol,
-                'status': 'FAILED',
-                'direction': 'N/A',
-                'confidence': None,
-                'probability_up': None,
-                'probability_down': None,
-                'latest_close': None,
-                'historical_data': None,
-                'error': 'Insufficient data or feature engineering failed'
-            })
+            results.append(
+                {
+                    "symbol": symbol,
+                    "status": "FAILED",
+                    "direction": "N/A",
+                    "confidence": None,
+                    "probability_up": None,
+                    "probability_down": None,
+                    "latest_close": None,
+                    "historical_data": None,
+                    "error": "Insufficient data or feature engineering failed",
+                }
+            )
             logger.warning(f"{symbol}: FAILED (insufficient data)")
             continue
 
@@ -168,37 +182,45 @@ def predict_all_stocks(
         try:
             pred = predict_stock_direction(features, model, scaler)
 
-            results.append({
-                'symbol': symbol,
-                'status': 'SUCCESS',
-                'direction': pred['direction'],
-                'confidence': pred['confidence'],
-                'probability_up': pred['probability_up'],
-                'probability_down': pred['probability_down'],
-                'latest_close': latest_close,
-                'historical_data': historical_ohlcv.to_dict('index') if historical_ohlcv is not None else None,
-                'error': None
-            })
+            results.append(
+                {
+                    "symbol": symbol,
+                    "status": "SUCCESS",
+                    "direction": pred["direction"],
+                    "confidence": pred["confidence"],
+                    "probability_up": pred["probability_up"],
+                    "probability_down": pred["probability_down"],
+                    "latest_close": latest_close,
+                    "historical_data": historical_ohlcv.to_dict("index")
+                    if historical_ohlcv is not None
+                    else None,
+                    "error": None,
+                }
+            )
 
-            direction_emoji = '📈' if pred['direction'] == 'UP' else '📉'
-            logger.info(f"{direction_emoji} {symbol}: {pred['direction']} (confidence: {pred['confidence']:.1%})")
+            direction_emoji = "📈" if pred["direction"] == "UP" else "📉"
+            logger.info(
+                f"{direction_emoji} {symbol}: {pred['direction']} (confidence: {pred['confidence']:.1%})"
+            )
 
         except Exception as e:
             logger.error(f"{symbol}: Prediction failed - {str(e)}")
-            results.append({
-                'symbol': symbol,
-                'status': 'FAILED',
-                'direction': 'N/A',
-                'confidence': None,
-                'probability_up': None,
-                'probability_down': None,
-                'latest_close': latest_close,
-                'historical_data': None,
-                'error': str(e)
-            })
+            results.append(
+                {
+                    "symbol": symbol,
+                    "status": "FAILED",
+                    "direction": "N/A",
+                    "confidence": None,
+                    "probability_up": None,
+                    "probability_down": None,
+                    "latest_close": latest_close,
+                    "historical_data": None,
+                    "error": str(e),
+                }
+            )
 
     # Summary
-    success_count = sum(1 for r in results if r['status'] == 'SUCCESS')
+    success_count = sum(1 for r in results if r["status"] == "SUCCESS")
     logger.info(f"Prediction complete: {success_count}/{len(symbols)} successful")
 
     return results

@@ -39,11 +39,11 @@ def load_model_and_scaler() -> Tuple[Any, Any]:
         raise FileNotFoundError(f"Scaler file not found: {Settings.SCALER_PATH}")
 
     # Load model
-    with open(Settings.MODEL_PATH, 'rb') as f:
+    with open(Settings.MODEL_PATH, "rb") as f:
         _model_cache = pickle.load(f)
 
     # Load scaler
-    with open(Settings.SCALER_PATH, 'rb') as f:
+    with open(Settings.SCALER_PATH, "rb") as f:
         _scaler_cache = pickle.load(f)
 
     logger.info("Model and scaler loaded successfully")
