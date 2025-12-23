@@ -27,3 +27,10 @@ dependencies = [
     "pytest-cov>=4.1.0",
     "ruff>=0.1.9",
 ]
+
+[tool.bandit]
+exclude_dirs = ["tests", "archive", ".venv", "venv"]
+skips = ["B101"]  # Skip assert_used check (used in tests)
+
+[tool.bandit.assert_used]
+skips = ["*_test.py", "test_*.py"]

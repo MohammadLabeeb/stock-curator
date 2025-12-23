@@ -162,6 +162,25 @@ streamlit run streamlit_app/app.py
    - Generate access token
    - Add to `.env`: `UPSTOX_ACCESS_TOKEN=your_token_here`
 
+⚠️ **Security Note**: Never commit your `.env` file or share API keys publicly. See [SECURITY.md](SECURITY.md) for best practices.
+
+---
+
+## 🔒 Security
+
+This project follows security best practices:
+
+- ✅ **No hardcoded secrets** - All API keys in environment variables
+- ✅ **Gitignore protection** - `.env` file excluded from version control
+- ✅ **GitHub Actions secrets** - Secure CI/CD with encrypted secrets
+- ✅ **Input validation** - All external data validated
+- ✅ **Sanitized logging** - No sensitive data in logs
+- ✅ **HTTPS only** - All API calls use secure connections
+- ✅ **Dependency scanning** - Automated vulnerability checks
+- ✅ **CodeQL analysis** - Security code scanning enabled
+
+For detailed security information, vulnerability reporting, and best practices, see [SECURITY.md](SECURITY.md).
+
 ---
 
 ## 📂 Project Structure
