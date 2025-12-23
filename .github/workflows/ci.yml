@@ -96,8 +96,9 @@ jobs:
           uv pip install --system -r requirements.txt
 
       - name: Validate module imports
+        env:
+          PYTHONPATH: ${{ github.workspace }}
         run: |
-          export PYTHONPATH="${PYTHONPATH}:$(pwd)"
           python -c "
           print('Testing all module imports...')
           from src.config.settings import Settings
