@@ -1,0 +1,83 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+.env
+.venv
+env/
+venv/
+ENV/
+*.egg
+*.egg-info/
+dist/
+build/
+*.whl
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Unit test / coverage reports
+.coverage
+*.cover
+*.py,cover
+.hypothesis/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# IDEs and editors
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+Commands
+claude.md
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Data files - Production Configuration
+# IMPORTANT: Keep models and daily_results in git for deployment
+
+# Ignore large/temporary data
+data/raw/
+data/processed/recommendations/
+data/processed/stock_data/
+data/predictions/
+
+# Keep these specific files (needed for production)
+!data/models/
+!data/models/**
+!data/daily_results/
+!data/daily_results/**
+!data/processed/stock_lookup.json
+!data/processed/filtered_stock_data.json
+!data/processed/selected_features.txt
+
+# MLflow experiments (use Dagshub instead)
+mlruns/
+lightning_logs/
+
+# Old model directory (models now in data/models/)
+# Note: /models/ would ignore src/models/, so we don't ignore it anymore
+# models/
+
+# Test cache
+.pytest_cache/
+htmlcov/
+coverage.xml
+.coverage.*

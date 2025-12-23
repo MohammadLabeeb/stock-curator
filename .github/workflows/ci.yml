@@ -1,0 +1,117 @@
+name: CI - Tests and Linting
+
+on:
+  pull_request:
+    branches: [main, dev]
+  push:
+    branches: [main, dev]
+  workflow_dispatch:
+
+env:
+  PYTHON_VERSION: '3.10'
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install uv
+        run: |
+          curl -LsSf https://astral.sh/uv/install.sh | sh
+          echo "$HOME/.cargo/bin" >> $GITHUB_PATH
+
+      - name: Install dependencies
+        run: |
+          uv pip install --system ruff
+
+      - name: Run ruff linting
+        run: |
+          ruff check src/ --output-format=github
+
+      - name: Run ruff formatting check
+        run: |
+          ruff format --check src/
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install uv
+        run: |
+          curl -LsSf https://astral.sh/uv/install.sh | sh
+          echo "$HOME/.cargo/bin" >> $GITHUB_PATH
+
+      - name: Install dependencies
+        run: |
+          uv pip install --system -r requirements.txt
+          uv pip install --system pytest pytest-cov
+
+      - name: Run tests
+        env:
+          # Use dummy values for testing (tests should mock API calls)
+          WORLD_NEWS_API_KEY: "test_key_world_news"
+          GEMINI_API_KEY: "test_key_gemini"
+          UPSTOX_ACCESS_TOKEN: "test_token_upstox"
+        run: |
+          pytest tests/ -v --cov=src --cov-report=term-missing --cov-report=xml
+
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v4
+        with:
+          file: ./coverage.xml
+          fail_ci_if_error: false
+
+  validate-imports:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: ${{ env.PYTHON_VERSION }}
+
+      - name: Install uv
+        run: |
+          curl -LsSf https://astral.sh/uv/install.sh | sh
+          echo "$HOME/.cargo/bin" >> $GITHUB_PATH
+
+      - name: Install dependencies
+        run: |
+          uv pip install --system -r requirements.txt
+
+      - name: Validate module imports
+        env:
+          PYTHONPATH: ${{ github.workspace }}
+        run: |
+          python -c "
+          print('Testing all module imports...')
+          from src.config.settings import Settings
+          from src.config.constants import FEATURE_COLS
+          from src.data.news_scraper import scrape_news
+          from src.llm.extractor import extract_recommendations
+          from src.data.stock_validator import validate_stocks
+          from src.data.stock_fetcher import fetch_stock_data
+          from src.features.basic_indicators import calculate_basic_features
+          from src.features.advanced_indicators import calculate_advanced_features
+          from src.models.predictor import predict_all_stocks
+          from src.pipeline.daily_pipeline import main
+          from src.utils.logging_config import setup_logging
+          from src.utils.helpers import get_trading_date
+          print('✓ All imports successful!')
+          "

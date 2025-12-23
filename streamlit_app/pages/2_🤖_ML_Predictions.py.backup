@@ -1,0 +1,202 @@
+"""
+ML Predictions Page - Display 7-day directional forecasts from XGBoost model
+"""
+
+import streamlit as st
+import pandas as pd
+import plotly.graph_objects as go
+import sys
+from pathlib import Path
+
+# Add parent directory to path for imports
+sys.path.insert(0, str(Path(__file__).parent.parent))
+
+from utils.data_loader import load_daily_predictions, get_available_dates
+from components.stock_cards import render_ml_prediction_card
+
+st.set_page_config(page_title="ML Predictions", page_icon="🤖", layout="wide")
+
+st.title("🤖 ML Predictions (7-Day Direction)")
+st.caption("XGBoost Model | 70.08% Accuracy | 73.10% Precision | 70.81% Win Rate")
+
+# Date selector
+available_dates = get_available_dates()
+if not available_dates:
+    st.error("⚠️ No data available. Run the pipeline at least once to generate predictions.")
+    st.info("Run: `python -m src.pipeline.daily_pipeline`")
+    st.stop()
+
+selected_date = st.selectbox("📅 Select Date", available_dates, index=0)
+
+# Load data
+data = load_daily_predictions(selected_date)
+if not data or 'ml_predictions' not in data:
+    st.error("❌ Failed to load ML predictions for this date")
+    st.stop()
+
+ml_preds = pd.DataFrame(data['ml_predictions'])
+llm_recs = pd.DataFrame(data.get('llm_recommendations', []))
+
+if len(ml_preds) == 0:
+    st.warning("No ML predictions found for this date")
+    st.stop()
+
+# Create LLM action lookup
+llm_action_map = {}
+if len(llm_recs) > 0:
+    for _, rec in llm_recs.iterrows():
+        llm_action_map[rec['trading_symbol']] = rec['action_to_take']
+
+# Add LLM action to ML predictions
+ml_preds['llm_action'] = ml_preds['symbol'].map(llm_action_map)
+
+# Filters
+st.markdown("### 🔍 Filters")
+col1, col2, col3 = st.columns(3)
+
+with col1:
+    direction_filter = st.selectbox("Direction", ['All', 'UP', 'DOWN'])
+
+with col2:
+    min_conf = st.slider("Minimum Confidence", 0.0, 1.0, 0.6, 0.05)
+
+with col3:
+    agreement_filter = st.selectbox("LLM-ML Agreement", ['All', 'Agree', 'Disagree', 'No LLM Data'])
+
+# Apply filters
+filtered = ml_preds.copy()
+
+if direction_filter != 'All':
+    filtered = filtered[filtered['direction'] == direction_filter]
+
+filtered = filtered[filtered['confidence'] >= min_conf]
+
+if agreement_filter == 'Agree':
+    filtered = filtered[
+        ((filtered['llm_action'].isin(['BUY', 'BUY_SIGNAL'])) & (filtered['direction'] == 'UP')) |
+        ((filtered['llm_action'].isin(['SELL', 'SELL_SIGNAL'])) & (filtered['direction'] == 'DOWN'))
+    ]
+elif agreement_filter == 'Disagree':
+    filtered = filtered[
+        ((filtered['llm_action'].isin(['BUY', 'BUY_SIGNAL'])) & (filtered['direction'] == 'DOWN')) |
+        ((filtered['llm_action'].isin(['SELL', 'SELL_SIGNAL'])) & (filtered['direction'] == 'UP'))
+    ]
+elif agreement_filter == 'No LLM Data':
+    filtered = filtered[filtered['llm_action'].isna()]
+
+# Sort by confidence
+filtered = filtered.sort_values('confidence', ascending=False)
+
+# Display metrics
+st.markdown("---")
+col1, col2, col3, col4 = st.columns(4)
+
+with col1:
+    st.metric("📊 Total Predictions", len(ml_preds))
+
+with col2:
+    up_count = len(ml_preds[ml_preds['direction'] == 'UP'])
+    st.metric("📈 UP Predictions", up_count)
+
+with col3:
+    down_count = len(ml_preds[ml_preds['direction'] == 'DOWN'])
+    st.metric("📉 DOWN Predictions", down_count)
+
+with col4:
+    avg_conf = ml_preds['confidence'].mean()
+    st.metric("📈 Avg Confidence", f"{avg_conf:.1%}")
+
+# Agreement analysis (if LLM data available)
+if len(llm_recs) > 0:
+    st.markdown("---")
+    st.markdown("### 🤝 LLM-ML Agreement Analysis")
+
+    col1, col2, col3, col4 = st.columns(4)
+
+    # Calculate agreement
+    agree_up = len(ml_preds[
+        (ml_preds['llm_action'].isin(['BUY', 'BUY_SIGNAL'])) & (ml_preds['direction'] == 'UP')
+    ])
+    agree_down = len(ml_preds[
+        (ml_preds['llm_action'].isin(['SELL', 'SELL_SIGNAL'])) & (ml_preds['direction'] == 'DOWN')
+    ])
+    total_agree = agree_up + agree_down
+
+    disagree_count = len(ml_preds[
+        ((ml_preds['llm_action'].isin(['BUY', 'BUY_SIGNAL'])) & (ml_preds['direction'] == 'DOWN')) |
+        ((ml_preds['llm_action'].isin(['SELL', 'SELL_SIGNAL'])) & (ml_preds['direction'] == 'UP'))
+    ])
+
+    no_llm = len(ml_preds[ml_preds['llm_action'].isna()])
+
+    with col1:
+        st.metric("✅ Agree", total_agree)
+
+    with col2:
+        st.metric("⚠️ Disagree", disagree_count)
+
+    with col3:
+        st.metric("⚪ No LLM Data", no_llm)
+
+    with col4:
+        if len(ml_preds) - no_llm > 0:
+            agreement_rate = total_agree / (len(ml_preds) - no_llm)
+            st.metric("Agreement Rate", f"{agreement_rate:.1%}")
+
+# Probability distribution chart
+st.markdown("---")
+st.markdown("### 📊 Probability Distribution")
+
+fig = go.Figure()
+
+fig.add_trace(go.Histogram(
+    x=filtered['probability_up'],
+    name='UP Probability',
+    marker_color='green',
+    opacity=0.7,
+    nbinsx=20
+))
+
+fig.add_trace(go.Histogram(
+    x=filtered['probability_down'],
+    name='DOWN Probability',
+    marker_color='red',
+    opacity=0.7,
+    nbinsx=20
+))
+
+fig.update_layout(
+    xaxis_title='Probability',
+    yaxis_title='Count',
+    barmode='overlay',
+    height=300
+)
+
+st.plotly_chart(fig, use_container_width=True)
+
+# Display predictions
+st.markdown("---")
+st.markdown(f"### 📋 Predictions ({len(filtered)} stocks)")
+
+if len(filtered) == 0:
+    st.info("No predictions match the selected filters. Try adjusting the filters above.")
+else:
+    for _, pred in filtered.iterrows():
+        llm_action = pred['llm_action'] if pd.notna(pred['llm_action']) else None
+        render_ml_prediction_card(pred.to_dict(), llm_action)
+
+# Download button
+st.markdown("---")
+st.markdown("### 💾 Export Data")
+
+csv = filtered.to_csv(index=False)
+st.download_button(
+    label="📥 Download Filtered Predictions (CSV)",
+    data=csv,
+    file_name=f"ml_predictions_{selected_date}.csv",
+    mime="text/csv"
+)
+
+# Raw data viewer
+with st.expander("🔍 View Raw Data"):
+    st.dataframe(filtered, use_container_width=True)
