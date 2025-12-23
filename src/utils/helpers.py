@@ -78,8 +78,9 @@ def sanitize_log_message(message: Any, max_length: int = 500) -> str:
     for pattern, replacement in patterns:
         msg = re.sub(pattern, replacement, msg)
     
-    # Truncate if too long
+    # Truncate if too long (calculate hidden chars before truncating)
     if len(msg) > max_length:
-        msg = msg[:max_length] + f"... (truncated, {len(msg) - max_length} chars hidden)"
+        hidden_chars = len(msg) - max_length
+        msg = msg[:max_length] + f"... (truncated, {hidden_chars} chars hidden)"
     
     return msg
