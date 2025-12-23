@@ -12,7 +12,12 @@ from typing import List, Dict, Optional
 import requests
 
 from src.config.settings import Settings
-from src.config.constants import NEWS_SEARCH_KEYWORDS, NEWS_COUNTRY, NEWS_LANGUAGE, NEWS_COUNT
+from src.config.constants import (
+    NEWS_SEARCH_KEYWORDS,
+    NEWS_COUNTRY,
+    NEWS_LANGUAGE,
+    NEWS_COUNT,
+)
 
 logger = logging.getLogger(__name__)
 
@@ -36,44 +41,40 @@ def scrape_news(days_back: int = 1, save_to_file: bool = True) -> List[Dict]:
         raise ValueError("WORLD_NEWS_API_KEY not set in environment variables")
 
     # Calculate date range
-    published_after = (datetime.now() - timedelta(days=days_back)).strftime('%Y-%m-%d')
+    published_after = (datetime.now() - timedelta(days=days_back)).strftime("%Y-%m-%d")
 
     # API parameters
     params = {
-        'text': NEWS_SEARCH_KEYWORDS,
-        'source-country': NEWS_COUNTRY,
-        'language': NEWS_LANGUAGE,
-        'earliest-publish-date': published_after,
-        'number': NEWS_COUNT
+        "text": NEWS_SEARCH_KEYWORDS,
+        "source-country": NEWS_COUNTRY,
+        "language": NEWS_LANGUAGE,
+        "earliest-publish-date": published_after,
+        "number": NEWS_COUNT,
     }
 
-    headers = {
-        'x-api-key': Settings.WORLD_NEWS_API_KEY
-    }
+    headers = {"x-api-key": Settings.WORLD_NEWS_API_KEY}
 
     logger.info(f"Scraping news from {published_after} to now...")
 
     try:
         response = requests.get(
-            'https://api.worldnewsapi.com/search-news',
+            "https://api.worldnewsapi.com/search-news",
             params=params,
             headers=headers,
-            timeout=10
+            timeout=10,
         )
         response.raise_for_status()
 
         data = response.json()
-        articles = data.get('news', [])
+        articles = data.get("news", [])
 
         logger.info(f"Successfully scraped {len(articles)} articles")
 
         # Clean article text (remove "Read more", "About", "Also Read" sections)
         for article in articles:
-            if 'text' in article:
-                article['text'] = re.split(
-                    r'Read more|About|Also Read',
-                    article['text'],
-                    flags=re.IGNORECASE
+            if "text" in article:
+                article["text"] = re.split(
+                    r"Read more|About|Also Read", article["text"], flags=re.IGNORECASE
                 )[0].strip()
 
         # Save to file if requested
@@ -82,7 +83,7 @@ def scrape_news(days_back: int = 1, save_to_file: bool = True) -> List[Dict]:
             Settings.RAW_NEWS_DIR.mkdir(parents=True, exist_ok=True)
             output_file = Settings.RAW_NEWS_DIR / f"worldnewsapi_{today}.json"
 
-            with open(output_file, 'w') as f:
+            with open(output_file, "w") as f:
                 json.dump(data, f, indent=4)
 
             logger.info(f"Saved raw news to {output_file}")
@@ -115,10 +116,10 @@ def load_news_from_file(date_str: Optional[str] = None) -> List[Dict]:
     if not news_file.exists():
         raise FileNotFoundError(f"News file not found: {news_file}")
 
-    with open(news_file, 'r') as f:
+    with open(news_file, "r") as f:
         data = json.load(f)
 
-    articles = data.get('news', [])
+    articles = data.get("news", [])
     logger.info(f"Loaded {len(articles)} articles from {news_file}")
 
     return articles

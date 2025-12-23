@@ -48,16 +48,16 @@ def extract_recommendations(news_items: List[Dict]) -> List[Dict]:
 
     try:
         # Use Gemini 2.5 Flash for fast and efficient extraction
-        model = genai.GenerativeModel('gemini-2.5-flash')
+        model = genai.GenerativeModel("gemini-2.5-flash")
         response = model.generate_content(prompt)
 
         # Extract JSON from response
         response_text = response.text.strip()
 
         # Remove markdown code blocks if present
-        if response_text.startswith('```'):
-            response_text = response_text.split('```')[1]
-            if response_text.startswith('json'):
+        if response_text.startswith("```"):
+            response_text = response_text.split("```")[1]
+            if response_text.startswith("json"):
                 response_text = response_text[4:]
 
         # Parse JSON
@@ -65,11 +65,12 @@ def extract_recommendations(news_items: List[Dict]) -> List[Dict]:
 
         # Filter out null recommendations
         valid_recommendations = [
-            rec for rec in recommendations
-            if rec.get('stock_name') is not None
+            rec for rec in recommendations if rec.get("stock_name") is not None
         ]
 
-        logger.info(f"Successfully extracted {len(valid_recommendations)} recommendations")
+        logger.info(
+            f"Successfully extracted {len(valid_recommendations)} recommendations"
+        )
 
         return valid_recommendations
 
@@ -96,7 +97,7 @@ def save_llm_recommendations(recommendations: List[Dict], date_str: str):
 
     output_file = output_dir / f"llm_recommendations_{date_str}.json"
 
-    with open(output_file, 'w') as f:
+    with open(output_file, "w") as f:
         json.dump(recommendations, f, indent=4)
 
     logger.info(f"Saved {len(recommendations)} LLM recommendations to {output_file}")

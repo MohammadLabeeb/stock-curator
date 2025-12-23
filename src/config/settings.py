@@ -37,7 +37,7 @@ class Settings:
 
     # ==================== ML Configuration ====================
     WINDOW_SIZE = 60  # Need 60 days of history
-    HORIZON = 7       # Predicting 7-day ahead direction
+    HORIZON = 7  # Predicting 7-day ahead direction
 
     @classmethod
     def validate(cls):
@@ -52,11 +52,15 @@ class Settings:
             missing.append("UPSTOX_ACCESS_TOKEN")
 
         if missing:
-            raise ValueError(f"Missing required environment variables: {', '.join(missing)}")
+            raise ValueError(
+                f"Missing required environment variables: {', '.join(missing)}"
+            )
 
         # Check critical files exist
         if not cls.STOCK_LOOKUP_PATH.exists():
-            raise FileNotFoundError(f"Stock lookup file not found: {cls.STOCK_LOOKUP_PATH}")
+            raise FileNotFoundError(
+                f"Stock lookup file not found: {cls.STOCK_LOOKUP_PATH}"
+            )
         if not cls.MODEL_PATH.exists():
             raise FileNotFoundError(f"Model file not found: {cls.MODEL_PATH}")
         if not cls.SCALER_PATH.exists():

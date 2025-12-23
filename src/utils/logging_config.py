@@ -17,8 +17,8 @@ def setup_logging(level: str = "INFO", log_file: Path = None):
     """
     # Create formatter
     formatter = logging.Formatter(
-        '%(asctime)s - %(name)s - %(levelname)s - %(message)s',
-        datefmt='%Y-%m-%d %H:%M:%S'
+        "%(asctime)s - %(name)s - %(levelname)s - %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S",
     )
 
     # Get root logger
@@ -41,8 +41,8 @@ def setup_logging(level: str = "INFO", log_file: Path = None):
         root_logger.addHandler(file_handler)
 
     # Suppress noisy loggers
-    logging.getLogger('urllib3').setLevel(logging.WARNING)
-    logging.getLogger('requests').setLevel(logging.WARNING)
-    logging.getLogger('google').setLevel(logging.WARNING)
+    logging.getLogger("urllib3").setLevel(logging.WARNING)
+    logging.getLogger("requests").setLevel(logging.WARNING)
+    logging.getLogger("google").setLevel(logging.WARNING)
 
     logging.info("Logging configured")

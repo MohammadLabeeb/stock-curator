@@ -30,12 +30,16 @@ def load_stock_lookup() -> Dict:
         return _stock_lookup_cache
 
     if not Settings.STOCK_LOOKUP_PATH.exists():
-        raise FileNotFoundError(f"Stock lookup file not found: {Settings.STOCK_LOOKUP_PATH}")
+        raise FileNotFoundError(
+            f"Stock lookup file not found: {Settings.STOCK_LOOKUP_PATH}"
+        )
 
-    with open(Settings.STOCK_LOOKUP_PATH, 'r') as f:
+    with open(Settings.STOCK_LOOKUP_PATH, "r") as f:
         _stock_lookup_cache = json.load(f)
 
-    logger.info(f"Loaded stock lookup with {len(_stock_lookup_cache['by_symbol'])} stocks")
+    logger.info(
+        f"Loaded stock lookup with {len(_stock_lookup_cache['by_symbol'])} stocks"
+    )
     return _stock_lookup_cache
 
 
@@ -50,26 +54,28 @@ def create_lookup_dict(stocks_db: List[Dict]) -> Dict:
         Dictionary with 'by_name' and 'by_symbol' lookup mappings
     """
     lookup = {
-        'by_name': {},
-        'by_symbol': {},
+        "by_name": {},
+        "by_symbol": {},
     }
 
     for stock in stocks_db:
         # Normalize names for matching
-        normalized_name = stock['name'].lower().strip()
-        lookup['by_name'][normalized_name] = stock
-        lookup['by_symbol'][stock['trading_symbol'].upper()] = stock
+        normalized_name = stock["name"].lower().strip()
+        lookup["by_name"][normalized_name] = stock
+        lookup["by_symbol"][stock["trading_symbol"].upper()] = stock
 
         # Add common variations
         # Remove "LIMITED", "LTD", "PVT" etc.
-        short_name = normalized_name.replace(' limited', '').replace(' ltd', '')
-        short_name = short_name.replace(' pvt', '').strip()
-        lookup['by_name'][short_name] = stock
+        short_name = normalized_name.replace(" limited", "").replace(" ltd", "")
+        short_name = short_name.replace(" pvt", "").strip()
+        lookup["by_name"][short_name] = stock
 
     return lookup
 
 
-def validate_and_enrich_stock(stock_name: str, is_ipo: bool = False) -> Tuple[Optional[Dict], Optional[str]]:
+def validate_and_enrich_stock(
+    stock_name: str, is_ipo: bool = False
+) -> Tuple[Optional[Dict], Optional[str]]:
     """
     Validate stock name and return enriched data from NSE master list.
 
@@ -96,34 +102,38 @@ def validate_and_enrich_stock(stock_name: str, is_ipo: bool = False) -> Tuple[Op
     # Handle IPOs
     if is_ipo:
         ipo_stock = {
-            'name': stock_name,
-            'trading_symbol': 'IPO_PENDING',
-            'instrument_key': None,
-            'isin': None,
-            'is_ipo': True
+            "name": stock_name,
+            "trading_symbol": "IPO_PENDING",
+            "instrument_key": None,
+            "isin": None,
+            "is_ipo": True,
         }
         return ipo_stock, "ipo_stock"
 
     stock_name = stock_name.strip()
 
     # Try exact symbol match first
-    if stock_name.upper() in stock_lookup['by_symbol']:
-        return stock_lookup['by_symbol'][stock_name.upper()], "symbol match"
+    if stock_name.upper() in stock_lookup["by_symbol"]:
+        return stock_lookup["by_symbol"][stock_name.upper()], "symbol match"
 
     # Try exact name match
     normalized = stock_name.lower()
-    if normalized in stock_lookup['by_name']:
-        return stock_lookup['by_name'][normalized], "name match"
+    if normalized in stock_lookup["by_name"]:
+        return stock_lookup["by_name"][normalized], "name match"
 
     # Helper functions for fuzzy matching
     def normalize_for_matching(text):
         """Remove common suffixes and standardize text"""
         text = text.lower()
         # Remove common suffixes
-        text = re.sub(r'\s+(ltd\.?|limited|pvt\.?|private|inc\.?|incorporated|corp\.?|corporation)$', '', text)
+        text = re.sub(
+            r"\s+(ltd\.?|limited|pvt\.?|private|inc\.?|incorporated|corp\.?|corporation)$",
+            "",
+            text,
+        )
         # Remove extra whitespace and special characters
-        text = re.sub(r'[&\-\.\,]', ' ', text)
-        text = re.sub(r'\s+', ' ', text).strip()
+        text = re.sub(r"[&\-\.\,]", " ", text)
+        text = re.sub(r"\s+", " ", text).strip()
         return text
 
     def extract_key_words(text):
@@ -131,7 +141,7 @@ def validate_and_enrich_stock(stock_name: str, is_ipo: bool = False) -> Tuple[Op
         text = normalize_for_matching(text)
         words = text.split()
         # Remove very common filler words
-        stop_words = {'and', 'the', 'of', 'a', 'an', 'in', 'on', 'at', 'to', 'for'}
+        stop_words = {"and", "the", "of", "a", "an", "in", "on", "at", "to", "for"}
         return [w for w in words if w not in stop_words and len(w) > 1]
 
     def is_abbreviation_match(word, abbreviated):
@@ -163,7 +173,7 @@ def validate_and_enrich_stock(stock_name: str, is_ipo: bool = False) -> Tuple[Op
     input_words = extract_key_words(stock_name)
 
     # Special handling for bank stocks
-    bank_keywords = ['hdfc', 'icici', 'sbi', 'axis', 'kotak', 'bank']
+    bank_keywords = ["hdfc", "icici", "sbi", "axis", "kotak", "bank"]
     is_bank_query = any(keyword in normalized_input for keyword in bank_keywords)
 
     if is_bank_query:
@@ -171,30 +181,39 @@ def validate_and_enrich_stock(stock_name: str, is_ipo: bool = False) -> Tuple[Op
         best_match = None
         best_score = 0
 
-        for key, stock in stock_lookup['by_name'].items():
+        for key, stock in stock_lookup["by_name"].items():
             key_lower = key.lower()
             normalized_key = normalize_for_matching(key)
 
             # Skip ETFs and AMCs when looking for banks
-            if 'etf' in key_lower or 'amc' in key_lower or 'pramc' in key_lower:
+            if "etf" in key_lower or "amc" in key_lower or "pramc" in key_lower:
                 continue
 
             # For insurance companies, only match if "insurance" or "life" is in the query
-            if 'insurance' in key_lower or 'life' in key_lower:
-                if 'insurance' not in normalized_input and 'life' not in normalized_input:
+            if "insurance" in key_lower or "life" in key_lower:
+                if (
+                    "insurance" not in normalized_input
+                    and "life" not in normalized_input
+                ):
                     continue
 
             # Must contain "bank" for bank queries
-            if 'bank' not in key_lower:
+            if "bank" not in key_lower:
                 continue
 
             # Check short_name field if available
             short_name_match = False
-            if 'short_name' in stock:
-                short_name_lower = stock['short_name'].lower()
-                if normalized_input == short_name_lower or stock_name.upper() == stock['short_name'].upper():
+            if "short_name" in stock:
+                short_name_lower = stock["short_name"].lower()
+                if (
+                    normalized_input == short_name_lower
+                    or stock_name.upper() == stock["short_name"].upper()
+                ):
                     return stock, "short name match"
-                if normalized_input in short_name_lower or short_name_lower in normalized_input:
+                if (
+                    normalized_input in short_name_lower
+                    or short_name_lower in normalized_input
+                ):
                     short_name_match = True
 
             # Check for acronym match (e.g., SBI -> State Bank India)
@@ -209,7 +228,9 @@ def validate_and_enrich_stock(stock_name: str, is_ipo: bool = False) -> Tuple[Op
             matches = 0
             for input_word in input_words:
                 for key_word in key_words:
-                    if input_word == key_word or is_abbreviation_match(input_word, key_word):
+                    if input_word == key_word or is_abbreviation_match(
+                        input_word, key_word
+                    ):
                         matches += 1
                         break
 
@@ -230,7 +251,7 @@ def validate_and_enrich_stock(stock_name: str, is_ipo: bool = False) -> Tuple[Op
                 score += 0.8
 
             # Prioritize stocks with "bank ltd" or "bank limited" (actual banks)
-            if 'bank ltd' in key_lower or 'bank limited' in key_lower:
+            if "bank ltd" in key_lower or "bank limited" in key_lower:
                 score += 0.5
 
             if score > best_score:
@@ -244,21 +265,26 @@ def validate_and_enrich_stock(stock_name: str, is_ipo: bool = False) -> Tuple[Op
     best_match = None
     best_score = 0
 
-    for key, stock in stock_lookup['by_name'].items():
+    for key, stock in stock_lookup["by_name"].items():
         normalized_key = normalize_for_matching(key)
         key_words = extract_key_words(key)
 
         # Check short_name field if available
-        if 'short_name' in stock:
-            short_name_lower = stock['short_name'].lower()
-            if normalized_input == short_name_lower or stock_name.upper() == stock['short_name'].upper():
+        if "short_name" in stock:
+            short_name_lower = stock["short_name"].lower()
+            if (
+                normalized_input == short_name_lower
+                or stock_name.upper() == stock["short_name"].upper()
+            ):
                 return stock, "short name match"
 
         # Calculate matching score based on word overlap with abbreviation support
         matches = 0
         for input_word in input_words:
             for key_word in key_words:
-                if input_word == key_word or is_abbreviation_match(input_word, key_word):
+                if input_word == key_word or is_abbreviation_match(
+                    input_word, key_word
+                ):
                     matches += 1
                     break
 
@@ -303,8 +329,8 @@ def validate_stocks(llm_recommendations: List[Dict]) -> List[Dict]:
     logger.info(f"Validating {len(llm_recommendations)} LLM recommendations...")
 
     for rec in llm_recommendations:
-        stock_name = rec.get('stock_name')
-        is_ipo = rec.get('is_ipo', False)
+        stock_name = rec.get("stock_name")
+        is_ipo = rec.get("is_ipo", False)
 
         if not stock_name:
             continue
@@ -314,32 +340,34 @@ def validate_stocks(llm_recommendations: List[Dict]) -> List[Dict]:
         if stock_data:
             enriched_rec = {
                 **rec,
-                'equity_name': stock_data['name'],
-                'instrument_key': stock_data.get('instrument_key'),
-                'trading_symbol': stock_data['trading_symbol'],
-                'isin': stock_data.get('isin'),
-                'validated': True,
-                'validation_method': method,
-                'extraction_timestamp': datetime.now().isoformat()
+                "equity_name": stock_data["name"],
+                "instrument_key": stock_data.get("instrument_key"),
+                "trading_symbol": stock_data["trading_symbol"],
+                "isin": stock_data.get("isin"),
+                "validated": True,
+                "validation_method": method,
+                "extraction_timestamp": datetime.now().isoformat(),
             }
             validated.append(enriched_rec)
         else:
             # Stock not found
             enriched_rec = {
                 **rec,
-                'equity_name': stock_name,
-                'instrument_key': None,
-                'trading_symbol': None,
-                'isin': None,
-                'validated': False,
-                'validation_error': 'Stock not found in master database',
-                'extraction_timestamp': datetime.now().isoformat()
+                "equity_name": stock_name,
+                "instrument_key": None,
+                "trading_symbol": None,
+                "isin": None,
+                "validated": False,
+                "validation_error": "Stock not found in master database",
+                "extraction_timestamp": datetime.now().isoformat(),
             }
             validated.append(enriched_rec)
 
-    success_count = sum(1 for r in validated if r['validated'])
-    logger.info(f"Validation complete: {success_count}/{len(validated)} stocks validated "
-                f"({success_count/len(validated)*100:.1f}%)")
+    success_count = sum(1 for r in validated if r["validated"])
+    logger.info(
+        f"Validation complete: {success_count}/{len(validated)} stocks validated "
+        f"({success_count / len(validated) * 100:.1f}%)"
+    )
 
     return validated
 
@@ -357,13 +385,15 @@ def save_validated_recommendations(recommendations: List[Dict], date_str: str):
 
     # Save all recommendations
     all_output_file = output_dir / f"all_recommendations_{date_str}.json"
-    with open(all_output_file, 'w') as f:
+    with open(all_output_file, "w") as f:
         json.dump(recommendations, f, indent=2)
 
     # Save only validated recommendations
-    validated_only = [r for r in recommendations if r.get('validated')]
+    validated_only = [r for r in recommendations if r.get("validated")]
     validated_output_file = output_dir / f"validated_recommendations_{date_str}.json"
-    with open(validated_output_file, 'w') as f:
+    with open(validated_output_file, "w") as f:
         json.dump(validated_only, f, indent=2)
 
-    logger.info(f"Saved {len(validated_only)} validated recommendations to {validated_output_file}")
+    logger.info(
+        f"Saved {len(validated_only)} validated recommendations to {validated_output_file}"
+    )

@@ -38,10 +38,10 @@ def main():
     """
     # 1. Setup
     setup_logging(level="INFO")
-    logger.info("="*80)
+    logger.info("=" * 80)
     logger.info("STOCK CURATOR - DAILY PIPELINE")
     logger.info(f"Started at: {format_ist_timestamp()}")
-    logger.info("="*80)
+    logger.info("=" * 80)
 
     # 2. Validate configuration
     try:
@@ -64,39 +64,41 @@ def main():
 
     try:
         # 4. Scrape news
-        logger.info("\n" + "="*80)
+        logger.info("\n" + "=" * 80)
         logger.info("STEP 1/5: Scraping financial news")
-        logger.info("="*80)
+        logger.info("=" * 80)
         news_articles = scrape_news()
         logger.info(f"✓ Scraped {len(news_articles)} articles")
 
         # 5. LLM extraction
-        logger.info("\n" + "="*80)
+        logger.info("\n" + "=" * 80)
         logger.info("STEP 2/5: Extracting recommendations via LLM")
-        logger.info("="*80)
+        logger.info("=" * 80)
         llm_recs = extract_recommendations(news_articles)
         logger.info(f"✓ Extracted {len(llm_recs)} recommendations")
 
         # 5.5 Add news URLs to recommendations
-        news_url_map = {str(article.get('id')): article.get('url') for article in news_articles}
+        news_url_map = {
+            str(article.get("id")): article.get("url") for article in news_articles
+        }
         for rec in llm_recs:
-            news_id = str(rec.get('news_id', ''))
+            news_id = str(rec.get("news_id", ""))
             if news_id in news_url_map:
-                rec['news_url'] = news_url_map[news_id]
+                rec["news_url"] = news_url_map[news_id]
         logger.info("✓ Added news URLs to recommendations")
 
         # 6. Validate stocks
-        logger.info("\n" + "="*80)
+        logger.info("\n" + "=" * 80)
         logger.info("STEP 3/5: Validating stock symbols")
-        logger.info("="*80)
+        logger.info("=" * 80)
         validated_recs = validate_stocks(llm_recs)
-        validated_count = sum(1 for r in validated_recs if r.get('validated'))
+        validated_count = sum(1 for r in validated_recs if r.get("validated"))
         logger.info(f"✓ Validated {validated_count}/{len(validated_recs)} stocks")
 
         # 7. Fetch NIFTY 50 for market context
-        logger.info("\n" + "="*80)
+        logger.info("\n" + "=" * 80)
         logger.info("STEP 4/5: Fetching NIFTY 50 data")
-        logger.info("="*80)
+        logger.info("=" * 80)
         nifty50_df = fetch_nifty50_data()
         if nifty50_df is not None:
             logger.info(f"✓ Fetched {len(nifty50_df)} days of NIFTY 50 data")
@@ -104,24 +106,24 @@ def main():
             logger.warning("⚠ NIFTY 50 data not available, using defaults")
 
         # 8. ML predictions
-        logger.info("\n" + "="*80)
+        logger.info("\n" + "=" * 80)
         logger.info("STEP 5/5: Running ML predictions")
-        logger.info("="*80)
+        logger.info("=" * 80)
         ml_predictions = predict_all_stocks(validated_recs, nifty50_df)
-        success_count = sum(1 for p in ml_predictions if p['status'] == 'SUCCESS')
+        success_count = sum(1 for p in ml_predictions if p["status"] == "SUCCESS")
         logger.info(f"✓ Predicted {success_count}/{len(ml_predictions)} stocks")
 
         # 9. Save results
-        logger.info("\n" + "="*80)
+        logger.info("\n" + "=" * 80)
         logger.info("SAVING RESULTS")
-        logger.info("="*80)
+        logger.info("=" * 80)
         output_file = save_daily_results(today, validated_recs, ml_predictions)
         logger.info(f"✓ Results saved to {output_file}")
 
         # Final summary
-        logger.info("\n" + "="*80)
+        logger.info("\n" + "=" * 80)
         logger.info("PIPELINE COMPLETED SUCCESSFULLY")
-        logger.info("="*80)
+        logger.info("=" * 80)
         logger.info(f"Date: {today}")
         logger.info(f"News articles: {len(news_articles)}")
         logger.info(f"LLM recommendations: {len(llm_recs)}")
@@ -129,16 +131,16 @@ def main():
         logger.info(f"ML predictions: {success_count}")
         logger.info(f"Output: {output_file}")
         logger.info(f"Finished at: {format_ist_timestamp()}")
-        logger.info("="*80)
+        logger.info("=" * 80)
 
         return output_file
 
     except Exception as e:
-        logger.error(f"\n{'='*80}")
+        logger.error(f"\n{'=' * 80}")
         logger.error("PIPELINE FAILED")
-        logger.error(f"{'='*80}")
+        logger.error(f"{'=' * 80}")
         logger.error(f"Error: {str(e)}", exc_info=True)
-        logger.error(f"{'='*80}")
+        logger.error(f"{'=' * 80}")
         raise
 
 

@@ -24,7 +24,7 @@ def create_extraction_prompt(news_items: List[Dict]) -> str:
         news_text += f"Title: {item['title']}\n"
         news_text += f"Text: {item['text']}\n"
         # Summary field is optional in World News API response
-        if 'summary' in item and item['summary']:
+        if "summary" in item and item["summary"]:
             news_text += f"Summary: {item['summary']}\n"
 
     prompt = f"""You are a financial analyst expert in Indian stock markets (NSE/BSE).

@@ -26,7 +26,7 @@ def get_trading_date() -> str:
     Returns:
         Date string in IST timezone
     """
-    return get_current_ist_time().strftime('%Y-%m-%d')
+    return get_current_ist_time().strftime("%Y-%m-%d")
 
 
 def format_ist_timestamp() -> str:
@@ -36,4 +36,4 @@ def format_ist_timestamp() -> str:
     Returns:
         Timestamp string like "2025-12-22 15:30:45 IST"
     """
-    return get_current_ist_time().strftime('%Y-%m-%d %H:%M:%S IST')
+    return get_current_ist_time().strftime("%Y-%m-%d %H:%M:%S IST")
