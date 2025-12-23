@@ -3,6 +3,8 @@
 > **AI-Powered Stock Analysis using LLM + Machine Learning**
 > Combining LLM-based news intelligence with ML predictions for the Indian stock market (NIFTY)
 
+**Live Dashboard**: [[Streamlit URL](https://stock-curator.streamlit.app/LLM_Recommendations)]
+
 [![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)](https://www.python.org/)
 [![ML](https://img.shields.io/badge/ML-XGBoost-orange.svg)](https://xgboost.ai/)
 [![LLM](https://img.shields.io/badge/LLM-Gemini-green.svg)](https://ai.google.dev/)
@@ -303,7 +305,7 @@ This is a portfolio project, but suggestions and feedback are welcome!
 
 ---
 
-**Live Dashboard**: [Streamlit URL]
+**Live Dashboard**: [[Streamlit URL](https://stock-curator.streamlit.app/LLM_Recommendations)]
 
 ---
 
