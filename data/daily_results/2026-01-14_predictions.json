@@ -1,0 +1,511 @@
+{
+  "metadata": {
+    "date": "2026-01-14",
+    "run_timestamp": "2026-01-14T03:57:18.135339",
+    "pipeline_version": "1.0.0",
+    "total_news_articles": 2,
+    "total_llm_recs": 2,
+    "total_validated": 2,
+    "total_ml_predictions": 1,
+    "success_rate": 1.0
+  },
+  "llm_recommendations": [
+    {
+      "news_id": "392854640",
+      "stock_name": "Eternal (Zomato)",
+      "is_ipo": false,
+      "ipo_details": null,
+      "news_type": "strategic",
+      "reason_for_recommendation": "Blinkit (owned by Eternal/Zomato) drops 10-minute delivery service following government intervention over rider safety concerns, impacting a key service pivotal for rapid expansion.",
+      "action_to_take": "WATCH",
+      "buy_price": null,
+      "target_price": null,
+      "target_price_range": null,
+      "timeframe": null,
+      "confidence": 0.85,
+      "sentiment": "mixed",
+      "analyst_consensus": null,
+      "news_url": "https://www.news18.com/business/markets/eternal-zomato-shares-in-focus-after-blinkit-drops-10-min-delivery-service-over-rider-safety-ws-l-9828901.html",
+      "equity_name": "ETERNAL LIMITED",
+      "instrument_key": "NSE_EQ|INE758T01015",
+      "trading_symbol": "ETERNAL",
+      "isin": "INE758T01015",
+      "validated": true,
+      "validation_method": "fuzzy match",
+      "extraction_timestamp": "2026-01-14T03:57:15.417275"
+    },
+    {
+      "news_id": "392854592",
+      "stock_name": "Bharat Coking Coal",
+      "is_ipo": true,
+      "ipo_details": {
+        "expected_listing_date": "January 16, Friday",
+        "price_range": "Rs 23 (IPO price)",
+        "issue_size": "46.57 crore equity shares"
+      },
+      "news_type": "ipo",
+      "reason_for_recommendation": "IPO allotment today after bumper subscription (147 times oversubscribed, QIB 310.81x, NII 258.16x, retail 49.33x). Grey market premium (GMP) suggests 58.26% premium over IPO price, indicating a bumper listing.",
+      "action_to_take": "IPO_WATCH",
+      "buy_price": null,
+      "target_price": null,
+      "target_price_range": null,
+      "timeframe": null,
+      "confidence": 0.95,
+      "sentiment": "positive",
+      "analyst_consensus": null,
+      "news_url": "https://www.news18.com/business/ipo/bharat-coking-coal-ipo-allotment-today-heres-step-by-step-guide-to-check-status-online-ws-l-9828842.html",
+      "equity_name": "Bharat Coking Coal",
+      "instrument_key": null,
+      "trading_symbol": "IPO_PENDING",
+      "isin": null,
+      "validated": true,
+      "validation_method": "ipo_stock",
+      "extraction_timestamp": "2026-01-14T03:57:15.417290"
+    }
+  ],
+  "ml_predictions": [
+    {
+      "symbol": "ETERNAL",
+      "status": "SUCCESS",
+      "direction": "DOWN",
+      "confidence": 0.7103523015975952,
+      "probability_up": 0.2896476686000824,
+      "probability_down": 0.7103523015975952,
+      "latest_close": 294.55,
+      "historical_data": {
+        "2025-10-17": {
+          "Open": 340.0,
+          "High": 347.75,
+          "Low": 333.75,
+          "Close": 342.65,
+          "Volume": 77995576
+        },
+        "2025-10-20": {
+          "Open": 345.0,
+          "High": 346.5,
+          "Low": 336.25,
+          "Close": 338.15,
+          "Volume": 25481979
+        },
+        "2025-10-21": {
+          "Open": 340.1,
+          "High": 340.8,
+          "Low": 337.2,
+          "Close": 338.1,
+          "Volume": 3818958
+        },
+        "2025-10-23": {
+          "Open": 343.0,
+          "High": 343.0,
+          "Low": 327.0,
+          "Close": 328.35,
+          "Volume": 54284157
+        },
+        "2025-10-24": {
+          "Open": 328.0,
+          "High": 329.85,
+          "Low": 324.35,
+          "Close": 326.6,
+          "Volume": 35567993
+        },
+        "2025-10-27": {
+          "Open": 326.2,
+          "High": 334.9,
+          "Low": 324.6,
+          "Close": 333.7,
+          "Volume": 27703118
+        },
+        "2025-10-28": {
+          "Open": 332.75,
+          "High": 336.2,
+          "Low": 332.15,
+          "Close": 334.6,
+          "Volume": 28723423
+        },
+        "2025-10-29": {
+          "Open": 333.55,
+          "High": 335.5,
+          "Low": 328.75,
+          "Close": 330.45,
+          "Volume": 19679008
+        },
+        "2025-10-30": {
+          "Open": 328.0,
+          "High": 332.25,
+          "Low": 325.5,
+          "Close": 329.35,
+          "Volume": 19800315
+        },
+        "2025-10-31": {
+          "Open": 329.95,
+          "High": 330.3,
+          "Low": 316.65,
+          "Close": 317.75,
+          "Volume": 34241754
+        },
+        "2025-11-03": {
+          "Open": 316.45,
+          "High": 323.6,
+          "Low": 313.25,
+          "Close": 322.6,
+          "Volume": 33549131
+        },
+        "2025-11-04": {
+          "Open": 321.05,
+          "High": 321.95,
+          "Low": 312.3,
+          "Close": 313.5,
+          "Volume": 35402202
+        },
+        "2025-11-06": {
+          "Open": 308.5,
+          "High": 311.65,
+          "Low": 303.55,
+          "Close": 305.65,
+          "Volume": 44725332
+        },
+        "2025-11-07": {
+          "Open": 305.95,
+          "High": 309.1,
+          "Low": 301.45,
+          "Close": 306.1,
+          "Volume": 26911856
+        },
+        "2025-11-10": {
+          "Open": 304.25,
+          "High": 308.55,
+          "Low": 300.8,
+          "Close": 301.45,
+          "Volume": 33919179
+        },
+        "2025-11-11": {
+          "Open": 302.95,
+          "High": 307.75,
+          "Low": 300.15,
+          "Close": 305.8,
+          "Volume": 35824473
+        },
+        "2025-11-12": {
+          "Open": 308.0,
+          "High": 312.95,
+          "Low": 307.35,
+          "Close": 308.8,
+          "Volume": 43774443
+        },
+        "2025-11-13": {
+          "Open": 308.65,
+          "High": 309.35,
+          "Low": 296.6,
+          "Close": 297.75,
+          "Volume": 63585986
+        },
+        "2025-11-14": {
+          "Open": 295.0,
+          "High": 305.25,
+          "Low": 294.75,
+          "Close": 303.75,
+          "Volume": 37378739
+        },
+        "2025-11-17": {
+          "Open": 303.1,
+          "High": 309.85,
+          "Low": 300.55,
+          "Close": 309.55,
+          "Volume": 26632684
+        },
+        "2025-11-18": {
+          "Open": 312.0,
+          "High": 313.0,
+          "Low": 304.5,
+          "Close": 306.15,
+          "Volume": 24986347
+        },
+        "2025-11-19": {
+          "Open": 305.0,
+          "High": 308.1,
+          "Low": 302.6,
+          "Close": 306.6,
+          "Volume": 15532632
+        },
+        "2025-11-20": {
+          "Open": 308.5,
+          "High": 308.65,
+          "Low": 304.6,
+          "Close": 306.9,
+          "Volume": 13522453
+        },
+        "2025-11-21": {
+          "Open": 304.95,
+          "High": 305.95,
+          "Low": 301.0,
+          "Close": 301.95,
+          "Volume": 13729185
+        },
+        "2025-11-24": {
+          "Open": 296.5,
+          "High": 304.25,
+          "Low": 295.6,
+          "Close": 301.0,
+          "Volume": 42517973
+        },
+        "2025-11-25": {
+          "Open": 303.0,
+          "High": 305.95,
+          "Low": 300.5,
+          "Close": 302.3,
+          "Volume": 19304127
+        },
+        "2025-11-26": {
+          "Open": 300.3,
+          "High": 307.15,
+          "Low": 300.3,
+          "Close": 306.85,
+          "Volume": 14488702
+        },
+        "2025-11-27": {
+          "Open": 308.0,
+          "High": 308.7,
+          "Low": 300.55,
+          "Close": 302.75,
+          "Volume": 22604916
+        },
+        "2025-11-28": {
+          "Open": 303.0,
+          "High": 304.8,
+          "Low": 299.65,
+          "Close": 300.1,
+          "Volume": 17678706
+        },
+        "2025-12-01": {
+          "Open": 302.3,
+          "High": 305.45,
+          "Low": 300.25,
+          "Close": 301.5,
+          "Volume": 17929620
+        },
+        "2025-12-02": {
+          "Open": 300.6,
+          "High": 301.8,
+          "Low": 297.0,
+          "Close": 300.55,
+          "Volume": 23517461
+        },
+        "2025-12-03": {
+          "Open": 300.6,
+          "High": 302.95,
+          "Low": 296.0,
+          "Close": 297.75,
+          "Volume": 18546982
+        },
+        "2025-12-04": {
+          "Open": 297.6,
+          "High": 298.75,
+          "Low": 292.55,
+          "Close": 295.75,
+          "Volume": 31947997
+        },
+        "2025-12-05": {
+          "Open": 295.0,
+          "High": 299.7,
+          "Low": 291.15,
+          "Close": 292.4,
+          "Volume": 17762375
+        },
+        "2025-12-08": {
+          "Open": 290.9,
+          "High": 297.4,
+          "Low": 284.15,
+          "Close": 285.25,
+          "Volume": 85127961
+        },
+        "2025-12-09": {
+          "Open": 284.55,
+          "High": 292.3,
+          "Low": 280.3,
+          "Close": 291.7,
+          "Volume": 27053864
+        },
+        "2025-12-10": {
+          "Open": 289.0,
+          "High": 293.0,
+          "Low": 282.0,
+          "Close": 283.25,
+          "Volume": 20644419
+        },
+        "2025-12-11": {
+          "Open": 284.0,
+          "High": 291.9,
+          "Low": 283.05,
+          "Close": 290.95,
+          "Volume": 21043741
+        },
+        "2025-12-12": {
+          "Open": 290.1,
+          "High": 299.0,
+          "Low": 288.6,
+          "Close": 298.05,
+          "Volume": 27289532
+        },
+        "2025-12-15": {
+          "Open": 295.0,
+          "High": 299.55,
+          "Low": 295.0,
+          "Close": 298.45,
+          "Volume": 14755897
+        },
+        "2025-12-16": {
+          "Open": 298.2,
+          "High": 298.2,
+          "Low": 282.65,
+          "Close": 284.45,
+          "Volume": 58633745
+        },
+        "2025-12-17": {
+          "Open": 286.25,
+          "High": 290.5,
+          "Low": 283.55,
+          "Close": 284.45,
+          "Volume": 27154430
+        },
+        "2025-12-18": {
+          "Open": 284.05,
+          "High": 285.5,
+          "Low": 281.7,
+          "Close": 284.75,
+          "Volume": 14159703
+        },
+        "2025-12-19": {
+          "Open": 286.9,
+          "High": 288.35,
+          "Low": 285.25,
+          "Close": 286.05,
+          "Volume": 17783844
+        },
+        "2025-12-22": {
+          "Open": 286.0,
+          "High": 287.9,
+          "Low": 285.2,
+          "Close": 286.7,
+          "Volume": 14987454
+        },
+        "2025-12-23": {
+          "Open": 287.05,
+          "High": 288.0,
+          "Low": 284.0,
+          "Close": 284.35,
+          "Volume": 12762620
+        },
+        "2025-12-24": {
+          "Open": 283.5,
+          "High": 286.0,
+          "Low": 283.1,
+          "Close": 284.85,
+          "Volume": 12973814
+        },
+        "2025-12-26": {
+          "Open": 281.8,
+          "High": 284.65,
+          "Low": 279.7,
+          "Close": 281.75,
+          "Volume": 15744495
+        },
+        "2025-12-29": {
+          "Open": 281.5,
+          "High": 286.05,
+          "Low": 281.5,
+          "Close": 282.85,
+          "Volume": 13175259
+        },
+        "2025-12-30": {
+          "Open": 282.5,
+          "High": 282.5,
+          "Low": 275.35,
+          "Close": 277.1,
+          "Volume": 37816382
+        },
+        "2025-12-31": {
+          "Open": 276.0,
+          "High": 280.35,
+          "Low": 275.5,
+          "Close": 278.05,
+          "Volume": 21964083
+        },
+        "2026-01-01": {
+          "Open": 278.6,
+          "High": 285.0,
+          "Low": 278.55,
+          "Close": 283.8,
+          "Volume": 13427852
+        },
+        "2026-01-02": {
+          "Open": 283.8,
+          "High": 287.75,
+          "Low": 283.25,
+          "Close": 284.15,
+          "Volume": 13624798
+        },
+        "2026-01-05": {
+          "Open": 280.5,
+          "High": 284.0,
+          "Low": 279.6,
+          "Close": 281.8,
+          "Volume": 19328131
+        },
+        "2026-01-06": {
+          "Open": 281.8,
+          "High": 283.55,
+          "Low": 276.25,
+          "Close": 279.05,
+          "Volume": 29577754
+        },
+        "2026-01-07": {
+          "Open": 277.0,
+          "High": 286.3,
+          "Low": 276.55,
+          "Close": 280.95,
+          "Volume": 38184312
+        },
+        "2026-01-08": {
+          "Open": 280.55,
+          "High": 287.4,
+          "Low": 279.0,
+          "Close": 283.55,
+          "Volume": 38191591
+        },
+        "2026-01-09": {
+          "Open": 283.4,
+          "High": 292.9,
+          "Low": 281.65,
+          "Close": 284.35,
+          "Volume": 55851766
+        },
+        "2026-01-12": {
+          "Open": 284.35,
+          "High": 286.25,
+          "Low": 276.8,
+          "Close": 285.25,
+          "Volume": 28605326
+        },
+        "2026-01-13": {
+          "Open": 289.5,
+          "High": 297.3,
+          "Low": 289.15,
+          "Close": 294.55,
+          "Volume": 50350178
+        }
+      },
+      "error": null
+    }
+  ],
+  "combined_signals": [
+    {
+      "symbol": "ETERNAL",
+      "llm_action": "WATCH",
+      "llm_reason": "Blinkit (owned by Eternal/Zomato) drops 10-minute delivery service following government intervention over rider safety concerns, impacting a key service pivotal for rapid expansion.",
+      "ml_direction": "DOWN",
+      "ml_confidence": 0.7103523015975952,
+      "recommendation": "STRONG_SELL",
+      "latest_price": 294.55
+    }
+  ]
+}
