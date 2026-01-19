@@ -1,0 +1,618 @@
+{
+  "metadata": {
+    "date": "2026-01-19",
+    "run_timestamp": "2026-01-19T04:00:44.030740",
+    "pipeline_version": "1.0.0",
+    "total_news_articles": 4,
+    "total_llm_recs": 6,
+    "total_validated": 4,
+    "total_ml_predictions": 1,
+    "success_rate": 1.0
+  },
+  "llm_recommendations": [
+    {
+      "news_id": "394044320",
+      "stock_name": "Amagi Media Labs Ltd",
+      "is_ipo": true,
+      "ipo_details": {
+        "expected_listing_date": "January 21",
+        "price_range": "\u20b9343 to \u20b9361 per share",
+        "issue_size": "\u20b91,788.62 crore"
+      },
+      "news_type": "ipo",
+      "reason_for_recommendation": "IPO allotment date likely today, strong demand (30.22x subscribed), high grey market premium (GMP \u20b919.5, ~5.4% premium over issue price) signals potential robust listing.",
+      "action_to_take": "IPO_WATCH",
+      "buy_price": null,
+      "target_price": null,
+      "target_price_range": null,
+      "timeframe": null,
+      "confidence": 0.9,
+      "sentiment": "positive",
+      "analyst_consensus": null,
+      "news_url": "https://www.livemint.com/market/ipo/amagi-media-labs-ipo-allotment-date-likely-today-gmp-steps-to-check-share-allotment-status-online-11768792450893.html",
+      "equity_name": "Amagi Media Labs Ltd",
+      "instrument_key": null,
+      "trading_symbol": "IPO_PENDING",
+      "isin": null,
+      "validated": true,
+      "validation_method": "ipo_stock",
+      "extraction_timestamp": "2026-01-19T04:00:40.512156"
+    },
+    {
+      "news_id": "394044318",
+      "stock_name": "Bharat Coking Coal",
+      "is_ipo": true,
+      "ipo_details": {
+        "expected_listing_date": "January 19",
+        "price_range": "\u20b921 to \u20b923 per share",
+        "issue_size": "\u20b91,071.11 crore"
+      },
+      "news_type": "ipo",
+      "reason_for_recommendation": "IPO listing scheduled today, massive subscription (146.87 times), strong grey market premium (GMP \u20b913.5, 58.70% premium) hints at robust debut. Parent company Coal India divesting.",
+      "action_to_take": "IPO_WATCH",
+      "buy_price": null,
+      "target_price": null,
+      "target_price_range": null,
+      "timeframe": null,
+      "confidence": 0.9,
+      "sentiment": "positive",
+      "analyst_consensus": "unanimous",
+      "news_url": "https://www.livemint.com/market/ipo/bharat-coking-coal-share-price-bharat-coking-coal-ipo-gmp-bharat-coking-coal-ipo-allotment-bccl-ipo-gmp-11768790709487.html",
+      "equity_name": "Bharat Coking Coal",
+      "instrument_key": null,
+      "trading_symbol": "IPO_PENDING",
+      "isin": null,
+      "validated": true,
+      "validation_method": "ipo_stock",
+      "extraction_timestamp": "2026-01-19T04:00:40.512169"
+    },
+    {
+      "news_id": "394044316",
+      "stock_name": "Bharat Coking Coal Ltd",
+      "is_ipo": true,
+      "ipo_details": {
+        "expected_listing_date": "January 19",
+        "price_range": "\u20b921 to \u20b923 per share",
+        "issue_size": "\u20b91,071.11 crore"
+      },
+      "news_type": "ipo",
+      "reason_for_recommendation": "IPO listing today, massive subscription (146.87 times, QIB 310.81x, NII 258.16x, Retail 49.33x), strong grey market premium (GMP \u20b913.6, >59% premium) and analyst expectations (39-52% premium) signal strong debut due to scarcity value and critical input for domestic steel industry.",
+      "action_to_take": "IPO_WATCH",
+      "buy_price": null,
+      "target_price": null,
+      "target_price_range": {
+        "min": 32.0,
+        "max": 35.0
+      },
+      "timeframe": "medium-to-long-term",
+      "confidence": 0.95,
+      "sentiment": "positive",
+      "analyst_consensus": "unanimous",
+      "news_url": "https://www.livemint.com/market/ipo/bharat-coking-coal-ipo-listing-date-today-gmp-experts-signal-strong-debut-of-shares-in-stock-market-today-11768758611086.html",
+      "equity_name": "Bharat Coking Coal Ltd",
+      "instrument_key": null,
+      "trading_symbol": "IPO_PENDING",
+      "isin": null,
+      "validated": true,
+      "validation_method": "ipo_stock",
+      "extraction_timestamp": "2026-01-19T04:00:40.512173"
+    },
+    {
+      "news_id": "394044304",
+      "stock_name": "Micron",
+      "is_ipo": false,
+      "ipo_details": null,
+      "news_type": "strategic",
+      "reason_for_recommendation": "Memory chip manufacturer facing challenges to meet customer demand amid global memory-chip shortage and rising prices.",
+      "action_to_take": "WATCH",
+      "buy_price": null,
+      "target_price": null,
+      "target_price_range": null,
+      "timeframe": "1-2 years",
+      "confidence": 0.7,
+      "sentiment": "neutral",
+      "analyst_consensus": null,
+      "news_url": "https://www.livemint.com/global/the-global-memory-chip-shortage-will-cost-us-all-11768714111682.html",
+      "equity_name": "20 MICRONS LTD",
+      "instrument_key": "NSE_EQ|INE144J01027",
+      "trading_symbol": "20MICRONS",
+      "isin": "INE144J01027",
+      "validated": true,
+      "validation_method": "fuzzy match",
+      "extraction_timestamp": "2026-01-19T04:00:40.552747"
+    },
+    {
+      "news_id": "394044304",
+      "stock_name": "CXMT",
+      "is_ipo": false,
+      "ipo_details": null,
+      "news_type": "strategic",
+      "reason_for_recommendation": "Potential increased demand as other firms consider buying memory from this Chinese manufacturer amidst global chip shortage.",
+      "action_to_take": "BUY_SIGNAL",
+      "buy_price": null,
+      "target_price": null,
+      "target_price_range": null,
+      "timeframe": "foreseeable future",
+      "confidence": 0.75,
+      "sentiment": "positive",
+      "analyst_consensus": null,
+      "news_url": "https://www.livemint.com/global/the-global-memory-chip-shortage-will-cost-us-all-11768714111682.html",
+      "equity_name": "CXMT",
+      "instrument_key": null,
+      "trading_symbol": null,
+      "isin": null,
+      "validated": false,
+      "validation_error": "Stock not found in master database",
+      "extraction_timestamp": "2026-01-19T04:00:40.592736"
+    },
+    {
+      "news_id": "394044304",
+      "stock_name": "Caramon",
+      "is_ipo": false,
+      "ipo_details": null,
+      "news_type": "strategic",
+      "reason_for_recommendation": "Company reclaiming old memory from decommissioned servers for PCs is benefiting from the global memory-chip shortage.",
+      "action_to_take": "BUY_SIGNAL",
+      "buy_price": null,
+      "target_price": null,
+      "target_price_range": null,
+      "timeframe": null,
+      "confidence": 0.8,
+      "sentiment": "positive",
+      "analyst_consensus": null,
+      "news_url": "https://www.livemint.com/global/the-global-memory-chip-shortage-will-cost-us-all-11768714111682.html",
+      "equity_name": "Caramon",
+      "instrument_key": null,
+      "trading_symbol": null,
+      "isin": null,
+      "validated": false,
+      "validation_error": "Stock not found in master database",
+      "extraction_timestamp": "2026-01-19T04:00:40.632781"
+    }
+  ],
+  "ml_predictions": [
+    {
+      "symbol": "20MICRONS",
+      "status": "SUCCESS",
+      "direction": "UP",
+      "confidence": 0.591944694519043,
+      "probability_up": 0.591944694519043,
+      "probability_down": 0.40805530548095703,
+      "latest_close": 186.11,
+      "historical_data": {
+        "2025-10-21": {
+          "Open": 211.98,
+          "High": 213.3,
+          "Low": 210.21,
+          "Close": 212.28,
+          "Volume": 20505
+        },
+        "2025-10-23": {
+          "Open": 215.45,
+          "High": 215.45,
+          "Low": 211.32,
+          "Close": 212.27,
+          "Volume": 47010
+        },
+        "2025-10-24": {
+          "Open": 211.5,
+          "High": 213.0,
+          "Low": 208.7,
+          "Close": 210.51,
+          "Volume": 52448
+        },
+        "2025-10-27": {
+          "Open": 211.0,
+          "High": 211.86,
+          "Low": 208.57,
+          "Close": 210.26,
+          "Volume": 64341
+        },
+        "2025-10-28": {
+          "Open": 210.6,
+          "High": 211.54,
+          "Low": 208.62,
+          "Close": 209.37,
+          "Volume": 51403
+        },
+        "2025-10-29": {
+          "Open": 210.2,
+          "High": 210.2,
+          "Low": 206.8,
+          "Close": 208.14,
+          "Volume": 77494
+        },
+        "2025-10-30": {
+          "Open": 210.22,
+          "High": 210.23,
+          "Low": 206.0,
+          "Close": 207.74,
+          "Volume": 49292
+        },
+        "2025-10-31": {
+          "Open": 206.72,
+          "High": 207.9,
+          "Low": 204.76,
+          "Close": 206.83,
+          "Volume": 60289
+        },
+        "2025-11-03": {
+          "Open": 206.83,
+          "High": 221.2,
+          "Low": 206.83,
+          "Close": 217.71,
+          "Volume": 218244
+        },
+        "2025-11-04": {
+          "Open": 218.0,
+          "High": 220.98,
+          "Low": 214.0,
+          "Close": 216.05,
+          "Volume": 82091
+        },
+        "2025-11-06": {
+          "Open": 218.5,
+          "High": 218.5,
+          "Low": 207.06,
+          "Close": 208.31,
+          "Volume": 93455
+        },
+        "2025-11-07": {
+          "Open": 208.31,
+          "High": 215.0,
+          "Low": 206.0,
+          "Close": 213.21,
+          "Volume": 67345
+        },
+        "2025-11-10": {
+          "Open": 207.3,
+          "High": 211.8,
+          "Low": 202.76,
+          "Close": 203.33,
+          "Volume": 148535
+        },
+        "2025-11-11": {
+          "Open": 203.73,
+          "High": 205.5,
+          "Low": 197.0,
+          "Close": 197.7,
+          "Volume": 113294
+        },
+        "2025-11-12": {
+          "Open": 199.0,
+          "High": 201.44,
+          "Low": 198.0,
+          "Close": 199.25,
+          "Volume": 78618
+        },
+        "2025-11-13": {
+          "Open": 199.25,
+          "High": 201.1,
+          "Low": 197.55,
+          "Close": 197.95,
+          "Volume": 99414
+        },
+        "2025-11-14": {
+          "Open": 197.9,
+          "High": 199.06,
+          "Low": 191.6,
+          "Close": 193.63,
+          "Volume": 95278
+        },
+        "2025-11-17": {
+          "Open": 195.55,
+          "High": 196.31,
+          "Low": 193.5,
+          "Close": 195.09,
+          "Volume": 66440
+        },
+        "2025-11-18": {
+          "Open": 194.09,
+          "High": 196.9,
+          "Low": 190.0,
+          "Close": 195.1,
+          "Volume": 45911
+        },
+        "2025-11-19": {
+          "Open": 198.75,
+          "High": 198.75,
+          "Low": 192.1,
+          "Close": 194.67,
+          "Volume": 37242
+        },
+        "2025-11-20": {
+          "Open": 194.0,
+          "High": 195.96,
+          "Low": 190.0,
+          "Close": 190.86,
+          "Volume": 56469
+        },
+        "2025-11-21": {
+          "Open": 190.0,
+          "High": 193.19,
+          "Low": 189.56,
+          "Close": 190.37,
+          "Volume": 49898
+        },
+        "2025-11-24": {
+          "Open": 189.2,
+          "High": 190.36,
+          "Low": 184.18,
+          "Close": 185.16,
+          "Volume": 82495
+        },
+        "2025-11-25": {
+          "Open": 186.09,
+          "High": 189.0,
+          "Low": 183.61,
+          "Close": 187.98,
+          "Volume": 52135
+        },
+        "2025-11-26": {
+          "Open": 191.99,
+          "High": 197.59,
+          "Low": 187.11,
+          "Close": 195.62,
+          "Volume": 63500
+        },
+        "2025-11-27": {
+          "Open": 196.4,
+          "High": 198.01,
+          "Low": 193.25,
+          "Close": 193.99,
+          "Volume": 49499
+        },
+        "2025-11-28": {
+          "Open": 192.05,
+          "High": 194.16,
+          "Low": 189.4,
+          "Close": 191.34,
+          "Volume": 88207
+        },
+        "2025-12-01": {
+          "Open": 192.04,
+          "High": 195.57,
+          "Low": 190.27,
+          "Close": 191.56,
+          "Volume": 41491
+        },
+        "2025-12-02": {
+          "Open": 191.75,
+          "High": 191.75,
+          "Low": 188.9,
+          "Close": 189.42,
+          "Volume": 38543
+        },
+        "2025-12-03": {
+          "Open": 188.0,
+          "High": 192.0,
+          "Low": 186.26,
+          "Close": 190.6,
+          "Volume": 65939
+        },
+        "2025-12-04": {
+          "Open": 190.6,
+          "High": 193.29,
+          "Low": 188.25,
+          "Close": 189.92,
+          "Volume": 38690
+        },
+        "2025-12-05": {
+          "Open": 190.11,
+          "High": 191.0,
+          "Low": 184.9,
+          "Close": 188.66,
+          "Volume": 72146
+        },
+        "2025-12-08": {
+          "Open": 188.66,
+          "High": 189.99,
+          "Low": 184.06,
+          "Close": 185.58,
+          "Volume": 60961
+        },
+        "2025-12-09": {
+          "Open": 182.8,
+          "High": 193.52,
+          "Low": 182.6,
+          "Close": 189.11,
+          "Volume": 94186
+        },
+        "2025-12-10": {
+          "Open": 189.0,
+          "High": 191.85,
+          "Low": 188.0,
+          "Close": 188.36,
+          "Volume": 33413
+        },
+        "2025-12-11": {
+          "Open": 189.02,
+          "High": 190.92,
+          "Low": 185.56,
+          "Close": 188.1,
+          "Volume": 51965
+        },
+        "2025-12-12": {
+          "Open": 188.76,
+          "High": 191.5,
+          "Low": 188.76,
+          "Close": 190.5,
+          "Volume": 35816
+        },
+        "2025-12-15": {
+          "Open": 190.02,
+          "High": 193.35,
+          "Low": 188.2,
+          "Close": 192.61,
+          "Volume": 55790
+        },
+        "2025-12-16": {
+          "Open": 193.75,
+          "High": 197.9,
+          "Low": 190.41,
+          "Close": 195.92,
+          "Volume": 65384
+        },
+        "2025-12-17": {
+          "Open": 195.35,
+          "High": 196.47,
+          "Low": 189.62,
+          "Close": 191.21,
+          "Volume": 43806
+        },
+        "2025-12-18": {
+          "Open": 192.17,
+          "High": 192.39,
+          "Low": 189.34,
+          "Close": 191.21,
+          "Volume": 39646
+        },
+        "2025-12-19": {
+          "Open": 193.1,
+          "High": 193.1,
+          "Low": 190.05,
+          "Close": 192.33,
+          "Volume": 33564
+        },
+        "2025-12-22": {
+          "Open": 194.24,
+          "High": 196.64,
+          "Low": 193.58,
+          "Close": 194.53,
+          "Volume": 56691
+        },
+        "2025-12-23": {
+          "Open": 196.0,
+          "High": 202.7,
+          "Low": 193.61,
+          "Close": 198.67,
+          "Volume": 75764
+        },
+        "2025-12-24": {
+          "Open": 200.8,
+          "High": 201.39,
+          "Low": 196.81,
+          "Close": 197.85,
+          "Volume": 56396
+        },
+        "2025-12-26": {
+          "Open": 200.99,
+          "High": 237.4,
+          "Low": 196.61,
+          "Close": 217.71,
+          "Volume": 10772476
+        },
+        "2025-12-29": {
+          "Open": 218.36,
+          "High": 223.9,
+          "Low": 213.2,
+          "Close": 220.68,
+          "Volume": 1246535
+        },
+        "2025-12-30": {
+          "Open": 221.0,
+          "High": 228.7,
+          "Low": 215.02,
+          "Close": 217.2,
+          "Volume": 1011119
+        },
+        "2025-12-31": {
+          "Open": 218.0,
+          "High": 221.79,
+          "Low": 212.0,
+          "Close": 212.77,
+          "Volume": 253140
+        },
+        "2026-01-01": {
+          "Open": 214.47,
+          "High": 214.47,
+          "Low": 208.41,
+          "Close": 212.08,
+          "Volume": 163949
+        },
+        "2026-01-02": {
+          "Open": 214.2,
+          "High": 217.79,
+          "Low": 209.01,
+          "Close": 214.3,
+          "Volume": 206190
+        },
+        "2026-01-05": {
+          "Open": 214.85,
+          "High": 217.15,
+          "Low": 208.06,
+          "Close": 209.16,
+          "Volume": 95150
+        },
+        "2026-01-06": {
+          "Open": 209.5,
+          "High": 214.64,
+          "Low": 203.15,
+          "Close": 205.18,
+          "Volume": 160605
+        },
+        "2026-01-07": {
+          "Open": 205.4,
+          "High": 211.2,
+          "Low": 204.64,
+          "Close": 207.54,
+          "Volume": 105576
+        },
+        "2026-01-08": {
+          "Open": 206.9,
+          "High": 209.89,
+          "Low": 200.25,
+          "Close": 201.01,
+          "Volume": 135437
+        },
+        "2026-01-09": {
+          "Open": 200.0,
+          "High": 201.98,
+          "Low": 194.3,
+          "Close": 195.72,
+          "Volume": 109967
+        },
+        "2026-01-12": {
+          "Open": 194.94,
+          "High": 195.5,
+          "Low": 190.0,
+          "Close": 192.88,
+          "Volume": 123892
+        },
+        "2026-01-13": {
+          "Open": 193.0,
+          "High": 197.0,
+          "Low": 189.68,
+          "Close": 190.64,
+          "Volume": 100472
+        },
+        "2026-01-14": {
+          "Open": 190.82,
+          "High": 195.0,
+          "Low": 189.82,
+          "Close": 190.47,
+          "Volume": 71917
+        },
+        "2026-01-16": {
+          "Open": 191.01,
+          "High": 191.9,
+          "Low": 184.1,
+          "Close": 186.11,
+          "Volume": 117606
+        }
+      },
+      "error": null
+    }
+  ],
+  "combined_signals": [
+    {
+      "symbol": "20MICRONS",
+      "llm_action": "WATCH",
+      "llm_reason": "Memory chip manufacturer facing challenges to meet customer demand amid global memory-chip shortage and rising prices.",
+      "ml_direction": "UP",
+      "ml_confidence": 0.591944694519043,
+      "recommendation": "HOLD",
+      "latest_price": 186.11
+    }
+  ]
+}
