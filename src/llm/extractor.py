@@ -11,6 +11,7 @@ import google.generativeai as genai
 
 from src.config.settings import Settings
 from src.llm.prompts import create_extraction_prompt
+from src.utils.helpers import sanitize_log_message
 
 logger = logging.getLogger(__name__)
 
@@ -76,7 +77,9 @@ def extract_recommendations(news_items: List[Dict]) -> List[Dict]:
 
     except json.JSONDecodeError as e:
         logger.error(f"JSON parsing error: {e}")
-        logger.error(f"Response: {response.text}")
+        # Sanitize response to prevent potential API key leakage in error logs
+        sanitized_response = sanitize_log_message(response.text, max_length=300)
+        logger.error(f"Response (sanitized): {sanitized_response}")
         raise
 
     except Exception as e:
