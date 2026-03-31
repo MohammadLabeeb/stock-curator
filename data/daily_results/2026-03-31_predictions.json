@@ -1,0 +1,52 @@
+{
+  "metadata": {
+    "date": "2026-03-31",
+    "run_timestamp": "2026-03-31T04:45:45.573681",
+    "pipeline_version": "1.0.0",
+    "total_news_articles": 1,
+    "total_llm_recs": 1,
+    "total_validated": 1,
+    "total_ml_predictions": 0,
+    "success_rate": 0.0
+  },
+  "llm_recommendations": [
+    {
+      "news_id": "417887992",
+      "stock_name": "Multi Commodity Exchange of India Ltd.",
+      "is_ipo": false,
+      "ipo_details": null,
+      "news_type": "significant_news",
+      "reason_for_recommendation": "Trading on MCX suspended during morning session due to Mahavir Jayanti holiday, scheduled to resume in evening session.",
+      "action_to_take": "WATCH",
+      "buy_price": null,
+      "target_price": null,
+      "target_price_range": null,
+      "timeframe": null,
+      "confidence": 0.8,
+      "sentiment": "neutral",
+      "analyst_consensus": null,
+      "news_url": "https://www.latestly.com/agency-news/business-news-markets-shut-for-mahavir-jayanti-other-asian-indices-show-mixed-cues-crude-oil-above-usd-107-7373763.html",
+      "equity_name": "MULTI COMMODITY EXCHANGE",
+      "instrument_key": "NSE_EQ|INE745G01035",
+      "trading_symbol": "MCX",
+      "isin": "INE745G01035",
+      "validated": true,
+      "validation_method": "fuzzy match",
+      "extraction_timestamp": "2026-03-31T04:45:42.827568"
+    }
+  ],
+  "ml_predictions": [
+    {
+      "symbol": "MCX",
+      "status": "FAILED",
+      "direction": "N/A",
+      "confidence": null,
+      "probability_up": null,
+      "probability_down": null,
+      "latest_close": null,
+      "historical_data": null,
+      "error": "Insufficient data or feature engineering failed"
+    }
+  ],
+  "combined_signals": []
+}
