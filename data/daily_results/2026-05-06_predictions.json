@@ -1,0 +1,1099 @@
+{
+  "metadata": {
+    "date": "2026-05-06",
+    "run_timestamp": "2026-05-06T05:41:18.175238",
+    "pipeline_version": "1.0.0",
+    "total_news_articles": 5,
+    "total_llm_recs": 8,
+    "total_validated": 5,
+    "total_ml_predictions": 2,
+    "success_rate": 1.0
+  },
+  "llm_recommendations": [
+    {
+      "news_id": "429473312",
+      "stock_name": "Hero MotoCorp",
+      "is_ipo": false,
+      "ipo_details": null,
+      "news_type": "earnings",
+      "reason_for_recommendation": "Reported strong Q4 FY26 results with 29.6% net profit growth, 28.8% revenue growth, and 31% EBITDA increase. Board recommended a final dividend of \u20b975 per share.",
+      "action_to_take": "BUY_SIGNAL",
+      "buy_price": null,
+      "target_price": null,
+      "target_price_range": null,
+      "timeframe": null,
+      "confidence": 0.85,
+      "sentiment": "positive",
+      "analyst_consensus": "mixed",
+      "news_url": "https://www.livemint.com/market/stock-market-news/hero-motocorp-share-price-rallies-over-3-after-q4-results-should-you-buy-sell-or-hold-the-stock-11778044951502.html",
+      "equity_name": "HERO MOTOCORP LIMITED",
+      "instrument_key": "NSE_EQ|INE158A01026",
+      "trading_symbol": "HEROMOTOCO",
+      "isin": "INE158A01026",
+      "validated": true,
+      "validation_method": "name match",
+      "extraction_timestamp": "2026-05-06T05:41:15.487560"
+    },
+    {
+      "news_id": "429473312",
+      "stock_name": "Hero MotoCorp",
+      "is_ipo": false,
+      "ipo_details": null,
+      "news_type": "recommendation",
+      "reason_for_recommendation": "Goldman Sachs maintained a 'Sell' rating with a target price of \u20b94,300, implying a downside potential of nearly 16%.",
+      "action_to_take": "SELL",
+      "buy_price": null,
+      "target_price": 4300.0,
+      "target_price_range": null,
+      "timeframe": null,
+      "confidence": 0.9,
+      "sentiment": "negative",
+      "analyst_consensus": "mixed",
+      "news_url": "https://www.livemint.com/market/stock-market-news/hero-motocorp-share-price-rallies-over-3-after-q4-results-should-you-buy-sell-or-hold-the-stock-11778044951502.html",
+      "equity_name": "HERO MOTOCORP LIMITED",
+      "instrument_key": "NSE_EQ|INE158A01026",
+      "trading_symbol": "HEROMOTOCO",
+      "isin": "INE158A01026",
+      "validated": true,
+      "validation_method": "name match",
+      "extraction_timestamp": "2026-05-06T05:41:15.487581"
+    },
+    {
+      "news_id": "429473312",
+      "stock_name": "Hero MotoCorp",
+      "is_ipo": false,
+      "ipo_details": null,
+      "news_type": "analyst_coverage",
+      "reason_for_recommendation": "Technical analysis suggests the stock is defending the lower end of a falling channel, with potential for initial momentum above \u20b95,318 and a short-term target of \u20b95,480.",
+      "action_to_take": "WATCH",
+      "buy_price": null,
+      "target_price": null,
+      "target_price_range": {
+        "min": 5318.0,
+        "max": 5480.0
+      },
+      "timeframe": "short-term",
+      "confidence": 0.75,
+      "sentiment": "neutral",
+      "analyst_consensus": "mixed",
+      "news_url": "https://www.livemint.com/market/stock-market-news/hero-motocorp-share-price-rallies-over-3-after-q4-results-should-you-buy-sell-or-hold-the-stock-11778044951502.html",
+      "equity_name": "HERO MOTOCORP LIMITED",
+      "instrument_key": "NSE_EQ|INE158A01026",
+      "trading_symbol": "HEROMOTOCO",
+      "isin": "INE158A01026",
+      "validated": true,
+      "validation_method": "name match",
+      "extraction_timestamp": "2026-05-06T05:41:15.487589"
+    },
+    {
+      "news_id": "429473310",
+      "stock_name": "Freshworks",
+      "is_ipo": false,
+      "ipo_details": null,
+      "news_type": "corporate_action",
+      "reason_for_recommendation": "Announced plans to trim 11% of its global workforce (roughly 500 job roles) due to AI advancements, with restructuring expected to cost $8 million.",
+      "action_to_take": "SELL_SIGNAL",
+      "buy_price": null,
+      "target_price": null,
+      "target_price_range": null,
+      "timeframe": null,
+      "confidence": 0.8,
+      "sentiment": "negative",
+      "analyst_consensus": null,
+      "news_url": "https://www.livemint.com/news/india/over-half-of-our-code-is-written-by-ai-freshworks-ceo-as-saas-firm-announces-500-job-cuts-11778041614921.html",
+      "equity_name": "Freshworks",
+      "instrument_key": null,
+      "trading_symbol": null,
+      "isin": null,
+      "validated": false,
+      "validation_error": "Stock not found in master database",
+      "extraction_timestamp": "2026-05-06T05:41:15.528860"
+    },
+    {
+      "news_id": "429471290",
+      "stock_name": "Anthropic",
+      "is_ipo": true,
+      "ipo_details": {
+        "expected_listing_date": "this year",
+        "price_range": null,
+        "issue_size": null
+      },
+      "news_type": "ipo",
+      "reason_for_recommendation": "Preparing for a potential stock market debut this year and launched specialized AI agents for financial services.",
+      "action_to_take": "IPO_WATCH",
+      "buy_price": null,
+      "target_price": null,
+      "target_price_range": null,
+      "timeframe": null,
+      "confidence": 0.85,
+      "sentiment": "positive",
+      "analyst_consensus": null,
+      "news_url": "https://www.ndtvprofit.com/technology/anthropic-launches-claude-for-financial-services-how-10-new-ai-agents-will-help-automate-work-11455496",
+      "equity_name": "Anthropic",
+      "instrument_key": null,
+      "trading_symbol": "IPO_PENDING",
+      "isin": null,
+      "validated": true,
+      "validation_method": "ipo_stock",
+      "extraction_timestamp": "2026-05-06T05:41:15.528870"
+    },
+    {
+      "news_id": "429471288",
+      "stock_name": "Meesho Ltd.",
+      "is_ipo": false,
+      "ipo_details": null,
+      "news_type": "analyst_coverage",
+      "reason_for_recommendation": "JPMorgan initiated coverage with an 'Overweight' rating and a target price of Rs 215, signaling meaningful upside. Analyst consensus shows 5 'buy', 3 'hold', and 1 'sell' recommendations.",
+      "action_to_take": "BUY_SIGNAL",
+      "buy_price": null,
+      "target_price": 215.0,
+      "target_price_range": null,
+      "timeframe": null,
+      "confidence": 0.85,
+      "sentiment": "positive",
+      "analyst_consensus": "mixed",
+      "news_url": "https://www.ndtvprofit.com/markets/meesho-shares-slump-nearly-5-ahead-of-q4-results-should-you-buy-sell-or-hold-11455610",
+      "equity_name": "Meesho Ltd.",
+      "instrument_key": null,
+      "trading_symbol": null,
+      "isin": null,
+      "validated": false,
+      "validation_error": "Stock not found in master database",
+      "extraction_timestamp": "2026-05-06T05:41:15.569517"
+    },
+    {
+      "news_id": "429471288",
+      "stock_name": "Meesho Ltd.",
+      "is_ipo": false,
+      "ipo_details": null,
+      "news_type": "earnings",
+      "reason_for_recommendation": "Shares slumped nearly 5% ahead of Q4 results. Q3 FY26 saw a 26.25% YoY rise in consolidated total income but reported a loss of Rs 490.7 crore.",
+      "action_to_take": "WATCH",
+      "buy_price": null,
+      "target_price": null,
+      "target_price_range": null,
+      "timeframe": null,
+      "confidence": 0.7,
+      "sentiment": "mixed",
+      "analyst_consensus": "mixed",
+      "news_url": "https://www.ndtvprofit.com/markets/meesho-shares-slump-nearly-5-ahead-of-q4-results-should-you-buy-sell-or-hold-11455610",
+      "equity_name": "Meesho Ltd.",
+      "instrument_key": null,
+      "trading_symbol": null,
+      "isin": null,
+      "validated": false,
+      "validation_error": "Stock not found in master database",
+      "extraction_timestamp": "2026-05-06T05:41:15.610047"
+    },
+    {
+      "news_id": "429470868",
+      "stock_name": "Vodafone Idea Limited",
+      "is_ipo": false,
+      "ipo_details": null,
+      "news_type": "corporate_action",
+      "reason_for_recommendation": "Kumar Mangalam Birla appointed non-executive chairman as Ravinder Takkar steps down (but remains vice chairman). Company is described as 'drowning in debt, haemorrhaging subscribers and perpetually on the edge'.",
+      "action_to_take": "WATCH",
+      "buy_price": null,
+      "target_price": null,
+      "target_price_range": null,
+      "timeframe": null,
+      "confidence": 0.8,
+      "sentiment": "mixed",
+      "analyst_consensus": null,
+      "news_url": "https://indiantelevision.com/iworld/kumar-mangalam-birla-appointed-non-executive-chairman-of-vodafone-idea-as-ravinder-takkar-steps-down",
+      "equity_name": "VODAFONE IDEA LIMITED",
+      "instrument_key": "NSE_EQ|INE669E01016",
+      "trading_symbol": "IDEA",
+      "isin": "INE669E01016",
+      "validated": true,
+      "validation_method": "name match",
+      "extraction_timestamp": "2026-05-06T05:41:15.610055"
+    }
+  ],
+  "ml_predictions": [
+    {
+      "symbol": "IDEA",
+      "status": "SUCCESS",
+      "direction": "DOWN",
+      "confidence": 0.5440890789031982,
+      "probability_up": 0.45591092109680176,
+      "probability_down": 0.5440890789031982,
+      "latest_close": 10.8,
+      "historical_data": {
+        "2026-02-03": {
+          "Open": 11.02,
+          "High": 11.55,
+          "Low": 10.81,
+          "Close": 11.41,
+          "Volume": 1188718129
+        },
+        "2026-02-04": {
+          "Open": 11.35,
+          "High": 11.55,
+          "Low": 11.3,
+          "Close": 11.35,
+          "Volume": 499984642
+        },
+        "2026-02-05": {
+          "Open": 11.3,
+          "High": 11.4,
+          "Low": 11.11,
+          "Close": 11.24,
+          "Volume": 528588471
+        },
+        "2026-02-06": {
+          "Open": 11.2,
+          "High": 11.27,
+          "Low": 10.9,
+          "Close": 11.12,
+          "Volume": 579763691
+        },
+        "2026-02-09": {
+          "Open": 11.3,
+          "High": 11.66,
+          "Low": 11.23,
+          "Close": 11.58,
+          "Volume": 631894548
+        },
+        "2026-02-10": {
+          "Open": 11.58,
+          "High": 11.67,
+          "Low": 11.45,
+          "Close": 11.48,
+          "Volume": 392199772
+        },
+        "2026-02-11": {
+          "Open": 11.52,
+          "High": 11.9,
+          "Low": 11.42,
+          "Close": 11.85,
+          "Volume": 859183785
+        },
+        "2026-02-12": {
+          "Open": 11.7,
+          "High": 11.74,
+          "Low": 11.32,
+          "Close": 11.55,
+          "Volume": 497570108
+        },
+        "2026-02-13": {
+          "Open": 11.44,
+          "High": 11.51,
+          "Low": 11.26,
+          "Close": 11.3,
+          "Volume": 351653687
+        },
+        "2026-02-16": {
+          "Open": 11.25,
+          "High": 11.5,
+          "Low": 11.21,
+          "Close": 11.43,
+          "Volume": 299017626
+        },
+        "2026-02-17": {
+          "Open": 11.4,
+          "High": 11.46,
+          "Low": 11.3,
+          "Close": 11.38,
+          "Volume": 252469405
+        },
+        "2026-02-18": {
+          "Open": 11.41,
+          "High": 11.66,
+          "Low": 11.4,
+          "Close": 11.56,
+          "Volume": 358955663
+        },
+        "2026-02-19": {
+          "Open": 11.6,
+          "High": 11.64,
+          "Low": 11.14,
+          "Close": 11.26,
+          "Volume": 330114434
+        },
+        "2026-02-20": {
+          "Open": 11.25,
+          "High": 11.4,
+          "Low": 11.09,
+          "Close": 11.16,
+          "Volume": 314954760
+        },
+        "2026-02-23": {
+          "Open": 11.2,
+          "High": 11.22,
+          "Low": 10.87,
+          "Close": 10.98,
+          "Volume": 385896457
+        },
+        "2026-02-24": {
+          "Open": 10.98,
+          "High": 11.05,
+          "Low": 10.79,
+          "Close": 10.91,
+          "Volume": 385651453
+        },
+        "2026-02-25": {
+          "Open": 11.01,
+          "High": 11.08,
+          "Low": 10.69,
+          "Close": 10.73,
+          "Volume": 305829521
+        },
+        "2026-02-26": {
+          "Open": 10.75,
+          "High": 11.16,
+          "Low": 10.74,
+          "Close": 10.85,
+          "Volume": 428109099
+        },
+        "2026-02-27": {
+          "Open": 10.88,
+          "High": 10.94,
+          "Low": 10.54,
+          "Close": 10.59,
+          "Volume": 383228221
+        },
+        "2026-03-02": {
+          "Open": 10.25,
+          "High": 10.53,
+          "Low": 10.1,
+          "Close": 10.29,
+          "Volume": 498723631
+        },
+        "2026-03-04": {
+          "Open": 10.1,
+          "High": 10.18,
+          "Low": 9.85,
+          "Close": 9.99,
+          "Volume": 479791170
+        },
+        "2026-03-05": {
+          "Open": 10.03,
+          "High": 10.34,
+          "Low": 9.88,
+          "Close": 10.22,
+          "Volume": 591320459
+        },
+        "2026-03-06": {
+          "Open": 10.3,
+          "High": 10.38,
+          "Low": 10.01,
+          "Close": 10.06,
+          "Volume": 450840141
+        },
+        "2026-03-09": {
+          "Open": 9.89,
+          "High": 9.97,
+          "Low": 9.57,
+          "Close": 9.91,
+          "Volume": 414186823
+        },
+        "2026-03-10": {
+          "Open": 10.01,
+          "High": 10.12,
+          "Low": 9.86,
+          "Close": 10.01,
+          "Volume": 404894631
+        },
+        "2026-03-11": {
+          "Open": 10.01,
+          "High": 10.12,
+          "Low": 9.61,
+          "Close": 9.71,
+          "Volume": 399806526
+        },
+        "2026-03-12": {
+          "Open": 9.64,
+          "High": 9.74,
+          "Low": 9.36,
+          "Close": 9.56,
+          "Volume": 444257788
+        },
+        "2026-03-13": {
+          "Open": 9.52,
+          "High": 9.59,
+          "Low": 9.18,
+          "Close": 9.27,
+          "Volume": 570944045
+        },
+        "2026-03-16": {
+          "Open": 9.32,
+          "High": 9.74,
+          "Low": 9.29,
+          "Close": 9.39,
+          "Volume": 550904012
+        },
+        "2026-03-17": {
+          "Open": 9.46,
+          "High": 9.5,
+          "Low": 9.21,
+          "Close": 9.25,
+          "Volume": 435075957
+        },
+        "2026-03-18": {
+          "Open": 9.3,
+          "High": 9.54,
+          "Low": 9.22,
+          "Close": 9.44,
+          "Volume": 514240404
+        },
+        "2026-03-19": {
+          "Open": 9.27,
+          "High": 9.3,
+          "Low": 8.85,
+          "Close": 8.94,
+          "Volume": 636955924
+        },
+        "2026-03-20": {
+          "Open": 9.05,
+          "High": 9.45,
+          "Low": 9.05,
+          "Close": 9.34,
+          "Volume": 612165493
+        },
+        "2026-03-23": {
+          "Open": 9.22,
+          "High": 9.22,
+          "Low": 8.65,
+          "Close": 8.7,
+          "Volume": 664844250
+        },
+        "2026-03-24": {
+          "Open": 9.08,
+          "High": 9.08,
+          "Low": 8.72,
+          "Close": 8.88,
+          "Volume": 544357109
+        },
+        "2026-03-25": {
+          "Open": 9.0,
+          "High": 9.17,
+          "Low": 8.97,
+          "Close": 9.04,
+          "Volume": 437977196
+        },
+        "2026-03-27": {
+          "Open": 9.0,
+          "High": 9.06,
+          "Low": 8.84,
+          "Close": 8.89,
+          "Volume": 467368070
+        },
+        "2026-03-30": {
+          "Open": 8.77,
+          "High": 8.85,
+          "Low": 8.5,
+          "Close": 8.53,
+          "Volume": 490503989
+        },
+        "2026-04-01": {
+          "Open": 8.94,
+          "High": 8.94,
+          "Low": 8.63,
+          "Close": 8.64,
+          "Volume": 664715028
+        },
+        "2026-04-02": {
+          "Open": 8.63,
+          "High": 8.64,
+          "Low": 8.13,
+          "Close": 8.58,
+          "Volume": 833576637
+        },
+        "2026-04-06": {
+          "Open": 8.6,
+          "High": 8.8,
+          "Low": 8.36,
+          "Close": 8.76,
+          "Volume": 539938324
+        },
+        "2026-04-07": {
+          "Open": 8.67,
+          "High": 8.74,
+          "Low": 8.52,
+          "Close": 8.63,
+          "Volume": 482130182
+        },
+        "2026-04-08": {
+          "Open": 9.0,
+          "High": 9.25,
+          "Low": 8.9,
+          "Close": 9.2,
+          "Volume": 640895030
+        },
+        "2026-04-09": {
+          "Open": 9.15,
+          "High": 9.22,
+          "Low": 9.0,
+          "Close": 9.12,
+          "Volume": 405859803
+        },
+        "2026-04-10": {
+          "Open": 9.18,
+          "High": 9.39,
+          "Low": 9.17,
+          "Close": 9.25,
+          "Volume": 468683513
+        },
+        "2026-04-13": {
+          "Open": 9.0,
+          "High": 9.33,
+          "Low": 8.94,
+          "Close": 9.25,
+          "Volume": 454947155
+        },
+        "2026-04-15": {
+          "Open": 9.36,
+          "High": 9.5,
+          "Low": 9.32,
+          "Close": 9.44,
+          "Volume": 410002148
+        },
+        "2026-04-16": {
+          "Open": 9.54,
+          "High": 9.66,
+          "Low": 9.42,
+          "Close": 9.53,
+          "Volume": 457206154
+        },
+        "2026-04-17": {
+          "Open": 9.51,
+          "High": 9.68,
+          "Low": 9.48,
+          "Close": 9.61,
+          "Volume": 383484709
+        },
+        "2026-04-20": {
+          "Open": 9.64,
+          "High": 9.71,
+          "Low": 9.38,
+          "Close": 9.47,
+          "Volume": 389805796
+        },
+        "2026-04-21": {
+          "Open": 9.47,
+          "High": 9.73,
+          "Low": 9.42,
+          "Close": 9.55,
+          "Volume": 388623918
+        },
+        "2026-04-22": {
+          "Open": 9.52,
+          "High": 9.61,
+          "Low": 9.46,
+          "Close": 9.54,
+          "Volume": 354014633
+        },
+        "2026-04-23": {
+          "Open": 9.54,
+          "High": 9.63,
+          "Low": 9.48,
+          "Close": 9.58,
+          "Volume": 372680769
+        },
+        "2026-04-24": {
+          "Open": 9.58,
+          "High": 9.63,
+          "Low": 9.37,
+          "Close": 9.52,
+          "Volume": 374835087
+        },
+        "2026-04-27": {
+          "Open": 9.58,
+          "High": 9.75,
+          "Low": 9.56,
+          "Close": 9.69,
+          "Volume": 339973336
+        },
+        "2026-04-28": {
+          "Open": 9.7,
+          "High": 10.15,
+          "Low": 9.67,
+          "Close": 9.95,
+          "Volume": 744203178
+        },
+        "2026-04-29": {
+          "Open": 10.05,
+          "High": 10.55,
+          "Low": 10.01,
+          "Close": 10.29,
+          "Volume": 605375435
+        },
+        "2026-04-30": {
+          "Open": 10.29,
+          "High": 10.3,
+          "Low": 10.01,
+          "Close": 10.22,
+          "Volume": 403450744
+        },
+        "2026-05-04": {
+          "Open": 11.0,
+          "High": 11.0,
+          "Low": 10.4,
+          "Close": 10.52,
+          "Volume": 1177221785
+        },
+        "2026-05-05": {
+          "Open": 10.52,
+          "High": 11.32,
+          "Low": 10.5,
+          "Close": 10.8,
+          "Volume": 808377583
+        }
+      },
+      "error": null
+    },
+    {
+      "symbol": "HEROMOTOCO",
+      "status": "SUCCESS",
+      "direction": "DOWN",
+      "confidence": 0.6063988208770752,
+      "probability_up": 0.3936011791229248,
+      "probability_down": 0.6063988208770752,
+      "latest_close": 5109.0,
+      "historical_data": {
+        "2026-02-03": {
+          "Open": 5734.0,
+          "High": 5791.0,
+          "Low": 5676.5,
+          "Close": 5763.0,
+          "Volume": 592655
+        },
+        "2026-02-04": {
+          "Open": 5747.0,
+          "High": 5878.0,
+          "Low": 5716.5,
+          "Close": 5851.5,
+          "Volume": 490202
+        },
+        "2026-02-05": {
+          "Open": 5880.5,
+          "High": 5890.0,
+          "Low": 5745.0,
+          "Close": 5766.0,
+          "Volume": 331312
+        },
+        "2026-02-06": {
+          "Open": 5772.0,
+          "High": 5841.0,
+          "Low": 5715.5,
+          "Close": 5753.5,
+          "Volume": 770475
+        },
+        "2026-02-09": {
+          "Open": 5800.0,
+          "High": 5816.0,
+          "Low": 5667.0,
+          "Close": 5756.5,
+          "Volume": 543956
+        },
+        "2026-02-10": {
+          "Open": 5785.0,
+          "High": 5845.0,
+          "Low": 5718.0,
+          "Close": 5753.5,
+          "Volume": 816528
+        },
+        "2026-02-11": {
+          "Open": 5695.0,
+          "High": 5750.0,
+          "Low": 5546.0,
+          "Close": 5682.5,
+          "Volume": 684908
+        },
+        "2026-02-12": {
+          "Open": 5704.0,
+          "High": 5805.0,
+          "Low": 5683.5,
+          "Close": 5733.0,
+          "Volume": 560676
+        },
+        "2026-02-13": {
+          "Open": 5702.0,
+          "High": 5724.5,
+          "Low": 5560.0,
+          "Close": 5584.0,
+          "Volume": 394003
+        },
+        "2026-02-16": {
+          "Open": 5578.0,
+          "High": 5623.5,
+          "Low": 5459.0,
+          "Close": 5492.0,
+          "Volume": 285719
+        },
+        "2026-02-17": {
+          "Open": 5490.0,
+          "High": 5588.0,
+          "Low": 5446.5,
+          "Close": 5577.0,
+          "Volume": 288723
+        },
+        "2026-02-18": {
+          "Open": 5595.0,
+          "High": 5628.0,
+          "Low": 5546.5,
+          "Close": 5592.0,
+          "Volume": 197770
+        },
+        "2026-02-19": {
+          "Open": 5600.0,
+          "High": 5644.5,
+          "Low": 5387.5,
+          "Close": 5414.5,
+          "Volume": 307768
+        },
+        "2026-02-20": {
+          "Open": 5400.0,
+          "High": 5472.0,
+          "Low": 5375.0,
+          "Close": 5465.0,
+          "Volume": 560735
+        },
+        "2026-02-23": {
+          "Open": 5504.5,
+          "High": 5549.0,
+          "Low": 5437.0,
+          "Close": 5488.5,
+          "Volume": 310190
+        },
+        "2026-02-24": {
+          "Open": 5480.0,
+          "High": 5523.0,
+          "Low": 5436.5,
+          "Close": 5511.0,
+          "Volume": 396015
+        },
+        "2026-02-25": {
+          "Open": 5511.0,
+          "High": 5840.0,
+          "Low": 5500.5,
+          "Close": 5737.5,
+          "Volume": 898486
+        },
+        "2026-02-26": {
+          "Open": 5760.0,
+          "High": 5829.0,
+          "Low": 5718.5,
+          "Close": 5787.0,
+          "Volume": 489797
+        },
+        "2026-02-27": {
+          "Open": 5775.0,
+          "High": 5800.0,
+          "Low": 5689.0,
+          "Close": 5710.0,
+          "Volume": 584546
+        },
+        "2026-03-02": {
+          "Open": 5565.0,
+          "High": 5725.0,
+          "Low": 5503.0,
+          "Close": 5591.5,
+          "Volume": 432301
+        },
+        "2026-03-04": {
+          "Open": 5520.0,
+          "High": 5529.0,
+          "Low": 5427.5,
+          "Close": 5500.0,
+          "Volume": 455955
+        },
+        "2026-03-05": {
+          "Open": 5513.5,
+          "High": 5622.5,
+          "Low": 5480.0,
+          "Close": 5588.5,
+          "Volume": 545405
+        },
+        "2026-03-06": {
+          "Open": 5571.0,
+          "High": 5571.5,
+          "Low": 5490.0,
+          "Close": 5512.5,
+          "Volume": 431008
+        },
+        "2026-03-09": {
+          "Open": 5447.0,
+          "High": 5510.0,
+          "Low": 5337.5,
+          "Close": 5480.0,
+          "Volume": 306358
+        },
+        "2026-03-10": {
+          "Open": 5546.5,
+          "High": 5733.5,
+          "Low": 5527.5,
+          "Close": 5711.5,
+          "Volume": 493375
+        },
+        "2026-03-11": {
+          "Open": 5729.5,
+          "High": 5766.0,
+          "Low": 5554.0,
+          "Close": 5575.0,
+          "Volume": 511965
+        },
+        "2026-03-12": {
+          "Open": 5589.0,
+          "High": 5589.0,
+          "Low": 5376.0,
+          "Close": 5394.5,
+          "Volume": 476478
+        },
+        "2026-03-13": {
+          "Open": 5338.0,
+          "High": 5377.5,
+          "Low": 5168.0,
+          "Close": 5206.0,
+          "Volume": 496250
+        },
+        "2026-03-16": {
+          "Open": 5198.5,
+          "High": 5329.0,
+          "Low": 5124.5,
+          "Close": 5278.5,
+          "Volume": 466610
+        },
+        "2026-03-17": {
+          "Open": 5276.5,
+          "High": 5384.0,
+          "Low": 5232.0,
+          "Close": 5355.0,
+          "Volume": 403766
+        },
+        "2026-03-18": {
+          "Open": 5370.0,
+          "High": 5488.0,
+          "Low": 5365.0,
+          "Close": 5426.0,
+          "Volume": 390261
+        },
+        "2026-03-19": {
+          "Open": 5349.0,
+          "High": 5366.5,
+          "Low": 5151.0,
+          "Close": 5172.5,
+          "Volume": 397483
+        },
+        "2026-03-20": {
+          "Open": 5218.0,
+          "High": 5367.5,
+          "Low": 5216.0,
+          "Close": 5275.5,
+          "Volume": 1043098
+        },
+        "2026-03-23": {
+          "Open": 5191.0,
+          "High": 5200.0,
+          "Low": 5051.0,
+          "Close": 5065.0,
+          "Volume": 340775
+        },
+        "2026-03-24": {
+          "Open": 5185.0,
+          "High": 5317.0,
+          "Low": 5124.5,
+          "Close": 5253.0,
+          "Volume": 435050
+        },
+        "2026-03-25": {
+          "Open": 5305.0,
+          "High": 5364.0,
+          "Low": 5278.0,
+          "Close": 5289.5,
+          "Volume": 531702
+        },
+        "2026-03-27": {
+          "Open": 5212.0,
+          "High": 5244.0,
+          "Low": 5125.5,
+          "Close": 5143.0,
+          "Volume": 535331
+        },
+        "2026-03-30": {
+          "Open": 5068.0,
+          "High": 5140.0,
+          "Low": 5037.5,
+          "Close": 5063.0,
+          "Volume": 704213
+        },
+        "2026-04-01": {
+          "Open": 5152.0,
+          "High": 5244.0,
+          "Low": 5077.5,
+          "Close": 5122.0,
+          "Volume": 546972
+        },
+        "2026-04-02": {
+          "Open": 5076.0,
+          "High": 5077.0,
+          "Low": 4904.0,
+          "Close": 5011.5,
+          "Volume": 753867
+        },
+        "2026-04-06": {
+          "Open": 5019.5,
+          "High": 5122.5,
+          "Low": 4985.5,
+          "Close": 5103.5,
+          "Volume": 348536
+        },
+        "2026-04-07": {
+          "Open": 5075.0,
+          "High": 5084.0,
+          "Low": 4932.0,
+          "Close": 5051.0,
+          "Volume": 429282
+        },
+        "2026-04-08": {
+          "Open": 5250.0,
+          "High": 5349.5,
+          "Low": 5243.0,
+          "Close": 5287.5,
+          "Volume": 790692
+        },
+        "2026-04-09": {
+          "Open": 5287.5,
+          "High": 5380.0,
+          "Low": 5204.0,
+          "Close": 5284.0,
+          "Volume": 760419
+        },
+        "2026-04-10": {
+          "Open": 5297.0,
+          "High": 5484.5,
+          "Low": 5295.5,
+          "Close": 5466.5,
+          "Volume": 855903
+        },
+        "2026-04-13": {
+          "Open": 5325.0,
+          "High": 5375.0,
+          "Low": 5202.5,
+          "Close": 5247.0,
+          "Volume": 743470
+        },
+        "2026-04-15": {
+          "Open": 5361.5,
+          "High": 5361.5,
+          "Low": 5275.0,
+          "Close": 5287.5,
+          "Volume": 651858
+        },
+        "2026-04-16": {
+          "Open": 5315.0,
+          "High": 5349.0,
+          "Low": 5129.5,
+          "Close": 5159.5,
+          "Volume": 920301
+        },
+        "2026-04-17": {
+          "Open": 5136.5,
+          "High": 5250.0,
+          "Low": 5130.5,
+          "Close": 5230.5,
+          "Volume": 545014
+        },
+        "2026-04-20": {
+          "Open": 5230.5,
+          "High": 5318.0,
+          "Low": 5210.0,
+          "Close": 5282.5,
+          "Volume": 654258
+        },
+        "2026-04-21": {
+          "Open": 5260.0,
+          "High": 5310.0,
+          "Low": 5252.0,
+          "Close": 5259.0,
+          "Volume": 321063
+        },
+        "2026-04-22": {
+          "Open": 5255.5,
+          "High": 5291.0,
+          "Low": 5178.0,
+          "Close": 5189.0,
+          "Volume": 293830
+        },
+        "2026-04-23": {
+          "Open": 5150.0,
+          "High": 5160.0,
+          "Low": 4995.0,
+          "Close": 5032.0,
+          "Volume": 628266
+        },
+        "2026-04-24": {
+          "Open": 5035.5,
+          "High": 5060.5,
+          "Low": 4941.5,
+          "Close": 4961.5,
+          "Volume": 520325
+        },
+        "2026-04-27": {
+          "Open": 5012.5,
+          "High": 5098.0,
+          "Low": 5005.5,
+          "Close": 5043.0,
+          "Volume": 448144
+        },
+        "2026-04-28": {
+          "Open": 5042.5,
+          "High": 5105.5,
+          "Low": 5019.0,
+          "Close": 5068.0,
+          "Volume": 667998
+        },
+        "2026-04-29": {
+          "Open": 5094.0,
+          "High": 5208.5,
+          "Low": 5081.5,
+          "Close": 5114.5,
+          "Volume": 474261
+        },
+        "2026-04-30": {
+          "Open": 5080.0,
+          "High": 5114.5,
+          "Low": 5020.0,
+          "Close": 5099.0,
+          "Volume": 478138
+        },
+        "2026-05-04": {
+          "Open": 5186.0,
+          "High": 5237.0,
+          "Low": 5006.0,
+          "Close": 5066.5,
+          "Volume": 617748
+        },
+        "2026-05-05": {
+          "Open": 5060.0,
+          "High": 5135.0,
+          "Low": 5018.0,
+          "Close": 5109.0,
+          "Volume": 573411
+        }
+      },
+      "error": null
+    }
+  ],
+  "combined_signals": [
+    {
+      "symbol": "IDEA",
+      "llm_action": "WATCH",
+      "llm_reason": "Kumar Mangalam Birla appointed non-executive chairman as Ravinder Takkar steps down (but remains vice chairman). Company is described as 'drowning in debt, haemorrhaging subscribers and perpetually on the edge'.",
+      "ml_direction": "DOWN",
+      "ml_confidence": 0.5440890789031982,
+      "recommendation": "HOLD",
+      "latest_price": 10.8
+    },
+    {
+      "symbol": "HEROMOTOCO",
+      "llm_action": "BUY_SIGNAL",
+      "llm_reason": "Reported strong Q4 FY26 results with 29.6% net profit growth, 28.8% revenue growth, and 31% EBITDA increase. Board recommended a final dividend of \u20b975 per share.",
+      "ml_direction": "DOWN",
+      "ml_confidence": 0.6063988208770752,
+      "recommendation": "HOLD",
+      "latest_price": 5109.0
+    }
+  ]
+}
