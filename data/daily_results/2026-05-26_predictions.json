@@ -1,0 +1,483 @@
+{
+  "metadata": {
+    "date": "2026-05-26",
+    "run_timestamp": "2026-05-26T06:29:42.571333",
+    "pipeline_version": "1.0.0",
+    "total_news_articles": 1,
+    "total_llm_recs": 1,
+    "total_validated": 1,
+    "total_ml_predictions": 1,
+    "success_rate": 1.0
+  },
+  "llm_recommendations": [
+    {
+      "news_id": "435294342",
+      "stock_name": "Indraprastha Gas Limited",
+      "is_ipo": false,
+      "ipo_details": null,
+      "news_type": "strategic",
+      "reason_for_recommendation": "CNG prices increased by Rs 2/kg (total Rs 6/kg in 11 days) in Delhi-NCR, potentially boosting revenue for gas distributors.",
+      "action_to_take": "BUY_SIGNAL",
+      "buy_price": null,
+      "target_price": null,
+      "target_price_range": null,
+      "timeframe": null,
+      "confidence": 0.65,
+      "sentiment": "positive",
+      "analyst_consensus": null,
+      "news_url": "https://timesofindia.indiatimes.com/videos/international/xi-greenlights-invasion-china-surrounds-taiwan-with-warships-fighter-jets-troops/videoshow/131323035.cms",
+      "equity_name": "INDRAPRASTHA GAS LTD",
+      "instrument_key": "NSE_EQ|INE203G01027",
+      "trading_symbol": "IGL",
+      "isin": "INE203G01027",
+      "validated": true,
+      "validation_method": "short name match",
+      "extraction_timestamp": "2026-05-26T06:29:40.048092"
+    }
+  ],
+  "ml_predictions": [
+    {
+      "symbol": "IGL",
+      "status": "SUCCESS",
+      "direction": "UP",
+      "confidence": 0.50267493724823,
+      "probability_up": 0.50267493724823,
+      "probability_down": 0.49732506275177,
+      "latest_close": 160.48,
+      "historical_data": {
+        "2026-02-23": {
+          "Open": 168.2,
+          "High": 170.23,
+          "Low": 167.43,
+          "Close": 169.9,
+          "Volume": 1244933
+        },
+        "2026-02-24": {
+          "Open": 170.0,
+          "High": 171.45,
+          "Low": 168.22,
+          "Close": 170.16,
+          "Volume": 2178514
+        },
+        "2026-02-25": {
+          "Open": 170.51,
+          "High": 171.52,
+          "Low": 168.41,
+          "Close": 168.89,
+          "Volume": 1913191
+        },
+        "2026-02-26": {
+          "Open": 168.9,
+          "High": 172.68,
+          "Low": 168.42,
+          "Close": 172.33,
+          "Volume": 2845471
+        },
+        "2026-02-27": {
+          "Open": 172.04,
+          "High": 172.2,
+          "Low": 170.05,
+          "Close": 170.86,
+          "Volume": 1149810
+        },
+        "2026-03-02": {
+          "Open": 164.2,
+          "High": 168.49,
+          "Low": 164.2,
+          "Close": 166.79,
+          "Volume": 1605081
+        },
+        "2026-03-04": {
+          "Open": 165.0,
+          "High": 165.26,
+          "Low": 156.8,
+          "Close": 157.41,
+          "Volume": 4444132
+        },
+        "2026-03-05": {
+          "Open": 157.99,
+          "High": 163.5,
+          "Low": 157.88,
+          "Close": 160.13,
+          "Volume": 4311565
+        },
+        "2026-03-06": {
+          "Open": 159.0,
+          "High": 159.2,
+          "Low": 156.08,
+          "Close": 157.27,
+          "Volume": 2074749
+        },
+        "2026-03-09": {
+          "Open": 154.05,
+          "High": 155.4,
+          "Low": 152.24,
+          "Close": 154.76,
+          "Volume": 1738155
+        },
+        "2026-03-10": {
+          "Open": 156.04,
+          "High": 163.74,
+          "Low": 156.02,
+          "Close": 157.66,
+          "Volume": 3391447
+        },
+        "2026-03-11": {
+          "Open": 158.66,
+          "High": 166.4,
+          "Low": 157.82,
+          "Close": 162.67,
+          "Volume": 10612994
+        },
+        "2026-03-12": {
+          "Open": 164.4,
+          "High": 164.85,
+          "Low": 157.82,
+          "Close": 161.91,
+          "Volume": 6354075
+        },
+        "2026-03-13": {
+          "Open": 161.9,
+          "High": 165.29,
+          "Low": 156.05,
+          "Close": 156.51,
+          "Volume": 3077409
+        },
+        "2026-03-16": {
+          "Open": 156.9,
+          "High": 157.72,
+          "Low": 152.2,
+          "Close": 155.49,
+          "Volume": 1976280
+        },
+        "2026-03-17": {
+          "Open": 156.0,
+          "High": 157.36,
+          "Low": 155.01,
+          "Close": 156.82,
+          "Volume": 1226756
+        },
+        "2026-03-18": {
+          "Open": 157.0,
+          "High": 159.5,
+          "Low": 156.82,
+          "Close": 157.33,
+          "Volume": 1687844
+        },
+        "2026-03-19": {
+          "Open": 155.99,
+          "High": 158.41,
+          "Low": 153.0,
+          "Close": 153.69,
+          "Volume": 2085896
+        },
+        "2026-03-20": {
+          "Open": 155.0,
+          "High": 158.46,
+          "Low": 154.65,
+          "Close": 156.63,
+          "Volume": 2525650
+        },
+        "2026-03-23": {
+          "Open": 156.0,
+          "High": 156.0,
+          "Low": 147.4,
+          "Close": 147.98,
+          "Volume": 1791088
+        },
+        "2026-03-24": {
+          "Open": 152.53,
+          "High": 152.58,
+          "Low": 147.56,
+          "Close": 149.89,
+          "Volume": 4833193
+        },
+        "2026-03-25": {
+          "Open": 152.0,
+          "High": 153.79,
+          "Low": 148.35,
+          "Close": 149.0,
+          "Volume": 4441902
+        },
+        "2026-03-27": {
+          "Open": 149.32,
+          "High": 150.3,
+          "Low": 146.6,
+          "Close": 148.33,
+          "Volume": 12266021
+        },
+        "2026-03-30": {
+          "Open": 146.8,
+          "High": 148.11,
+          "Low": 143.26,
+          "Close": 145.62,
+          "Volume": 4511356
+        },
+        "2026-04-01": {
+          "Open": 148.0,
+          "High": 150.34,
+          "Low": 147.0,
+          "Close": 148.17,
+          "Volume": 2871715
+        },
+        "2026-04-02": {
+          "Open": 147.0,
+          "High": 147.0,
+          "Low": 141.74,
+          "Close": 146.31,
+          "Volume": 2510216
+        },
+        "2026-04-06": {
+          "Open": 146.0,
+          "High": 149.85,
+          "Low": 143.78,
+          "Close": 148.81,
+          "Volume": 2226131
+        },
+        "2026-04-07": {
+          "Open": 148.21,
+          "High": 149.5,
+          "Low": 146.84,
+          "Close": 148.19,
+          "Volume": 1171178
+        },
+        "2026-04-08": {
+          "Open": 154.15,
+          "High": 155.0,
+          "Low": 152.21,
+          "Close": 154.48,
+          "Volume": 3089078
+        },
+        "2026-04-09": {
+          "Open": 155.24,
+          "High": 156.89,
+          "Low": 151.71,
+          "Close": 155.1,
+          "Volume": 5994358
+        },
+        "2026-04-10": {
+          "Open": 156.0,
+          "High": 162.5,
+          "Low": 155.6,
+          "Close": 161.33,
+          "Volume": 8990056
+        },
+        "2026-04-13": {
+          "Open": 159.7,
+          "High": 163.49,
+          "Low": 157.59,
+          "Close": 162.25,
+          "Volume": 5520594
+        },
+        "2026-04-15": {
+          "Open": 165.0,
+          "High": 166.38,
+          "Low": 162.11,
+          "Close": 166.0,
+          "Volume": 4398832
+        },
+        "2026-04-16": {
+          "Open": 168.7,
+          "High": 168.7,
+          "Low": 164.33,
+          "Close": 166.05,
+          "Volume": 3214743
+        },
+        "2026-04-17": {
+          "Open": 167.8,
+          "High": 171.25,
+          "Low": 166.88,
+          "Close": 169.27,
+          "Volume": 8478431
+        },
+        "2026-04-20": {
+          "Open": 169.9,
+          "High": 170.06,
+          "Low": 161.3,
+          "Close": 166.39,
+          "Volume": 3670818
+        },
+        "2026-04-21": {
+          "Open": 167.0,
+          "High": 169.77,
+          "Low": 166.37,
+          "Close": 167.2,
+          "Volume": 12202158
+        },
+        "2026-04-22": {
+          "Open": 167.2,
+          "High": 169.45,
+          "Low": 166.25,
+          "Close": 169.08,
+          "Volume": 2701299
+        },
+        "2026-04-23": {
+          "Open": 172.0,
+          "High": 173.29,
+          "Low": 165.0,
+          "Close": 165.55,
+          "Volume": 8511897
+        },
+        "2026-04-24": {
+          "Open": 165.55,
+          "High": 167.05,
+          "Low": 162.6,
+          "Close": 164.61,
+          "Volume": 1608269
+        },
+        "2026-04-27": {
+          "Open": 165.43,
+          "High": 166.12,
+          "Low": 163.6,
+          "Close": 164.88,
+          "Volume": 1175492
+        },
+        "2026-04-28": {
+          "Open": 164.8,
+          "High": 168.1,
+          "Low": 163.9,
+          "Close": 166.45,
+          "Volume": 5859740
+        },
+        "2026-04-29": {
+          "Open": 167.5,
+          "High": 169.2,
+          "Low": 165.94,
+          "Close": 167.55,
+          "Volume": 7324563
+        },
+        "2026-04-30": {
+          "Open": 167.9,
+          "High": 167.9,
+          "Low": 165.1,
+          "Close": 166.02,
+          "Volume": 958215
+        },
+        "2026-05-04": {
+          "Open": 168.02,
+          "High": 168.76,
+          "Low": 166.01,
+          "Close": 166.91,
+          "Volume": 1019008
+        },
+        "2026-05-05": {
+          "Open": 166.8,
+          "High": 168.33,
+          "Low": 165.53,
+          "Close": 166.24,
+          "Volume": 1174631
+        },
+        "2026-05-06": {
+          "Open": 168.0,
+          "High": 170.19,
+          "Low": 166.2,
+          "Close": 169.46,
+          "Volume": 6848692
+        },
+        "2026-05-07": {
+          "Open": 170.8,
+          "High": 171.84,
+          "Low": 168.95,
+          "Close": 169.84,
+          "Volume": 3341947
+        },
+        "2026-05-08": {
+          "Open": 168.95,
+          "High": 168.95,
+          "Low": 165.08,
+          "Close": 165.99,
+          "Volume": 3164858
+        },
+        "2026-05-11": {
+          "Open": 164.5,
+          "High": 164.5,
+          "Low": 160.19,
+          "Close": 160.69,
+          "Volume": 1700324
+        },
+        "2026-05-12": {
+          "Open": 160.0,
+          "High": 161.09,
+          "Low": 156.41,
+          "Close": 156.81,
+          "Volume": 1033120
+        },
+        "2026-05-13": {
+          "Open": 156.21,
+          "High": 160.1,
+          "Low": 154.74,
+          "Close": 159.3,
+          "Volume": 1499363
+        },
+        "2026-05-14": {
+          "Open": 159.5,
+          "High": 161.29,
+          "Low": 154.98,
+          "Close": 155.71,
+          "Volume": 3163363
+        },
+        "2026-05-15": {
+          "Open": 157.0,
+          "High": 157.69,
+          "Low": 150.06,
+          "Close": 152.12,
+          "Volume": 5194963
+        },
+        "2026-05-18": {
+          "Open": 151.95,
+          "High": 152.4,
+          "Low": 149.61,
+          "Close": 151.64,
+          "Volume": 2125723
+        },
+        "2026-05-19": {
+          "Open": 152.14,
+          "High": 159.1,
+          "Low": 152.14,
+          "Close": 157.35,
+          "Volume": 13581588
+        },
+        "2026-05-20": {
+          "Open": 157.98,
+          "High": 158.15,
+          "Low": 153.78,
+          "Close": 154.8,
+          "Volume": 8956651
+        },
+        "2026-05-21": {
+          "Open": 155.0,
+          "High": 156.61,
+          "Low": 153.72,
+          "Close": 154.81,
+          "Volume": 7290980
+        },
+        "2026-05-22": {
+          "Open": 155.0,
+          "High": 156.95,
+          "Low": 151.02,
+          "Close": 155.51,
+          "Volume": 11485498
+        },
+        "2026-05-25": {
+          "Open": 157.8,
+          "High": 162.3,
+          "Low": 157.11,
+          "Close": 160.48,
+          "Volume": 3617104
+        }
+      },
+      "error": null
+    }
+  ],
+  "combined_signals": [
+    {
+      "symbol": "IGL",
+      "llm_action": "BUY_SIGNAL",
+      "llm_reason": "CNG prices increased by Rs 2/kg (total Rs 6/kg in 11 days) in Delhi-NCR, potentially boosting revenue for gas distributors.",
+      "ml_direction": "UP",
+      "ml_confidence": 0.50267493724823,
+      "recommendation": "HOLD",
+      "latest_price": 160.48
+    }
+  ]
+}
