@@ -1,0 +1,573 @@
+{
+  "metadata": {
+    "date": "2026-06-16",
+    "run_timestamp": "2026-06-16T08:24:03.341047",
+    "pipeline_version": "1.0.0",
+    "total_news_articles": 4,
+    "total_llm_recs": 4,
+    "total_validated": 4,
+    "total_ml_predictions": 1,
+    "success_rate": 0.5
+  },
+  "llm_recommendations": [
+    {
+      "news_id": "441926732",
+      "stock_name": "Turtlemint Fintech",
+      "is_ipo": true,
+      "ipo_details": {
+        "expected_listing_date": "June 19",
+        "price_range": "\u20b9144-152 per share",
+        "issue_size": "\u20b9883 crore"
+      },
+      "news_type": "ipo",
+      "reason_for_recommendation": "Upcoming IPO launch with fresh issue and OFS components.",
+      "action_to_take": "IPO_WATCH",
+      "buy_price": null,
+      "target_price": null,
+      "target_price_range": {
+        "min": 144,
+        "max": 152
+      },
+      "timeframe": null,
+      "confidence": 0.9,
+      "sentiment": "neutral",
+      "analyst_consensus": null,
+      "news_url": "https://www.freepressjournal.in/business/turtlemint-fintech-launches-883-crore-ipo-on-june-19-sets-price-band-at-144-152-per-share",
+      "equity_name": "Turtlemint Fintech",
+      "instrument_key": null,
+      "trading_symbol": "IPO_PENDING",
+      "isin": null,
+      "validated": true,
+      "validation_method": "ipo_stock",
+      "extraction_timestamp": "2026-06-16T08:24:00.691036"
+    },
+    {
+      "news_id": "441925154",
+      "stock_name": "Angel One",
+      "is_ipo": false,
+      "ipo_details": null,
+      "news_type": "strategic",
+      "reason_for_recommendation": "Received IFSCA approval under GIFT City's Global Access Provider (GAP) framework to offer international investing, positioning for global market access boom.",
+      "action_to_take": "BUY_SIGNAL",
+      "buy_price": null,
+      "target_price": null,
+      "target_price_range": null,
+      "timeframe": "next two to three months for service launch",
+      "confidence": 0.85,
+      "sentiment": "positive",
+      "analyst_consensus": null,
+      "news_url": "https://www.ndtvprofit.com/markets/zerodha-groww-angel-one-upstox-join-race-to-capture-global-investing-boom-get-gift-city-nod-11642917",
+      "equity_name": "ANGEL ONE LIMITED",
+      "instrument_key": "NSE_EQ|INE732I01013",
+      "trading_symbol": "ANGELONE",
+      "isin": "INE732I01013",
+      "validated": true,
+      "validation_method": "name match",
+      "extraction_timestamp": "2026-06-16T08:24:00.691053"
+    },
+    {
+      "news_id": "441924394",
+      "stock_name": "Tata Motors Passenger Vehicles",
+      "is_ipo": false,
+      "ipo_details": null,
+      "news_type": "strategic",
+      "reason_for_recommendation": "Charting a shift to software-defined vehicles (SDVs) with proprietary t.idal architecture; significant R&D investment (\u20b92,836 crore in FY26) for future product development and AI capabilities. Strong pipeline of new launches and multi-powertrain offerings for FY27. Retained leadership in domestic EV market.",
+      "action_to_take": "BUY_SIGNAL",
+      "buy_price": null,
+      "target_price": null,
+      "target_price_range": null,
+      "timeframe": "FY26-FY27",
+      "confidence": 0.8,
+      "sentiment": "positive",
+      "analyst_consensus": null,
+      "news_url": "https://www.business-standard.com/companies/news/tata-motors-accelerates-shift-to-software-defined-vehicles-126061600434_1.html",
+      "equity_name": "TATA MOTORS LIMITED",
+      "instrument_key": "NSE_EQ|INE155A01022",
+      "trading_symbol": "TATAMOTORS",
+      "isin": "INE155A01022",
+      "validated": true,
+      "validation_method": "fuzzy match",
+      "extraction_timestamp": "2026-06-16T08:24:00.743498"
+    },
+    {
+      "news_id": "441924392",
+      "stock_name": "Angel One",
+      "is_ipo": false,
+      "ipo_details": null,
+      "news_type": "strategic",
+      "reason_for_recommendation": "Received IFSCA approval to enable international and US stock investing through GIFT City under the Global Access Provider (GAP) framework, allowing expansion into global markets.",
+      "action_to_take": "BUY_SIGNAL",
+      "buy_price": null,
+      "target_price": null,
+      "target_price_range": null,
+      "timeframe": "next two to three months for service launch",
+      "confidence": 0.85,
+      "sentiment": "positive",
+      "analyst_consensus": null,
+      "news_url": "https://www.business-standard.com/markets/news/gift-city-international-investing-zerodha-groww-upstox-angel-one-us-stocks-126061600491_1.html",
+      "equity_name": "ANGEL ONE LIMITED",
+      "instrument_key": "NSE_EQ|INE732I01013",
+      "trading_symbol": "ANGELONE",
+      "isin": "INE732I01013",
+      "validated": true,
+      "validation_method": "name match",
+      "extraction_timestamp": "2026-06-16T08:24:00.743508"
+    }
+  ],
+  "ml_predictions": [
+    {
+      "symbol": "TATAMOTORS",
+      "status": "SUCCESS",
+      "direction": "DOWN",
+      "confidence": 0.699725866317749,
+      "probability_up": 0.300274133682251,
+      "probability_down": 0.699725866317749,
+      "latest_close": 396.4,
+      "historical_data": {
+        "2026-03-16": {
+          "Open": 313.0,
+          "High": 316.45,
+          "Low": 306.9,
+          "Close": 314.4,
+          "Volume": 10394023
+        },
+        "2026-03-17": {
+          "Open": 315.0,
+          "High": 321.0,
+          "Low": 313.0,
+          "Close": 319.2,
+          "Volume": 7953108
+        },
+        "2026-03-18": {
+          "Open": 321.0,
+          "High": 330.2,
+          "Low": 319.9,
+          "Close": 324.75,
+          "Volume": 7533727
+        },
+        "2026-03-19": {
+          "Open": 318.0,
+          "High": 318.95,
+          "Low": 307.5,
+          "Close": 309.3,
+          "Volume": 10146164
+        },
+        "2026-03-20": {
+          "Open": 311.0,
+          "High": 316.9,
+          "Low": 310.8,
+          "Close": 314.1,
+          "Volume": 13905760
+        },
+        "2026-03-23": {
+          "Open": 311.05,
+          "High": 311.05,
+          "Low": 303.5,
+          "Close": 305.25,
+          "Volume": 10816349
+        },
+        "2026-03-24": {
+          "Open": 312.95,
+          "High": 314.2,
+          "Low": 305.5,
+          "Close": 311.2,
+          "Volume": 8524890
+        },
+        "2026-03-25": {
+          "Open": 316.0,
+          "High": 322.25,
+          "Low": 314.6,
+          "Close": 317.95,
+          "Volume": 7857557
+        },
+        "2026-03-27": {
+          "Open": 312.5,
+          "High": 312.85,
+          "Low": 301.05,
+          "Close": 303.2,
+          "Volume": 19009638
+        },
+        "2026-03-30": {
+          "Open": 297.25,
+          "High": 303.5,
+          "Low": 294.3,
+          "Close": 296.2,
+          "Volume": 16410266
+        },
+        "2026-04-01": {
+          "Open": 310.0,
+          "High": 310.0,
+          "Low": 302.05,
+          "Close": 302.95,
+          "Volume": 8911554
+        },
+        "2026-04-02": {
+          "Open": 298.0,
+          "High": 304.3,
+          "Low": 295.05,
+          "Close": 303.3,
+          "Volume": 9098035
+        },
+        "2026-04-06": {
+          "Open": 303.3,
+          "High": 308.1,
+          "Low": 299.85,
+          "Close": 307.4,
+          "Volume": 6425909
+        },
+        "2026-04-07": {
+          "Open": 306.5,
+          "High": 309.35,
+          "Low": 301.85,
+          "Close": 308.7,
+          "Volume": 8543428
+        },
+        "2026-04-08": {
+          "Open": 321.0,
+          "High": 337.0,
+          "Low": 318.95,
+          "Close": 334.75,
+          "Volume": 20930060
+        },
+        "2026-04-09": {
+          "Open": 334.5,
+          "High": 339.2,
+          "Low": 330.45,
+          "Close": 333.25,
+          "Volume": 11110200
+        },
+        "2026-04-10": {
+          "Open": 336.6,
+          "High": 343.8,
+          "Low": 335.0,
+          "Close": 342.6,
+          "Volume": 10666149
+        },
+        "2026-04-13": {
+          "Open": 332.0,
+          "High": 346.8,
+          "Low": 332.0,
+          "Close": 345.5,
+          "Volume": 13113105
+        },
+        "2026-04-15": {
+          "Open": 352.05,
+          "High": 362.1,
+          "Low": 349.25,
+          "Close": 357.9,
+          "Volume": 12495093
+        },
+        "2026-04-16": {
+          "Open": 360.0,
+          "High": 360.0,
+          "Low": 354.1,
+          "Close": 356.3,
+          "Volume": 6871023
+        },
+        "2026-04-17": {
+          "Open": 352.05,
+          "High": 361.35,
+          "Low": 352.0,
+          "Close": 360.1,
+          "Volume": 7314044
+        },
+        "2026-04-20": {
+          "Open": 357.3,
+          "High": 359.8,
+          "Low": 352.5,
+          "Close": 355.7,
+          "Volume": 7216605
+        },
+        "2026-04-21": {
+          "Open": 354.0,
+          "High": 358.9,
+          "Low": 353.45,
+          "Close": 355.9,
+          "Volume": 5922373
+        },
+        "2026-04-22": {
+          "Open": 355.45,
+          "High": 367.95,
+          "Low": 353.4,
+          "Close": 361.85,
+          "Volume": 14994313
+        },
+        "2026-04-23": {
+          "Open": 359.95,
+          "High": 361.2,
+          "Low": 350.0,
+          "Close": 351.95,
+          "Volume": 11374109
+        },
+        "2026-04-24": {
+          "Open": 353.65,
+          "High": 355.85,
+          "Low": 347.5,
+          "Close": 350.5,
+          "Volume": 5722477
+        },
+        "2026-04-27": {
+          "Open": 351.0,
+          "High": 356.8,
+          "Low": 350.25,
+          "Close": 354.35,
+          "Volume": 9713765
+        },
+        "2026-04-28": {
+          "Open": 354.35,
+          "High": 356.0,
+          "Low": 349.35,
+          "Close": 350.8,
+          "Volume": 7247106
+        },
+        "2026-04-29": {
+          "Open": 351.0,
+          "High": 363.65,
+          "Low": 351.0,
+          "Close": 352.7,
+          "Volume": 10581537
+        },
+        "2026-04-30": {
+          "Open": 352.0,
+          "High": 352.0,
+          "Low": 337.5,
+          "Close": 341.55,
+          "Volume": 12670807
+        },
+        "2026-05-04": {
+          "Open": 338.4,
+          "High": 345.9,
+          "Low": 338.0,
+          "Close": 343.05,
+          "Volume": 7734863
+        },
+        "2026-05-05": {
+          "Open": 341.9,
+          "High": 344.0,
+          "Low": 339.0,
+          "Close": 340.15,
+          "Volume": 6084755
+        },
+        "2026-05-06": {
+          "Open": 345.35,
+          "High": 358.95,
+          "Low": 343.65,
+          "Close": 358.15,
+          "Volume": 11036464
+        },
+        "2026-05-07": {
+          "Open": 360.2,
+          "High": 361.45,
+          "Low": 357.05,
+          "Close": 359.25,
+          "Volume": 6975162
+        },
+        "2026-05-08": {
+          "Open": 356.0,
+          "High": 357.45,
+          "Low": 353.7,
+          "Close": 355.45,
+          "Volume": 4615800
+        },
+        "2026-05-11": {
+          "Open": 352.3,
+          "High": 352.3,
+          "Low": 345.2,
+          "Close": 346.0,
+          "Volume": 4283236
+        },
+        "2026-05-12": {
+          "Open": 343.85,
+          "High": 345.7,
+          "Low": 336.0,
+          "Close": 336.85,
+          "Volume": 5758949
+        },
+        "2026-05-13": {
+          "Open": 335.0,
+          "High": 342.4,
+          "Low": 334.0,
+          "Close": 336.85,
+          "Volume": 5692558
+        },
+        "2026-05-14": {
+          "Open": 340.05,
+          "High": 340.6,
+          "Low": 333.65,
+          "Close": 338.75,
+          "Volume": 7975089
+        },
+        "2026-05-15": {
+          "Open": 352.0,
+          "High": 366.95,
+          "Low": 352.0,
+          "Close": 356.55,
+          "Volume": 51689818
+        },
+        "2026-05-18": {
+          "Open": 354.8,
+          "High": 358.25,
+          "Low": 351.1,
+          "Close": 353.15,
+          "Volume": 10409685
+        },
+        "2026-05-19": {
+          "Open": 352.9,
+          "High": 365.8,
+          "Low": 352.9,
+          "Close": 361.2,
+          "Volume": 15119605
+        },
+        "2026-05-20": {
+          "Open": 358.65,
+          "High": 365.0,
+          "Low": 356.1,
+          "Close": 361.25,
+          "Volume": 9875276
+        },
+        "2026-05-21": {
+          "Open": 364.0,
+          "High": 366.0,
+          "Low": 359.0,
+          "Close": 361.35,
+          "Volume": 10834385
+        },
+        "2026-05-22": {
+          "Open": 364.5,
+          "High": 365.65,
+          "Low": 361.75,
+          "Close": 363.35,
+          "Volume": 6934910
+        },
+        "2026-05-25": {
+          "Open": 366.15,
+          "High": 374.3,
+          "Low": 366.15,
+          "Close": 373.25,
+          "Volume": 10356089
+        },
+        "2026-05-26": {
+          "Open": 373.75,
+          "High": 387.3,
+          "Low": 371.8,
+          "Close": 385.6,
+          "Volume": 21346890
+        },
+        "2026-05-27": {
+          "Open": 385.8,
+          "High": 404.0,
+          "Low": 383.7,
+          "Close": 400.95,
+          "Volume": 16294686
+        },
+        "2026-05-29": {
+          "Open": 400.95,
+          "High": 408.0,
+          "Low": 390.7,
+          "Close": 393.9,
+          "Volume": 31210075
+        },
+        "2026-06-01": {
+          "Open": 395.0,
+          "High": 398.85,
+          "Low": 383.85,
+          "Close": 384.9,
+          "Volume": 8626860
+        },
+        "2026-06-02": {
+          "Open": 379.6,
+          "High": 391.9,
+          "Low": 377.3,
+          "Close": 390.2,
+          "Volume": 12789321
+        },
+        "2026-06-03": {
+          "Open": 392.05,
+          "High": 399.8,
+          "Low": 384.85,
+          "Close": 398.15,
+          "Volume": 8638483
+        },
+        "2026-06-04": {
+          "Open": 396.2,
+          "High": 401.2,
+          "Low": 391.0,
+          "Close": 399.7,
+          "Volume": 12067304
+        },
+        "2026-06-05": {
+          "Open": 401.0,
+          "High": 403.05,
+          "Low": 393.6,
+          "Close": 397.8,
+          "Volume": 9554051
+        },
+        "2026-06-08": {
+          "Open": 392.0,
+          "High": 392.9,
+          "Low": 387.0,
+          "Close": 389.0,
+          "Volume": 7585986
+        },
+        "2026-06-09": {
+          "Open": 393.95,
+          "High": 395.45,
+          "Low": 386.8,
+          "Close": 387.8,
+          "Volume": 8550946
+        },
+        "2026-06-10": {
+          "Open": 388.0,
+          "High": 388.8,
+          "Low": 380.0,
+          "Close": 381.0,
+          "Volume": 7251442
+        },
+        "2026-06-11": {
+          "Open": 375.0,
+          "High": 378.4,
+          "Low": 372.35,
+          "Close": 375.9,
+          "Volume": 6508792
+        },
+        "2026-06-12": {
+          "Open": 380.25,
+          "High": 392.95,
+          "Low": 379.0,
+          "Close": 390.0,
+          "Volume": 7787586
+        },
+        "2026-06-15": {
+          "Open": 398.2,
+          "High": 407.8,
+          "Low": 395.25,
+          "Close": 396.4,
+          "Volume": 11097635
+        }
+      },
+      "error": null
+    },
+    {
+      "symbol": "ANGELONE",
+      "status": "FAILED",
+      "direction": "N/A",
+      "confidence": null,
+      "probability_up": null,
+      "probability_down": null,
+      "latest_close": null,
+      "historical_data": null,
+      "error": "Insufficient data or feature engineering failed"
+    }
+  ],
+  "combined_signals": [
+    {
+      "symbol": "TATAMOTORS",
+      "llm_action": "BUY_SIGNAL",
+      "llm_reason": "Charting a shift to software-defined vehicles (SDVs) with proprietary t.idal architecture; significant R&D investment (\u20b92,836 crore in FY26) for future product development and AI capabilities. Strong pipeline of new launches and multi-powertrain offerings for FY27. Retained leadership in domestic EV market.",
+      "ml_direction": "DOWN",
+      "ml_confidence": 0.699725866317749,
+      "recommendation": "HOLD",
+      "latest_price": 396.4
+    }
+  ]
+}
