@@ -1,0 +1,2343 @@
+{
+  "metadata": {
+    "date": "2026-07-03",
+    "run_timestamp": "2026-07-03T06:08:37.188992",
+    "pipeline_version": "1.0.0",
+    "total_news_articles": 5,
+    "total_llm_recs": 5,
+    "total_validated": 5,
+    "total_ml_predictions": 5,
+    "success_rate": 1.0
+  },
+  "llm_recommendations": [
+    {
+      "news_id": "447426516",
+      "stock_name": "Adani Enterprises Ltd",
+      "is_ipo": false,
+      "ipo_details": null,
+      "news_type": "corporate_action",
+      "reason_for_recommendation": "Expanded Qualified Institutional Placement (QIP) to \u20b915,000 crore from \u20b910,000 crore due to strong investor demand, indicating robust market confidence.",
+      "action_to_take": "BUY_SIGNAL",
+      "buy_price": null,
+      "target_price": null,
+      "target_price_range": null,
+      "timeframe": null,
+      "confidence": 0.85,
+      "sentiment": "positive",
+      "analyst_consensus": null,
+      "news_url": "https://www.ndtv.com/india-news/adani-enterprises-expands-qip-to-rs-15-000-crore-amid-investor-demand-11721051",
+      "equity_name": "ADANI ENTERPRISES LIMITED",
+      "instrument_key": "NSE_EQ|INE423A01024",
+      "trading_symbol": "ADANIENT",
+      "isin": "INE423A01024",
+      "validated": true,
+      "validation_method": "short name match",
+      "extraction_timestamp": "2026-07-03T06:08:31.862975"
+    },
+    {
+      "news_id": "447425942",
+      "stock_name": "PB Fintech",
+      "is_ipo": false,
+      "ipo_details": null,
+      "news_type": "corporate_action",
+      "reason_for_recommendation": "Share price plunged over 8% after a \u20b91,741 crore block deal (2.37% of company's equity at \u20b91,601 apiece), reportedly by Singapore's sovereign wealth fund Temasek Holdings reducing its stake. This follows recent stake sales by co-founders and Tencent.",
+      "action_to_take": "SELL_SIGNAL",
+      "buy_price": 1601.0,
+      "target_price": null,
+      "target_price_range": null,
+      "timeframe": null,
+      "confidence": 0.85,
+      "sentiment": "negative",
+      "analyst_consensus": null,
+      "news_url": "https://www.livemint.com/market/stock-market-news/pb-fintech-share-price-falls-over-8-amid-reports-of-rs-1-741-crore-block-deal-11783057239297.html",
+      "equity_name": "PB FINTECH LIMITED",
+      "instrument_key": "NSE_EQ|INE417T01026",
+      "trading_symbol": "POLICYBZR",
+      "isin": "INE417T01026",
+      "validated": true,
+      "validation_method": "name match",
+      "extraction_timestamp": "2026-07-03T06:08:31.863002"
+    },
+    {
+      "news_id": "447423778",
+      "stock_name": "Tata Consultancy Services",
+      "is_ipo": false,
+      "ipo_details": null,
+      "news_type": "analyst_coverage",
+      "reason_for_recommendation": "Shares are up 1.87% amid an IT sector rebound. Multiple domestic brokerages (ICICI Direct, PL Capital, Systematix) have maintained 'Buy' ratings. The company was named a Leader in IDC MarketScape for Life Sciences R&D Strategic Consulting and successfully modernized payroll with SAP Cloud ERP. Board meeting on July 9, 2026, to consider Q1 results and interim dividend.",
+      "action_to_take": "BUY_SIGNAL",
+      "buy_price": 2106.7,
+      "target_price": null,
+      "target_price_range": null,
+      "timeframe": null,
+      "confidence": 0.9,
+      "sentiment": "positive",
+      "analyst_consensus": "unanimous",
+      "news_url": "https://www.latestly.com/business/tata-consultancy-services-stock-update-shares-up-1-87-amid-it-sector-rebound-7500846.html",
+      "equity_name": "TATA CONSULTANCY SERV LT",
+      "instrument_key": "NSE_EQ|INE467B01029",
+      "trading_symbol": "TCS",
+      "isin": "INE467B01029",
+      "validated": true,
+      "validation_method": "fuzzy match",
+      "extraction_timestamp": "2026-07-03T06:08:31.911427"
+    },
+    {
+      "news_id": "447423776",
+      "stock_name": "Zee Entertainment",
+      "is_ipo": false,
+      "ipo_details": null,
+      "news_type": "regulatory",
+      "reason_for_recommendation": "The Ministry of Information and Broadcasting (MIB) has suspended BARC TV ratings across all genres, creating significant uncertainty for the commercial rollout of major global sporting properties (like the 2026 FIFA World Cup, for which Zee holds rights). This blackout impacts advertising negotiations and the ability to measure revenue effectiveness.",
+      "action_to_take": "SELL_SIGNAL",
+      "buy_price": null,
+      "target_price": null,
+      "target_price_range": null,
+      "timeframe": null,
+      "confidence": 0.75,
+      "sentiment": "negative",
+      "analyst_consensus": null,
+      "news_url": "https://www.latestly.com/india/news/why-has-mib-suspended-barc-tv-ratings-the-2026-policy-explained-7500835.html",
+      "equity_name": "ZEE ENTERTAINMENT ENT LTD",
+      "instrument_key": "NSE_EQ|INE256A01028",
+      "trading_symbol": "ZEEL",
+      "isin": "INE256A01028",
+      "validated": true,
+      "validation_method": "fuzzy match",
+      "extraction_timestamp": "2026-07-03T06:08:31.954971"
+    },
+    {
+      "news_id": "447423382",
+      "stock_name": "SpiceJet",
+      "is_ipo": false,
+      "ipo_details": null,
+      "news_type": "strategic",
+      "reason_for_recommendation": "Suspended flight operations from Chennai and reduced overall flights by 44% due to severe fleet shortage (available fleet shrunk to 12-13 aircraft from over 30) and ongoing operational/financial challenges. Faces liquidity crunch, delayed employee payments, and regulatory scrutiny (EOW case). Continues to face pressures despite recent Qualified Institutional Placements (QIPs).",
+      "action_to_take": "SELL_SIGNAL",
+      "buy_price": null,
+      "target_price": null,
+      "target_price_range": null,
+      "timeframe": null,
+      "confidence": 0.95,
+      "sentiment": "negative",
+      "analyst_consensus": null,
+      "news_url": "https://www.thehindu.com/news/national/fleet-shortage-forces-spicejet-withdrawal-from-chennai-explained/article71177395.ece",
+      "equity_name": "SPIC LTD",
+      "instrument_key": "NSE_EQ|INE147A01011",
+      "trading_symbol": "SPIC",
+      "isin": "INE147A01011",
+      "validated": true,
+      "validation_method": "fuzzy match",
+      "extraction_timestamp": "2026-07-03T06:08:31.994801"
+    }
+  ],
+  "ml_predictions": [
+    {
+      "symbol": "POLICYBZR",
+      "status": "SUCCESS",
+      "direction": "UP",
+      "confidence": 0.6923462152481079,
+      "probability_up": 0.6923462152481079,
+      "probability_down": 0.3076537847518921,
+      "latest_close": 1682.1,
+      "historical_data": {
+        "2026-04-06": {
+          "Open": 1426.9,
+          "High": 1476.0,
+          "Low": 1410.7,
+          "Close": 1470.0,
+          "Volume": 1003976
+        },
+        "2026-04-07": {
+          "Open": 1451.6,
+          "High": 1468.7,
+          "Low": 1430.3,
+          "Close": 1459.7,
+          "Volume": 1055877
+        },
+        "2026-04-08": {
+          "Open": 1487.3,
+          "High": 1516.6,
+          "Low": 1485.0,
+          "Close": 1498.5,
+          "Volume": 1201886
+        },
+        "2026-04-09": {
+          "Open": 1497.0,
+          "High": 1517.3,
+          "Low": 1471.4,
+          "Close": 1493.3,
+          "Volume": 903680
+        },
+        "2026-04-10": {
+          "Open": 1499.3,
+          "High": 1528.0,
+          "Low": 1492.3,
+          "Close": 1509.8,
+          "Volume": 1610123
+        },
+        "2026-04-13": {
+          "Open": 1474.0,
+          "High": 1474.1,
+          "Low": 1450.0,
+          "Close": 1453.0,
+          "Volume": 1483902
+        },
+        "2026-04-15": {
+          "Open": 1472.8,
+          "High": 1498.6,
+          "Low": 1464.0,
+          "Close": 1480.6,
+          "Volume": 1280768
+        },
+        "2026-04-16": {
+          "Open": 1490.0,
+          "High": 1563.9,
+          "Low": 1482.2,
+          "Close": 1550.5,
+          "Volume": 4186963
+        },
+        "2026-04-17": {
+          "Open": 1557.7,
+          "High": 1628.9,
+          "Low": 1553.0,
+          "Close": 1600.6,
+          "Volume": 3749052
+        },
+        "2026-04-20": {
+          "Open": 1600.6,
+          "High": 1632.0,
+          "Low": 1582.1,
+          "Close": 1616.8,
+          "Volume": 1874530
+        },
+        "2026-04-21": {
+          "Open": 1610.0,
+          "High": 1630.6,
+          "Low": 1582.0,
+          "Close": 1623.2,
+          "Volume": 1630099
+        },
+        "2026-04-22": {
+          "Open": 1608.0,
+          "High": 1644.6,
+          "Low": 1603.3,
+          "Close": 1625.8,
+          "Volume": 1641453
+        },
+        "2026-04-23": {
+          "Open": 1610.5,
+          "High": 1687.6,
+          "Low": 1610.5,
+          "Close": 1670.8,
+          "Volume": 2260644
+        },
+        "2026-04-24": {
+          "Open": 1685.0,
+          "High": 1701.1,
+          "Low": 1667.0,
+          "Close": 1696.7,
+          "Volume": 1113981
+        },
+        "2026-04-27": {
+          "Open": 1700.0,
+          "High": 1728.6,
+          "Low": 1659.2,
+          "Close": 1663.0,
+          "Volume": 1390205
+        },
+        "2026-04-28": {
+          "Open": 1657.0,
+          "High": 1681.7,
+          "Low": 1643.1,
+          "Close": 1667.4,
+          "Volume": 1198968
+        },
+        "2026-04-29": {
+          "Open": 1670.0,
+          "High": 1713.0,
+          "Low": 1667.1,
+          "Close": 1684.3,
+          "Volume": 875557
+        },
+        "2026-04-30": {
+          "Open": 1680.1,
+          "High": 1682.2,
+          "Low": 1641.5,
+          "Close": 1666.2,
+          "Volume": 729684
+        },
+        "2026-05-04": {
+          "Open": 1674.0,
+          "High": 1683.6,
+          "Low": 1638.4,
+          "Close": 1670.8,
+          "Volume": 697645
+        },
+        "2026-05-05": {
+          "Open": 1656.0,
+          "High": 1689.9,
+          "Low": 1647.4,
+          "Close": 1680.5,
+          "Volume": 514996
+        },
+        "2026-05-06": {
+          "Open": 1700.0,
+          "High": 1720.0,
+          "Low": 1666.8,
+          "Close": 1701.8,
+          "Volume": 1787992
+        },
+        "2026-05-07": {
+          "Open": 1716.0,
+          "High": 1735.0,
+          "Low": 1606.8,
+          "Close": 1684.1,
+          "Volume": 6016469
+        },
+        "2026-05-08": {
+          "Open": 1685.1,
+          "High": 1711.8,
+          "Low": 1633.6,
+          "Close": 1645.1,
+          "Volume": 1950285
+        },
+        "2026-05-11": {
+          "Open": 1650.0,
+          "High": 1666.0,
+          "Low": 1611.0,
+          "Close": 1642.5,
+          "Volume": 968844
+        },
+        "2026-05-12": {
+          "Open": 1640.0,
+          "High": 1649.2,
+          "Low": 1593.9,
+          "Close": 1603.3,
+          "Volume": 1482394
+        },
+        "2026-05-13": {
+          "Open": 1607.5,
+          "High": 1665.4,
+          "Low": 1593.7,
+          "Close": 1636.3,
+          "Volume": 1548791
+        },
+        "2026-05-14": {
+          "Open": 1650.0,
+          "High": 1688.7,
+          "Low": 1630.0,
+          "Close": 1681.4,
+          "Volume": 2089308
+        },
+        "2026-05-15": {
+          "Open": 1690.0,
+          "High": 1707.5,
+          "Low": 1660.4,
+          "Close": 1688.3,
+          "Volume": 1854796
+        },
+        "2026-05-18": {
+          "Open": 1694.6,
+          "High": 1752.7,
+          "Low": 1674.0,
+          "Close": 1748.3,
+          "Volume": 2212164
+        },
+        "2026-05-19": {
+          "Open": 1758.9,
+          "High": 1833.3,
+          "Low": 1751.0,
+          "Close": 1804.8,
+          "Volume": 3790067
+        },
+        "2026-05-20": {
+          "Open": 1771.2,
+          "High": 1845.5,
+          "Low": 1771.2,
+          "Close": 1830.0,
+          "Volume": 3459259
+        },
+        "2026-05-21": {
+          "Open": 1830.0,
+          "High": 1843.2,
+          "Low": 1814.6,
+          "Close": 1819.3,
+          "Volume": 1110039
+        },
+        "2026-05-22": {
+          "Open": 1815.0,
+          "High": 1825.0,
+          "Low": 1756.2,
+          "Close": 1792.4,
+          "Volume": 2414312
+        },
+        "2026-05-25": {
+          "Open": 1805.0,
+          "High": 1831.4,
+          "Low": 1785.0,
+          "Close": 1791.5,
+          "Volume": 725634
+        },
+        "2026-05-26": {
+          "Open": 1787.5,
+          "High": 1801.4,
+          "Low": 1773.3,
+          "Close": 1789.0,
+          "Volume": 709299
+        },
+        "2026-05-27": {
+          "Open": 1789.0,
+          "High": 1800.9,
+          "Low": 1773.0,
+          "Close": 1784.8,
+          "Volume": 418169
+        },
+        "2026-05-29": {
+          "Open": 1769.0,
+          "High": 1769.0,
+          "Low": 1693.2,
+          "Close": 1702.5,
+          "Volume": 3301589
+        },
+        "2026-06-01": {
+          "Open": 1702.5,
+          "High": 1708.9,
+          "Low": 1661.5,
+          "Close": 1671.4,
+          "Volume": 1942497
+        },
+        "2026-06-02": {
+          "Open": 1660.0,
+          "High": 1667.8,
+          "Low": 1614.0,
+          "Close": 1644.2,
+          "Volume": 2243569
+        },
+        "2026-06-03": {
+          "Open": 1653.0,
+          "High": 1661.4,
+          "Low": 1551.6,
+          "Close": 1578.5,
+          "Volume": 3301345
+        },
+        "2026-06-04": {
+          "Open": 1578.5,
+          "High": 1591.5,
+          "Low": 1526.5,
+          "Close": 1536.3,
+          "Volume": 1465703
+        },
+        "2026-06-05": {
+          "Open": 1500.0,
+          "High": 1560.5,
+          "Low": 1499.9,
+          "Close": 1534.1,
+          "Volume": 4348433
+        },
+        "2026-06-08": {
+          "Open": 1520.0,
+          "High": 1544.1,
+          "Low": 1502.0,
+          "Close": 1511.9,
+          "Volume": 841623
+        },
+        "2026-06-09": {
+          "Open": 1514.0,
+          "High": 1524.7,
+          "Low": 1478.3,
+          "Close": 1497.3,
+          "Volume": 3138282
+        },
+        "2026-06-10": {
+          "Open": 1500.0,
+          "High": 1542.4,
+          "Low": 1495.4,
+          "Close": 1509.6,
+          "Volume": 1809006
+        },
+        "2026-06-11": {
+          "Open": 1503.9,
+          "High": 1531.6,
+          "Low": 1490.5,
+          "Close": 1504.2,
+          "Volume": 1054191
+        },
+        "2026-06-12": {
+          "Open": 1526.8,
+          "High": 1551.9,
+          "Low": 1494.8,
+          "Close": 1547.8,
+          "Volume": 917290
+        },
+        "2026-06-15": {
+          "Open": 1569.0,
+          "High": 1591.7,
+          "Low": 1552.5,
+          "Close": 1581.1,
+          "Volume": 1678959
+        },
+        "2026-06-16": {
+          "Open": 1587.0,
+          "High": 1605.3,
+          "Low": 1571.4,
+          "Close": 1596.8,
+          "Volume": 1386132
+        },
+        "2026-06-17": {
+          "Open": 1600.0,
+          "High": 1629.7,
+          "Low": 1587.5,
+          "Close": 1624.6,
+          "Volume": 1486416
+        },
+        "2026-06-18": {
+          "Open": 1622.9,
+          "High": 1629.5,
+          "Low": 1604.7,
+          "Close": 1617.7,
+          "Volume": 464099
+        },
+        "2026-06-19": {
+          "Open": 1609.9,
+          "High": 1644.0,
+          "Low": 1604.7,
+          "Close": 1636.7,
+          "Volume": 718290
+        },
+        "2026-06-22": {
+          "Open": 1657.9,
+          "High": 1711.3,
+          "Low": 1645.2,
+          "Close": 1668.8,
+          "Volume": 3541471
+        },
+        "2026-06-23": {
+          "Open": 1662.1,
+          "High": 1678.5,
+          "Low": 1615.0,
+          "Close": 1622.4,
+          "Volume": 1053849
+        },
+        "2026-06-24": {
+          "Open": 1622.4,
+          "High": 1646.9,
+          "Low": 1600.3,
+          "Close": 1636.3,
+          "Volume": 828244
+        },
+        "2026-06-25": {
+          "Open": 1650.8,
+          "High": 1660.8,
+          "Low": 1601.1,
+          "Close": 1615.2,
+          "Volume": 832382
+        },
+        "2026-06-29": {
+          "Open": 1621.7,
+          "High": 1658.0,
+          "Low": 1588.3,
+          "Close": 1623.1,
+          "Volume": 2643196
+        },
+        "2026-06-30": {
+          "Open": 1630.9,
+          "High": 1657.7,
+          "Low": 1610.3,
+          "Close": 1628.6,
+          "Volume": 1884876
+        },
+        "2026-07-01": {
+          "Open": 1640.0,
+          "High": 1691.5,
+          "Low": 1631.1,
+          "Close": 1684.2,
+          "Volume": 1056784
+        },
+        "2026-07-02": {
+          "Open": 1685.7,
+          "High": 1705.0,
+          "Low": 1667.2,
+          "Close": 1682.1,
+          "Volume": 897073
+        }
+      },
+      "error": null
+    },
+    {
+      "symbol": "ADANIENT",
+      "status": "SUCCESS",
+      "direction": "DOWN",
+      "confidence": 0.5385996103286743,
+      "probability_up": 0.4614003896713257,
+      "probability_down": 0.5385996103286743,
+      "latest_close": 3177.5,
+      "historical_data": {
+        "2026-04-06": {
+          "Open": 1836.9,
+          "High": 1909.0,
+          "Low": 1802.1,
+          "Close": 1902.2,
+          "Volume": 3153437
+        },
+        "2026-04-07": {
+          "Open": 1890.0,
+          "High": 1904.6,
+          "Low": 1865.0,
+          "Close": 1882.1,
+          "Volume": 1566909
+        },
+        "2026-04-08": {
+          "Open": 2000.0,
+          "High": 2099.0,
+          "Low": 1975.1,
+          "Close": 2043.8,
+          "Volume": 4197831
+        },
+        "2026-04-09": {
+          "Open": 2039.8,
+          "High": 2065.0,
+          "Low": 2010.3,
+          "Close": 2040.5,
+          "Volume": 2481188
+        },
+        "2026-04-10": {
+          "Open": 2043.1,
+          "High": 2094.6,
+          "Low": 2041.7,
+          "Close": 2086.8,
+          "Volume": 1700162
+        },
+        "2026-04-13": {
+          "Open": 2010.2,
+          "High": 2159.0,
+          "Low": 2000.2,
+          "Close": 2129.0,
+          "Volume": 3729773
+        },
+        "2026-04-15": {
+          "Open": 2187.0,
+          "High": 2200.0,
+          "Low": 2136.0,
+          "Close": 2144.4,
+          "Volume": 1779015
+        },
+        "2026-04-16": {
+          "Open": 2170.0,
+          "High": 2210.4,
+          "Low": 2161.1,
+          "Close": 2203.7,
+          "Volume": 2188912
+        },
+        "2026-04-17": {
+          "Open": 2240.0,
+          "High": 2240.0,
+          "Low": 2186.1,
+          "Close": 2218.3,
+          "Volume": 2408901
+        },
+        "2026-04-20": {
+          "Open": 2218.3,
+          "High": 2280.1,
+          "Low": 2202.2,
+          "Close": 2229.6,
+          "Volume": 1795338
+        },
+        "2026-04-21": {
+          "Open": 2229.7,
+          "High": 2255.0,
+          "Low": 2220.0,
+          "Close": 2226.0,
+          "Volume": 1818221
+        },
+        "2026-04-22": {
+          "Open": 2229.0,
+          "High": 2278.6,
+          "Low": 2224.1,
+          "Close": 2260.8,
+          "Volume": 3517237
+        },
+        "2026-04-23": {
+          "Open": 2243.5,
+          "High": 2333.9,
+          "Low": 2221.8,
+          "Close": 2300.0,
+          "Volume": 2948009
+        },
+        "2026-04-24": {
+          "Open": 2310.2,
+          "High": 2321.4,
+          "Low": 2227.0,
+          "Close": 2287.6,
+          "Volume": 2271317
+        },
+        "2026-04-27": {
+          "Open": 2300.2,
+          "High": 2337.0,
+          "Low": 2286.0,
+          "Close": 2321.8,
+          "Volume": 1500864
+        },
+        "2026-04-28": {
+          "Open": 2321.8,
+          "High": 2420.0,
+          "Low": 2320.9,
+          "Close": 2412.4,
+          "Volume": 4375556
+        },
+        "2026-04-29": {
+          "Open": 2427.6,
+          "High": 2443.8,
+          "Low": 2388.0,
+          "Close": 2425.9,
+          "Volume": 4656967
+        },
+        "2026-04-30": {
+          "Open": 2394.9,
+          "High": 2420.0,
+          "Low": 2328.8,
+          "Close": 2408.4,
+          "Volume": 3538354
+        },
+        "2026-05-04": {
+          "Open": 2390.4,
+          "High": 2515.0,
+          "Low": 2375.0,
+          "Close": 2485.7,
+          "Volume": 6039537
+        },
+        "2026-05-05": {
+          "Open": 2470.0,
+          "High": 2511.9,
+          "Low": 2450.0,
+          "Close": 2462.0,
+          "Volume": 1622580
+        },
+        "2026-05-06": {
+          "Open": 2475.5,
+          "High": 2546.5,
+          "Low": 2472.2,
+          "Close": 2540.3,
+          "Volume": 3169133
+        },
+        "2026-05-07": {
+          "Open": 2540.3,
+          "High": 2549.9,
+          "Low": 2506.2,
+          "Close": 2513.7,
+          "Volume": 1098088
+        },
+        "2026-05-08": {
+          "Open": 2519.0,
+          "High": 2546.1,
+          "Low": 2500.0,
+          "Close": 2505.9,
+          "Volume": 1499613
+        },
+        "2026-05-11": {
+          "Open": 2495.0,
+          "High": 2514.0,
+          "Low": 2460.0,
+          "Close": 2500.2,
+          "Volume": 1279432
+        },
+        "2026-05-12": {
+          "Open": 2487.7,
+          "High": 2511.7,
+          "Low": 2400.1,
+          "Close": 2405.2,
+          "Volume": 1459022
+        },
+        "2026-05-13": {
+          "Open": 2401.1,
+          "High": 2530.0,
+          "Low": 2401.1,
+          "Close": 2498.0,
+          "Volume": 2036291
+        },
+        "2026-05-14": {
+          "Open": 2530.1,
+          "High": 2720.0,
+          "Low": 2530.0,
+          "Close": 2712.9,
+          "Volume": 9539233
+        },
+        "2026-05-15": {
+          "Open": 2781.1,
+          "High": 2803.1,
+          "Low": 2661.0,
+          "Close": 2716.0,
+          "Volume": 6742083
+        },
+        "2026-05-18": {
+          "Open": 2700.0,
+          "High": 2710.0,
+          "Low": 2647.5,
+          "Close": 2689.8,
+          "Volume": 2033884
+        },
+        "2026-05-19": {
+          "Open": 2734.7,
+          "High": 2774.5,
+          "Low": 2697.0,
+          "Close": 2725.0,
+          "Volume": 4204144
+        },
+        "2026-05-20": {
+          "Open": 2715.0,
+          "High": 2720.0,
+          "Low": 2685.1,
+          "Close": 2704.8,
+          "Volume": 1187449
+        },
+        "2026-05-21": {
+          "Open": 2727.9,
+          "High": 2770.0,
+          "Low": 2684.0,
+          "Close": 2697.6,
+          "Volume": 1606690
+        },
+        "2026-05-22": {
+          "Open": 2710.2,
+          "High": 2745.0,
+          "Low": 2706.1,
+          "Close": 2717.3,
+          "Volume": 1094843
+        },
+        "2026-05-25": {
+          "Open": 2739.8,
+          "High": 2858.8,
+          "Low": 2739.3,
+          "Close": 2849.7,
+          "Volume": 3277924
+        },
+        "2026-05-26": {
+          "Open": 2846.0,
+          "High": 2979.4,
+          "Low": 2825.0,
+          "Close": 2969.3,
+          "Volume": 4899494
+        },
+        "2026-05-27": {
+          "Open": 2982.0,
+          "High": 3027.5,
+          "Low": 2944.0,
+          "Close": 2973.1,
+          "Volume": 3826916
+        },
+        "2026-05-29": {
+          "Open": 2987.8,
+          "High": 2995.0,
+          "Low": 2926.8,
+          "Close": 2937.4,
+          "Volume": 4040865
+        },
+        "2026-06-01": {
+          "Open": 2949.9,
+          "High": 2955.7,
+          "Low": 2891.1,
+          "Close": 2909.4,
+          "Volume": 1629342
+        },
+        "2026-06-02": {
+          "Open": 2885.0,
+          "High": 2975.0,
+          "Low": 2865.2,
+          "Close": 2968.1,
+          "Volume": 2066890
+        },
+        "2026-06-03": {
+          "Open": 2960.0,
+          "High": 2965.0,
+          "Low": 2888.1,
+          "Close": 2925.6,
+          "Volume": 1346112
+        },
+        "2026-06-04": {
+          "Open": 2920.0,
+          "High": 2983.0,
+          "Low": 2918.1,
+          "Close": 2972.8,
+          "Volume": 1722991
+        },
+        "2026-06-05": {
+          "Open": 2992.0,
+          "High": 3059.8,
+          "Low": 2921.8,
+          "Close": 3048.2,
+          "Volume": 5617327
+        },
+        "2026-06-08": {
+          "Open": 3017.7,
+          "High": 3039.8,
+          "Low": 2955.1,
+          "Close": 2970.0,
+          "Volume": 1653499
+        },
+        "2026-06-09": {
+          "Open": 2985.9,
+          "High": 2998.7,
+          "Low": 2935.9,
+          "Close": 2979.9,
+          "Volume": 1841620
+        },
+        "2026-06-10": {
+          "Open": 2977.0,
+          "High": 2994.9,
+          "Low": 2918.0,
+          "Close": 2931.1,
+          "Volume": 1475029
+        },
+        "2026-06-11": {
+          "Open": 2895.1,
+          "High": 2966.8,
+          "Low": 2895.1,
+          "Close": 2908.8,
+          "Volume": 1204115
+        },
+        "2026-06-12": {
+          "Open": 2958.8,
+          "High": 2971.9,
+          "Low": 2886.2,
+          "Close": 2921.6,
+          "Volume": 2321009
+        },
+        "2026-06-15": {
+          "Open": 2960.0,
+          "High": 2983.0,
+          "Low": 2935.0,
+          "Close": 2942.5,
+          "Volume": 1174229
+        },
+        "2026-06-16": {
+          "Open": 2971.4,
+          "High": 2997.7,
+          "Low": 2928.3,
+          "Close": 2943.6,
+          "Volume": 1851843
+        },
+        "2026-06-17": {
+          "Open": 2958.0,
+          "High": 2974.5,
+          "Low": 2934.6,
+          "Close": 2951.9,
+          "Volume": 1244567
+        },
+        "2026-06-18": {
+          "Open": 2952.0,
+          "High": 3041.0,
+          "Low": 2938.0,
+          "Close": 3013.4,
+          "Volume": 1774394
+        },
+        "2026-06-19": {
+          "Open": 3017.0,
+          "High": 3051.9,
+          "Low": 3009.1,
+          "Close": 3038.4,
+          "Volume": 3620222
+        },
+        "2026-06-22": {
+          "Open": 3040.0,
+          "High": 3065.0,
+          "Low": 3001.0,
+          "Close": 3059.6,
+          "Volume": 1726452
+        },
+        "2026-06-23": {
+          "Open": 3072.0,
+          "High": 3091.7,
+          "Low": 2943.5,
+          "Close": 2962.9,
+          "Volume": 1620658
+        },
+        "2026-06-24": {
+          "Open": 2988.3,
+          "High": 3077.8,
+          "Low": 2971.0,
+          "Close": 3069.7,
+          "Volume": 2527812
+        },
+        "2026-06-25": {
+          "Open": 3086.0,
+          "High": 3105.0,
+          "Low": 3027.7,
+          "Close": 3038.0,
+          "Volume": 1719600
+        },
+        "2026-06-29": {
+          "Open": 3020.0,
+          "High": 3020.0,
+          "Low": 2955.0,
+          "Close": 2962.5,
+          "Volume": 1693354
+        },
+        "2026-06-30": {
+          "Open": 2980.0,
+          "High": 3054.6,
+          "Low": 2969.0,
+          "Close": 3036.0,
+          "Volume": 2099291
+        },
+        "2026-07-01": {
+          "Open": 3041.0,
+          "High": 3149.8,
+          "Low": 3012.8,
+          "Close": 3143.6,
+          "Volume": 3415655
+        },
+        "2026-07-02": {
+          "Open": 3155.9,
+          "High": 3229.6,
+          "Low": 3147.0,
+          "Close": 3177.5,
+          "Volume": 3400034
+        }
+      },
+      "error": null
+    },
+    {
+      "symbol": "SPIC",
+      "status": "SUCCESS",
+      "direction": "DOWN",
+      "confidence": 0.572585940361023,
+      "probability_up": 0.42741405963897705,
+      "probability_down": 0.572585940361023,
+      "latest_close": 69.7,
+      "historical_data": {
+        "2026-04-06": {
+          "Open": 61.51,
+          "High": 62.95,
+          "Low": 60.6,
+          "Close": 62.43,
+          "Volume": 589714
+        },
+        "2026-04-07": {
+          "Open": 62.5,
+          "High": 63.32,
+          "Low": 61.81,
+          "Close": 62.54,
+          "Volume": 393336
+        },
+        "2026-04-08": {
+          "Open": 65.85,
+          "High": 66.6,
+          "Low": 64.05,
+          "Close": 66.37,
+          "Volume": 886919
+        },
+        "2026-04-09": {
+          "Open": 66.58,
+          "High": 68.55,
+          "Low": 65.81,
+          "Close": 66.51,
+          "Volume": 1013961
+        },
+        "2026-04-10": {
+          "Open": 66.78,
+          "High": 68.29,
+          "Low": 66.58,
+          "Close": 67.29,
+          "Volume": 571906
+        },
+        "2026-04-13": {
+          "Open": 66.4,
+          "High": 67.49,
+          "Low": 64.65,
+          "Close": 66.85,
+          "Volume": 619077
+        },
+        "2026-04-15": {
+          "Open": 68.1,
+          "High": 71.67,
+          "Low": 68.1,
+          "Close": 70.84,
+          "Volume": 1687470
+        },
+        "2026-04-16": {
+          "Open": 71.4,
+          "High": 73.0,
+          "Low": 70.81,
+          "Close": 72.02,
+          "Volume": 923914
+        },
+        "2026-04-17": {
+          "Open": 72.02,
+          "High": 73.35,
+          "Low": 71.67,
+          "Close": 72.26,
+          "Volume": 922163
+        },
+        "2026-04-20": {
+          "Open": 72.26,
+          "High": 72.78,
+          "Low": 70.0,
+          "Close": 70.47,
+          "Volume": 512820
+        },
+        "2026-04-21": {
+          "Open": 70.41,
+          "High": 72.5,
+          "Low": 70.14,
+          "Close": 71.88,
+          "Volume": 478157
+        },
+        "2026-04-22": {
+          "Open": 72.0,
+          "High": 73.47,
+          "Low": 71.29,
+          "Close": 72.63,
+          "Volume": 732700
+        },
+        "2026-04-23": {
+          "Open": 72.63,
+          "High": 73.25,
+          "Low": 70.6,
+          "Close": 70.79,
+          "Volume": 475512
+        },
+        "2026-04-24": {
+          "Open": 71.31,
+          "High": 71.31,
+          "Low": 68.5,
+          "Close": 68.94,
+          "Volume": 556415
+        },
+        "2026-04-27": {
+          "Open": 68.94,
+          "High": 71.45,
+          "Low": 68.94,
+          "Close": 70.98,
+          "Volume": 455663
+        },
+        "2026-04-28": {
+          "Open": 71.0,
+          "High": 71.9,
+          "Low": 70.0,
+          "Close": 70.42,
+          "Volume": 419421
+        },
+        "2026-04-29": {
+          "Open": 70.58,
+          "High": 71.46,
+          "Low": 69.68,
+          "Close": 70.16,
+          "Volume": 481746
+        },
+        "2026-04-30": {
+          "Open": 69.95,
+          "High": 71.72,
+          "Low": 68.87,
+          "Close": 70.26,
+          "Volume": 379101
+        },
+        "2026-05-04": {
+          "Open": 70.49,
+          "High": 71.74,
+          "Low": 69.5,
+          "Close": 69.94,
+          "Volume": 452925
+        },
+        "2026-05-05": {
+          "Open": 69.99,
+          "High": 70.33,
+          "Low": 68.8,
+          "Close": 69.29,
+          "Volume": 340799
+        },
+        "2026-05-06": {
+          "Open": 70.1,
+          "High": 72.5,
+          "Low": 69.9,
+          "Close": 72.13,
+          "Volume": 560201
+        },
+        "2026-05-07": {
+          "Open": 72.5,
+          "High": 72.78,
+          "Low": 71.38,
+          "Close": 71.69,
+          "Volume": 370636
+        },
+        "2026-05-08": {
+          "Open": 71.69,
+          "High": 72.43,
+          "Low": 70.42,
+          "Close": 70.71,
+          "Volume": 362791
+        },
+        "2026-05-11": {
+          "Open": 69.0,
+          "High": 69.97,
+          "Low": 68.18,
+          "Close": 68.42,
+          "Volume": 492056
+        },
+        "2026-05-12": {
+          "Open": 69.0,
+          "High": 69.13,
+          "Low": 65.3,
+          "Close": 65.62,
+          "Volume": 626409
+        },
+        "2026-05-13": {
+          "Open": 65.68,
+          "High": 67.98,
+          "Low": 65.62,
+          "Close": 67.68,
+          "Volume": 342862
+        },
+        "2026-05-14": {
+          "Open": 68.0,
+          "High": 68.98,
+          "Low": 66.37,
+          "Close": 67.37,
+          "Volume": 413063
+        },
+        "2026-05-15": {
+          "Open": 67.5,
+          "High": 68.62,
+          "Low": 66.36,
+          "Close": 66.71,
+          "Volume": 524503
+        },
+        "2026-05-18": {
+          "Open": 66.5,
+          "High": 68.2,
+          "Low": 64.2,
+          "Close": 67.73,
+          "Volume": 560314
+        },
+        "2026-05-19": {
+          "Open": 69.4,
+          "High": 72.95,
+          "Low": 68.21,
+          "Close": 70.99,
+          "Volume": 1873417
+        },
+        "2026-05-20": {
+          "Open": 70.0,
+          "High": 70.7,
+          "Low": 68.94,
+          "Close": 69.51,
+          "Volume": 494626
+        },
+        "2026-05-21": {
+          "Open": 70.0,
+          "High": 71.2,
+          "Low": 69.85,
+          "Close": 70.36,
+          "Volume": 460751
+        },
+        "2026-05-22": {
+          "Open": 70.5,
+          "High": 76.44,
+          "Low": 70.5,
+          "Close": 74.25,
+          "Volume": 4579243
+        },
+        "2026-05-25": {
+          "Open": 75.0,
+          "High": 75.0,
+          "Low": 71.0,
+          "Close": 71.81,
+          "Volume": 1666461
+        },
+        "2026-05-26": {
+          "Open": 72.0,
+          "High": 74.22,
+          "Low": 71.61,
+          "Close": 72.19,
+          "Volume": 1065321
+        },
+        "2026-05-27": {
+          "Open": 72.01,
+          "High": 72.94,
+          "Low": 71.26,
+          "Close": 71.54,
+          "Volume": 636163
+        },
+        "2026-05-29": {
+          "Open": 71.84,
+          "High": 71.97,
+          "Low": 68.5,
+          "Close": 69.19,
+          "Volume": 709502
+        },
+        "2026-06-01": {
+          "Open": 69.3,
+          "High": 70.14,
+          "Low": 67.01,
+          "Close": 67.47,
+          "Volume": 658797
+        },
+        "2026-06-02": {
+          "Open": 67.4,
+          "High": 68.9,
+          "Low": 66.5,
+          "Close": 68.53,
+          "Volume": 481665
+        },
+        "2026-06-03": {
+          "Open": 68.33,
+          "High": 71.19,
+          "Low": 68.0,
+          "Close": 70.62,
+          "Volume": 882595
+        },
+        "2026-06-04": {
+          "Open": 70.39,
+          "High": 71.32,
+          "Low": 69.02,
+          "Close": 69.18,
+          "Volume": 627379
+        },
+        "2026-06-05": {
+          "Open": 69.54,
+          "High": 70.98,
+          "Low": 69.4,
+          "Close": 69.64,
+          "Volume": 458862
+        },
+        "2026-06-08": {
+          "Open": 69.0,
+          "High": 69.22,
+          "Low": 66.1,
+          "Close": 66.47,
+          "Volume": 699586
+        },
+        "2026-06-09": {
+          "Open": 67.27,
+          "High": 69.14,
+          "Low": 67.25,
+          "Close": 68.88,
+          "Volume": 430089
+        },
+        "2026-06-10": {
+          "Open": 69.25,
+          "High": 70.88,
+          "Low": 67.21,
+          "Close": 67.42,
+          "Volume": 758897
+        },
+        "2026-06-11": {
+          "Open": 67.48,
+          "High": 67.66,
+          "Low": 66.5,
+          "Close": 67.08,
+          "Volume": 404935
+        },
+        "2026-06-12": {
+          "Open": 67.48,
+          "High": 69.77,
+          "Low": 67.48,
+          "Close": 68.89,
+          "Volume": 458479
+        },
+        "2026-06-15": {
+          "Open": 69.25,
+          "High": 70.71,
+          "Low": 68.82,
+          "Close": 69.01,
+          "Volume": 754023
+        },
+        "2026-06-16": {
+          "Open": 69.55,
+          "High": 72.77,
+          "Low": 69.1,
+          "Close": 71.75,
+          "Volume": 2291189
+        },
+        "2026-06-17": {
+          "Open": 72.05,
+          "High": 72.19,
+          "Low": 70.3,
+          "Close": 71.01,
+          "Volume": 641836
+        },
+        "2026-06-18": {
+          "Open": 71.0,
+          "High": 71.64,
+          "Low": 70.56,
+          "Close": 70.86,
+          "Volume": 504781
+        },
+        "2026-06-19": {
+          "Open": 70.88,
+          "High": 72.23,
+          "Low": 69.71,
+          "Close": 70.66,
+          "Volume": 939279
+        },
+        "2026-06-22": {
+          "Open": 70.8,
+          "High": 72.51,
+          "Low": 70.61,
+          "Close": 71.19,
+          "Volume": 644485
+        },
+        "2026-06-23": {
+          "Open": 70.85,
+          "High": 71.62,
+          "Low": 69.71,
+          "Close": 69.96,
+          "Volume": 396117
+        },
+        "2026-06-24": {
+          "Open": 70.0,
+          "High": 70.31,
+          "Low": 69.05,
+          "Close": 69.61,
+          "Volume": 329940
+        },
+        "2026-06-25": {
+          "Open": 70.3,
+          "High": 70.65,
+          "Low": 68.99,
+          "Close": 69.08,
+          "Volume": 307290
+        },
+        "2026-06-29": {
+          "Open": 69.25,
+          "High": 69.49,
+          "Low": 67.4,
+          "Close": 67.61,
+          "Volume": 312187
+        },
+        "2026-06-30": {
+          "Open": 67.79,
+          "High": 68.14,
+          "Low": 67.34,
+          "Close": 67.49,
+          "Volume": 274359
+        },
+        "2026-07-01": {
+          "Open": 67.64,
+          "High": 69.17,
+          "Low": 67.64,
+          "Close": 68.2,
+          "Volume": 340488
+        },
+        "2026-07-02": {
+          "Open": 68.5,
+          "High": 69.9,
+          "Low": 68.5,
+          "Close": 69.7,
+          "Volume": 279711
+        }
+      },
+      "error": null
+    },
+    {
+      "symbol": "TCS",
+      "status": "SUCCESS",
+      "direction": "UP",
+      "confidence": 0.5317456722259521,
+      "probability_up": 0.5317456722259521,
+      "probability_down": 0.46825432777404785,
+      "latest_close": 2068.1,
+      "historical_data": {
+        "2026-04-06": {
+          "Open": 2474.0,
+          "High": 2482.0,
+          "Low": 2448.2,
+          "Close": 2473.9,
+          "Volume": 2572417
+        },
+        "2026-04-07": {
+          "Open": 2461.0,
+          "High": 2543.9,
+          "Low": 2448.0,
+          "Close": 2539.8,
+          "Volume": 4516550
+        },
+        "2026-04-08": {
+          "Open": 2572.0,
+          "High": 2580.3,
+          "Low": 2540.1,
+          "Close": 2559.2,
+          "Volume": 4769337
+        },
+        "2026-04-09": {
+          "Open": 2554.0,
+          "High": 2605.0,
+          "Low": 2531.1,
+          "Close": 2589.0,
+          "Volume": 5628261
+        },
+        "2026-04-10": {
+          "Open": 2565.8,
+          "High": 2565.8,
+          "Low": 2501.1,
+          "Close": 2524.3,
+          "Volume": 10480239
+        },
+        "2026-04-13": {
+          "Open": 2489.9,
+          "High": 2504.9,
+          "Low": 2470.0,
+          "Close": 2472.6,
+          "Volume": 3739587
+        },
+        "2026-04-15": {
+          "Open": 2501.9,
+          "High": 2559.0,
+          "Low": 2493.4,
+          "Close": 2554.9,
+          "Volume": 5261384
+        },
+        "2026-04-16": {
+          "Open": 2572.0,
+          "High": 2594.0,
+          "Low": 2558.0,
+          "Close": 2576.9,
+          "Volume": 3905403
+        },
+        "2026-04-17": {
+          "Open": 2570.0,
+          "High": 2589.0,
+          "Low": 2555.9,
+          "Close": 2581.5,
+          "Volume": 2718206
+        },
+        "2026-04-20": {
+          "Open": 2587.1,
+          "High": 2594.0,
+          "Low": 2561.2,
+          "Close": 2579.6,
+          "Volume": 2288558
+        },
+        "2026-04-21": {
+          "Open": 2560.0,
+          "High": 2614.0,
+          "Low": 2560.0,
+          "Close": 2610.5,
+          "Volume": 2719959
+        },
+        "2026-04-22": {
+          "Open": 2580.0,
+          "High": 2580.0,
+          "Low": 2503.6,
+          "Close": 2538.5,
+          "Volume": 5232045
+        },
+        "2026-04-23": {
+          "Open": 2529.0,
+          "High": 2559.5,
+          "Low": 2516.3,
+          "Close": 2521.8,
+          "Volume": 2509050
+        },
+        "2026-04-24": {
+          "Open": 2488.0,
+          "High": 2505.0,
+          "Low": 2388.8,
+          "Close": 2396.9,
+          "Volume": 5107719
+        },
+        "2026-04-27": {
+          "Open": 2396.9,
+          "High": 2459.0,
+          "Low": 2396.9,
+          "Close": 2447.6,
+          "Volume": 5853425
+        },
+        "2026-04-28": {
+          "Open": 2444.0,
+          "High": 2487.0,
+          "Low": 2427.4,
+          "Close": 2444.7,
+          "Volume": 4508363
+        },
+        "2026-04-29": {
+          "Open": 2451.0,
+          "High": 2487.9,
+          "Low": 2447.6,
+          "Close": 2474.7,
+          "Volume": 2835961
+        },
+        "2026-04-30": {
+          "Open": 2479.0,
+          "High": 2491.0,
+          "Low": 2438.0,
+          "Close": 2473.9,
+          "Volume": 3970446
+        },
+        "2026-05-04": {
+          "Open": 2494.0,
+          "High": 2498.3,
+          "Low": 2425.0,
+          "Close": 2431.3,
+          "Volume": 2632358
+        },
+        "2026-05-05": {
+          "Open": 2430.0,
+          "High": 2460.4,
+          "Low": 2412.2,
+          "Close": 2427.3,
+          "Volume": 3385720
+        },
+        "2026-05-06": {
+          "Open": 2441.9,
+          "High": 2471.0,
+          "Low": 2406.5,
+          "Close": 2435.4,
+          "Volume": 3147628
+        },
+        "2026-05-07": {
+          "Open": 2438.2,
+          "High": 2439.7,
+          "Low": 2398.0,
+          "Close": 2401.4,
+          "Volume": 5829594
+        },
+        "2026-05-08": {
+          "Open": 2398.0,
+          "High": 2407.0,
+          "Low": 2375.1,
+          "Close": 2394.4,
+          "Volume": 3792199
+        },
+        "2026-05-11": {
+          "Open": 2371.0,
+          "High": 2415.0,
+          "Low": 2371.0,
+          "Close": 2392.9,
+          "Volume": 1975188
+        },
+        "2026-05-12": {
+          "Open": 2375.0,
+          "High": 2375.0,
+          "Low": 2283.0,
+          "Close": 2300.3,
+          "Volume": 6347884
+        },
+        "2026-05-13": {
+          "Open": 2306.0,
+          "High": 2309.2,
+          "Low": 2269.0,
+          "Close": 2272.8,
+          "Volume": 3171843
+        },
+        "2026-05-14": {
+          "Open": 2265.0,
+          "High": 2265.0,
+          "Low": 2206.4,
+          "Close": 2246.0,
+          "Volume": 5633313
+        },
+        "2026-05-15": {
+          "Open": 2252.0,
+          "High": 2304.9,
+          "Low": 2252.0,
+          "Close": 2264.0,
+          "Volume": 3410637
+        },
+        "2026-05-18": {
+          "Open": 2264.0,
+          "High": 2292.9,
+          "Low": 2252.2,
+          "Close": 2283.2,
+          "Volume": 3773336
+        },
+        "2026-05-19": {
+          "Open": 2300.0,
+          "High": 2377.6,
+          "Low": 2297.1,
+          "Close": 2327.1,
+          "Volume": 10394707
+        },
+        "2026-05-20": {
+          "Open": 2323.9,
+          "High": 2342.0,
+          "Low": 2317.8,
+          "Close": 2327.4,
+          "Volume": 2537422
+        },
+        "2026-05-21": {
+          "Open": 2331.0,
+          "High": 2335.9,
+          "Low": 2314.0,
+          "Close": 2327.2,
+          "Volume": 3299087
+        },
+        "2026-05-22": {
+          "Open": 2331.1,
+          "High": 2340.0,
+          "Low": 2308.1,
+          "Close": 2317.3,
+          "Volume": 2617262
+        },
+        "2026-05-25": {
+          "Open": 2325.0,
+          "High": 2326.1,
+          "Low": 2293.0,
+          "Close": 2308.2,
+          "Volume": 3298364
+        },
+        "2026-05-26": {
+          "Open": 2308.2,
+          "High": 2327.9,
+          "Low": 2272.4,
+          "Close": 2276.2,
+          "Volume": 3587597
+        },
+        "2026-05-27": {
+          "Open": 2275.0,
+          "High": 2295.6,
+          "Low": 2260.9,
+          "Close": 2284.2,
+          "Volume": 2653950
+        },
+        "2026-05-29": {
+          "Open": 2291.0,
+          "High": 2334.0,
+          "Low": 2235.0,
+          "Close": 2258.9,
+          "Volume": 16331582
+        },
+        "2026-06-01": {
+          "Open": 2284.0,
+          "High": 2335.0,
+          "Low": 2280.0,
+          "Close": 2297.4,
+          "Volume": 7505095
+        },
+        "2026-06-02": {
+          "Open": 2320.0,
+          "High": 2457.4,
+          "Low": 2316.2,
+          "Close": 2446.9,
+          "Volume": 11306127
+        },
+        "2026-06-03": {
+          "Open": 2393.0,
+          "High": 2393.0,
+          "Low": 2224.8,
+          "Close": 2241.7,
+          "Volume": 15660062
+        },
+        "2026-06-04": {
+          "Open": 2241.7,
+          "High": 2253.1,
+          "Low": 2216.6,
+          "Close": 2241.0,
+          "Volume": 4867263
+        },
+        "2026-06-05": {
+          "Open": 2262.9,
+          "High": 2271.8,
+          "Low": 2192.0,
+          "Close": 2198.9,
+          "Volume": 5019717
+        },
+        "2026-06-08": {
+          "Open": 2170.0,
+          "High": 2177.0,
+          "Low": 2143.3,
+          "Close": 2151.4,
+          "Volume": 6536734
+        },
+        "2026-06-09": {
+          "Open": 2174.0,
+          "High": 2174.0,
+          "Low": 2132.8,
+          "Close": 2151.0,
+          "Volume": 4148655
+        },
+        "2026-06-10": {
+          "Open": 2151.3,
+          "High": 2180.8,
+          "Low": 2144.8,
+          "Close": 2153.9,
+          "Volume": 2848650
+        },
+        "2026-06-11": {
+          "Open": 2127.0,
+          "High": 2154.6,
+          "Low": 2110.0,
+          "Close": 2135.6,
+          "Volume": 3079815
+        },
+        "2026-06-12": {
+          "Open": 2150.0,
+          "High": 2168.0,
+          "Low": 2138.0,
+          "Close": 2161.4,
+          "Volume": 2124656
+        },
+        "2026-06-15": {
+          "Open": 2192.0,
+          "High": 2192.0,
+          "Low": 2159.3,
+          "Close": 2162.0,
+          "Volume": 3337083
+        },
+        "2026-06-16": {
+          "Open": 2167.0,
+          "High": 2209.0,
+          "Low": 2160.6,
+          "Close": 2199.0,
+          "Volume": 3079898
+        },
+        "2026-06-17": {
+          "Open": 2209.0,
+          "High": 2231.0,
+          "Low": 2200.7,
+          "Close": 2223.0,
+          "Volume": 2865010
+        },
+        "2026-06-18": {
+          "Open": 2209.0,
+          "High": 2214.0,
+          "Low": 2182.0,
+          "Close": 2203.3,
+          "Volume": 3735188
+        },
+        "2026-06-19": {
+          "Open": 2105.0,
+          "High": 2138.0,
+          "Low": 2059.9,
+          "Close": 2125.0,
+          "Volume": 13286502
+        },
+        "2026-06-22": {
+          "Open": 2132.2,
+          "High": 2157.0,
+          "Low": 2121.0,
+          "Close": 2127.8,
+          "Volume": 4566101
+        },
+        "2026-06-23": {
+          "Open": 2111.0,
+          "High": 2114.0,
+          "Low": 2055.0,
+          "Close": 2059.6,
+          "Volume": 6392736
+        },
+        "2026-06-24": {
+          "Open": 2061.0,
+          "High": 2120.7,
+          "Low": 2061.0,
+          "Close": 2109.0,
+          "Volume": 4747277
+        },
+        "2026-06-25": {
+          "Open": 2133.6,
+          "High": 2148.5,
+          "Low": 2088.0,
+          "Close": 2094.7,
+          "Volume": 4738903
+        },
+        "2026-06-29": {
+          "Open": 2090.0,
+          "High": 2105.0,
+          "Low": 2071.0,
+          "Close": 2097.9,
+          "Volume": 3412470
+        },
+        "2026-06-30": {
+          "Open": 2090.0,
+          "High": 2104.3,
+          "Low": 2018.8,
+          "Close": 2031.5,
+          "Volume": 6848411
+        },
+        "2026-07-01": {
+          "Open": 2039.9,
+          "High": 2052.0,
+          "Low": 1976.8,
+          "Close": 1982.6,
+          "Volume": 4658295
+        },
+        "2026-07-02": {
+          "Open": 2008.0,
+          "High": 2076.9,
+          "Low": 2002.5,
+          "Close": 2068.1,
+          "Volume": 6040621
+        }
+      },
+      "error": null
+    },
+    {
+      "symbol": "ZEEL",
+      "status": "SUCCESS",
+      "direction": "DOWN",
+      "confidence": 0.6903295516967773,
+      "probability_up": 0.30967041850090027,
+      "probability_down": 0.6903295516967773,
+      "latest_close": 107.16,
+      "historical_data": {
+        "2026-04-06": {
+          "Open": 74.45,
+          "High": 74.65,
+          "Low": 72.1,
+          "Close": 73.73,
+          "Volume": 9489319
+        },
+        "2026-04-07": {
+          "Open": 73.69,
+          "High": 74.74,
+          "Low": 73.09,
+          "Close": 73.57,
+          "Volume": 7438911
+        },
+        "2026-04-08": {
+          "Open": 76.61,
+          "High": 80.19,
+          "Low": 75.22,
+          "Close": 78.79,
+          "Volume": 35920241
+        },
+        "2026-04-09": {
+          "Open": 79.0,
+          "High": 82.2,
+          "Low": 78.1,
+          "Close": 79.2,
+          "Volume": 19845981
+        },
+        "2026-04-10": {
+          "Open": 79.7,
+          "High": 84.0,
+          "Low": 79.4,
+          "Close": 81.94,
+          "Volume": 22740187
+        },
+        "2026-04-13": {
+          "Open": 79.82,
+          "High": 81.31,
+          "Low": 78.36,
+          "Close": 79.89,
+          "Volume": 14374718
+        },
+        "2026-04-15": {
+          "Open": 81.6,
+          "High": 83.8,
+          "Low": 81.3,
+          "Close": 82.72,
+          "Volume": 17756007
+        },
+        "2026-04-16": {
+          "Open": 83.55,
+          "High": 84.44,
+          "Low": 79.16,
+          "Close": 80.2,
+          "Volume": 32966412
+        },
+        "2026-04-17": {
+          "Open": 80.25,
+          "High": 81.86,
+          "Low": 79.96,
+          "Close": 81.04,
+          "Volume": 17454192
+        },
+        "2026-04-20": {
+          "Open": 81.3,
+          "High": 89.19,
+          "Low": 80.35,
+          "Close": 87.6,
+          "Volume": 71633339
+        },
+        "2026-04-21": {
+          "Open": 87.46,
+          "High": 89.09,
+          "Low": 86.06,
+          "Close": 86.76,
+          "Volume": 21715130
+        },
+        "2026-04-22": {
+          "Open": 86.4,
+          "High": 88.69,
+          "Low": 86.15,
+          "Close": 87.58,
+          "Volume": 14807336
+        },
+        "2026-04-23": {
+          "Open": 87.5,
+          "High": 93.2,
+          "Low": 86.84,
+          "Close": 91.19,
+          "Volume": 52256845
+        },
+        "2026-04-24": {
+          "Open": 91.0,
+          "High": 92.14,
+          "Low": 86.64,
+          "Close": 88.1,
+          "Volume": 14798633
+        },
+        "2026-04-27": {
+          "Open": 88.1,
+          "High": 92.4,
+          "Low": 88.1,
+          "Close": 91.43,
+          "Volume": 18890355
+        },
+        "2026-04-28": {
+          "Open": 91.42,
+          "High": 94.35,
+          "Low": 90.64,
+          "Close": 92.96,
+          "Volume": 16800160
+        },
+        "2026-04-29": {
+          "Open": 93.4,
+          "High": 93.8,
+          "Low": 90.01,
+          "Close": 90.46,
+          "Volume": 10022575
+        },
+        "2026-04-30": {
+          "Open": 89.65,
+          "High": 90.8,
+          "Low": 88.0,
+          "Close": 89.74,
+          "Volume": 9543093
+        },
+        "2026-05-04": {
+          "Open": 90.09,
+          "High": 92.38,
+          "Low": 89.59,
+          "Close": 90.82,
+          "Volume": 7508796
+        },
+        "2026-05-05": {
+          "Open": 90.47,
+          "High": 93.34,
+          "Low": 90.0,
+          "Close": 90.58,
+          "Volume": 9289913
+        },
+        "2026-05-06": {
+          "Open": 91.04,
+          "High": 96.1,
+          "Low": 89.92,
+          "Close": 94.53,
+          "Volume": 29977350
+        },
+        "2026-05-07": {
+          "Open": 95.25,
+          "High": 97.0,
+          "Low": 94.18,
+          "Close": 94.58,
+          "Volume": 16080681
+        },
+        "2026-05-08": {
+          "Open": 94.2,
+          "High": 96.25,
+          "Low": 93.94,
+          "Close": 95.11,
+          "Volume": 15670286
+        },
+        "2026-05-11": {
+          "Open": 94.2,
+          "High": 94.36,
+          "Low": 89.97,
+          "Close": 90.37,
+          "Volume": 14605509
+        },
+        "2026-05-12": {
+          "Open": 90.37,
+          "High": 90.75,
+          "Low": 85.4,
+          "Close": 86.12,
+          "Volume": 15146708
+        },
+        "2026-05-13": {
+          "Open": 86.5,
+          "High": 90.17,
+          "Low": 85.41,
+          "Close": 88.38,
+          "Volume": 21773849
+        },
+        "2026-05-14": {
+          "Open": 89.0,
+          "High": 91.34,
+          "Low": 88.52,
+          "Close": 90.62,
+          "Volume": 10555948
+        },
+        "2026-05-15": {
+          "Open": 90.9,
+          "High": 90.92,
+          "Low": 87.5,
+          "Close": 88.34,
+          "Volume": 7489723
+        },
+        "2026-05-18": {
+          "Open": 87.68,
+          "High": 87.68,
+          "Low": 82.43,
+          "Close": 84.57,
+          "Volume": 18114915
+        },
+        "2026-05-19": {
+          "Open": 84.71,
+          "High": 88.46,
+          "Low": 84.71,
+          "Close": 87.68,
+          "Volume": 8880197
+        },
+        "2026-05-20": {
+          "Open": 83.0,
+          "High": 85.28,
+          "Low": 81.82,
+          "Close": 82.95,
+          "Volume": 32621116
+        },
+        "2026-05-21": {
+          "Open": 83.26,
+          "High": 84.88,
+          "Low": 82.7,
+          "Close": 83.42,
+          "Volume": 10403040
+        },
+        "2026-05-22": {
+          "Open": 83.85,
+          "High": 84.1,
+          "Low": 81.87,
+          "Close": 82.13,
+          "Volume": 7469610
+        },
+        "2026-05-25": {
+          "Open": 82.93,
+          "High": 84.75,
+          "Low": 82.38,
+          "Close": 82.68,
+          "Volume": 8871000
+        },
+        "2026-05-26": {
+          "Open": 83.08,
+          "High": 84.59,
+          "Low": 82.51,
+          "Close": 82.78,
+          "Volume": 6639254
+        },
+        "2026-05-27": {
+          "Open": 83.7,
+          "High": 92.99,
+          "Low": 83.18,
+          "Close": 91.46,
+          "Volume": 122229243
+        },
+        "2026-05-29": {
+          "Open": 92.2,
+          "High": 95.46,
+          "Low": 90.6,
+          "Close": 93.11,
+          "Volume": 42532141
+        },
+        "2026-06-01": {
+          "Open": 94.1,
+          "High": 99.8,
+          "Low": 92.54,
+          "Close": 95.79,
+          "Volume": 92286105
+        },
+        "2026-06-02": {
+          "Open": 94.39,
+          "High": 97.39,
+          "Low": 92.7,
+          "Close": 94.32,
+          "Volume": 29387604
+        },
+        "2026-06-03": {
+          "Open": 94.2,
+          "High": 95.2,
+          "Low": 91.32,
+          "Close": 94.5,
+          "Volume": 21003654
+        },
+        "2026-06-04": {
+          "Open": 94.0,
+          "High": 107.5,
+          "Low": 93.51,
+          "Close": 104.42,
+          "Volume": 80466080
+        },
+        "2026-06-05": {
+          "Open": 107.0,
+          "High": 113.7,
+          "Low": 106.12,
+          "Close": 112.27,
+          "Volume": 230280587
+        },
+        "2026-06-08": {
+          "Open": 113.0,
+          "High": 117.2,
+          "Low": 109.4,
+          "Close": 111.09,
+          "Volume": 135948580
+        },
+        "2026-06-09": {
+          "Open": 111.11,
+          "High": 111.9,
+          "Low": 106.66,
+          "Close": 107.62,
+          "Volume": 42715992
+        },
+        "2026-06-10": {
+          "Open": 108.25,
+          "High": 110.49,
+          "Low": 102.25,
+          "Close": 102.93,
+          "Volume": 49980653
+        },
+        "2026-06-11": {
+          "Open": 103.0,
+          "High": 112.89,
+          "Low": 102.95,
+          "Close": 111.45,
+          "Volume": 147507343
+        },
+        "2026-06-12": {
+          "Open": 113.19,
+          "High": 114.95,
+          "Low": 109.0,
+          "Close": 112.6,
+          "Volume": 86798974
+        },
+        "2026-06-15": {
+          "Open": 113.0,
+          "High": 114.01,
+          "Low": 107.29,
+          "Close": 108.49,
+          "Volume": 41711971
+        },
+        "2026-06-16": {
+          "Open": 109.5,
+          "High": 113.75,
+          "Low": 108.27,
+          "Close": 111.19,
+          "Volume": 52031423
+        },
+        "2026-06-17": {
+          "Open": 111.8,
+          "High": 112.8,
+          "Low": 109.55,
+          "Close": 109.97,
+          "Volume": 23844626
+        },
+        "2026-06-18": {
+          "Open": 110.64,
+          "High": 114.4,
+          "Low": 109.75,
+          "Close": 111.78,
+          "Volume": 46243980
+        },
+        "2026-06-19": {
+          "Open": 112.0,
+          "High": 117.79,
+          "Low": 110.66,
+          "Close": 113.36,
+          "Volume": 75042015
+        },
+        "2026-06-22": {
+          "Open": 114.0,
+          "High": 117.65,
+          "Low": 113.5,
+          "Close": 115.75,
+          "Volume": 38133230
+        },
+        "2026-06-23": {
+          "Open": 116.49,
+          "High": 118.35,
+          "Low": 113.57,
+          "Close": 114.86,
+          "Volume": 30899988
+        },
+        "2026-06-24": {
+          "Open": 115.1,
+          "High": 116.0,
+          "Low": 111.92,
+          "Close": 115.48,
+          "Volume": 23013188
+        },
+        "2026-06-25": {
+          "Open": 116.1,
+          "High": 116.98,
+          "Low": 110.0,
+          "Close": 111.36,
+          "Volume": 24635497
+        },
+        "2026-06-29": {
+          "Open": 111.99,
+          "High": 112.08,
+          "Low": 106.5,
+          "Close": 107.32,
+          "Volume": 19277445
+        },
+        "2026-06-30": {
+          "Open": 107.5,
+          "High": 107.73,
+          "Low": 103.11,
+          "Close": 103.51,
+          "Volume": 26871047
+        },
+        "2026-07-01": {
+          "Open": 105.0,
+          "High": 112.25,
+          "Low": 104.6,
+          "Close": 108.31,
+          "Volume": 65730657
+        },
+        "2026-07-02": {
+          "Open": 108.0,
+          "High": 108.45,
+          "Low": 103.52,
+          "Close": 107.16,
+          "Volume": 51620794
+        }
+      },
+      "error": null
+    }
+  ],
+  "combined_signals": [
+    {
+      "symbol": "POLICYBZR",
+      "llm_action": "SELL_SIGNAL",
+      "llm_reason": "Share price plunged over 8% after a \u20b91,741 crore block deal (2.37% of company's equity at \u20b91,601 apiece), reportedly by Singapore's sovereign wealth fund Temasek Holdings reducing its stake. This follows recent stake sales by co-founders and Tencent.",
+      "ml_direction": "UP",
+      "ml_confidence": 0.6923462152481079,
+      "recommendation": "HOLD",
+      "latest_price": 1682.1
+    },
+    {
+      "symbol": "ADANIENT",
+      "llm_action": "BUY_SIGNAL",
+      "llm_reason": "Expanded Qualified Institutional Placement (QIP) to \u20b915,000 crore from \u20b910,000 crore due to strong investor demand, indicating robust market confidence.",
+      "ml_direction": "DOWN",
+      "ml_confidence": 0.5385996103286743,
+      "recommendation": "HOLD",
+      "latest_price": 3177.5
+    },
+    {
+      "symbol": "SPIC",
+      "llm_action": "SELL_SIGNAL",
+      "llm_reason": "Suspended flight operations from Chennai and reduced overall flights by 44% due to severe fleet shortage (available fleet shrunk to 12-13 aircraft from over 30) and ongoing operational/financial challenges. Faces liquidity crunch, delayed employee payments, and regulatory scrutiny (EOW case). Continues to face pressures despite recent Qualified Institutional Placements (QIPs).",
+      "ml_direction": "DOWN",
+      "ml_confidence": 0.572585940361023,
+      "recommendation": "HOLD",
+      "latest_price": 69.7
+    },
+    {
+      "symbol": "TCS",
+      "llm_action": "BUY_SIGNAL",
+      "llm_reason": "Shares are up 1.87% amid an IT sector rebound. Multiple domestic brokerages (ICICI Direct, PL Capital, Systematix) have maintained 'Buy' ratings. The company was named a Leader in IDC MarketScape for Life Sciences R&D Strategic Consulting and successfully modernized payroll with SAP Cloud ERP. Board meeting on July 9, 2026, to consider Q1 results and interim dividend.",
+      "ml_direction": "UP",
+      "ml_confidence": 0.5317456722259521,
+      "recommendation": "HOLD",
+      "latest_price": 2068.1
+    },
+    {
+      "symbol": "ZEEL",
+      "llm_action": "SELL_SIGNAL",
+      "llm_reason": "The Ministry of Information and Broadcasting (MIB) has suspended BARC TV ratings across all genres, creating significant uncertainty for the commercial rollout of major global sporting properties (like the 2026 FIFA World Cup, for which Zee holds rights). This blackout impacts advertising negotiations and the ability to measure revenue effectiveness.",
+      "ml_direction": "DOWN",
+      "ml_confidence": 0.6903295516967773,
+      "recommendation": "HOLD",
+      "latest_price": 107.16
+    }
+  ]
+}
