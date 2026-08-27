@@ -1,0 +1,483 @@
+{
+  "metadata": {
+    "date": "2026-08-27",
+    "run_timestamp": "2026-08-27T12:57:02.075256",
+    "pipeline_version": "1.0.0",
+    "total_news_articles": 1,
+    "total_llm_recs": 1,
+    "total_validated": 1,
+    "total_ml_predictions": 1,
+    "success_rate": 1.0
+  },
+  "llm_recommendations": [
+    {
+      "news_id": "463621568",
+      "stock_name": "LIC Housing Finance",
+      "is_ipo": false,
+      "ipo_details": null,
+      "news_type": "strategic",
+      "reason_for_recommendation": "As a dissenting creditor, LIC Housing Finance is set to recover only \u20b938,09,294 (0.028%) against an admitted claim of \u20b91,322.39 crore from Subhash Chandra's insolvency settlement, indicating a significant write-down.",
+      "action_to_take": "SELL_SIGNAL",
+      "buy_price": null,
+      "target_price": null,
+      "target_price_range": null,
+      "timeframe": null,
+      "confidence": 0.75,
+      "sentiment": "negative",
+      "analyst_consensus": null,
+      "news_url": "https://www.livemint.com/news/india/subhash-chandras-rs-6-5-cr-payout-to-settle-dues-cleared-by-nclt-congress-calls-it-mundan-key-things-to-know-11787819816271.html",
+      "equity_name": "LIC HOUSING FINANCE LTD",
+      "instrument_key": "NSE_EQ|INE115A01026",
+      "trading_symbol": "LICHSGFIN",
+      "isin": "INE115A01026",
+      "validated": true,
+      "validation_method": "name match",
+      "extraction_timestamp": "2026-08-27T12:56:58.178935"
+    }
+  ],
+  "ml_predictions": [
+    {
+      "symbol": "LICHSGFIN",
+      "status": "SUCCESS",
+      "direction": "DOWN",
+      "confidence": 0.6125144362449646,
+      "probability_up": 0.3874855637550354,
+      "probability_down": 0.6125144362449646,
+      "latest_close": 524.4,
+      "historical_data": {
+        "2026-06-03": {
+          "Open": 535.0,
+          "High": 544.55,
+          "Low": 523.55,
+          "Close": 541.25,
+          "Volume": 1832015
+        },
+        "2026-06-04": {
+          "Open": 541.0,
+          "High": 547.75,
+          "Low": 536.45,
+          "Close": 545.55,
+          "Volume": 1251639
+        },
+        "2026-06-05": {
+          "Open": 546.0,
+          "High": 552.7,
+          "Low": 542.8,
+          "Close": 549.75,
+          "Volume": 2983748
+        },
+        "2026-06-08": {
+          "Open": 542.0,
+          "High": 550.95,
+          "Low": 537.5,
+          "Close": 541.0,
+          "Volume": 3246619
+        },
+        "2026-06-09": {
+          "Open": 541.15,
+          "High": 554.0,
+          "Low": 540.05,
+          "Close": 552.75,
+          "Volume": 589940
+        },
+        "2026-06-10": {
+          "Open": 554.0,
+          "High": 554.0,
+          "Low": 539.4,
+          "Close": 541.0,
+          "Volume": 505435
+        },
+        "2026-06-11": {
+          "Open": 541.3,
+          "High": 544.95,
+          "Low": 533.4,
+          "Close": 535.9,
+          "Volume": 851702
+        },
+        "2026-06-12": {
+          "Open": 543.65,
+          "High": 561.25,
+          "Low": 542.05,
+          "Close": 559.5,
+          "Volume": 2541823
+        },
+        "2026-06-15": {
+          "Open": 564.5,
+          "High": 570.75,
+          "Low": 551.1,
+          "Close": 553.85,
+          "Volume": 1197810
+        },
+        "2026-06-16": {
+          "Open": 552.75,
+          "High": 560.95,
+          "Low": 550.5,
+          "Close": 552.8,
+          "Volume": 584674
+        },
+        "2026-06-17": {
+          "Open": 553.0,
+          "High": 555.85,
+          "Low": 546.5,
+          "Close": 551.05,
+          "Volume": 970189
+        },
+        "2026-06-18": {
+          "Open": 552.0,
+          "High": 556.45,
+          "Low": 546.5,
+          "Close": 550.15,
+          "Volume": 1362678
+        },
+        "2026-06-19": {
+          "Open": 548.55,
+          "High": 553.65,
+          "Low": 545.15,
+          "Close": 549.9,
+          "Volume": 1088518
+        },
+        "2026-06-22": {
+          "Open": 552.0,
+          "High": 553.5,
+          "Low": 547.05,
+          "Close": 548.5,
+          "Volume": 1084087
+        },
+        "2026-06-23": {
+          "Open": 549.0,
+          "High": 550.55,
+          "Low": 540.0,
+          "Close": 541.2,
+          "Volume": 928998
+        },
+        "2026-06-24": {
+          "Open": 540.5,
+          "High": 552.6,
+          "Low": 538.5,
+          "Close": 550.55,
+          "Volume": 1229302
+        },
+        "2026-06-25": {
+          "Open": 553.5,
+          "High": 556.9,
+          "Low": 548.0,
+          "Close": 549.85,
+          "Volume": 1850385
+        },
+        "2026-06-29": {
+          "Open": 551.0,
+          "High": 562.65,
+          "Low": 544.1,
+          "Close": 560.75,
+          "Volume": 5408871
+        },
+        "2026-06-30": {
+          "Open": 564.0,
+          "High": 566.0,
+          "Low": 552.7,
+          "Close": 564.0,
+          "Volume": 2564040
+        },
+        "2026-07-01": {
+          "Open": 566.0,
+          "High": 568.5,
+          "Low": 547.05,
+          "Close": 554.45,
+          "Volume": 1842330
+        },
+        "2026-07-02": {
+          "Open": 555.0,
+          "High": 559.7,
+          "Low": 551.0,
+          "Close": 552.9,
+          "Volume": 724232
+        },
+        "2026-07-03": {
+          "Open": 555.8,
+          "High": 564.0,
+          "Low": 552.8,
+          "Close": 553.7,
+          "Volume": 986542
+        },
+        "2026-07-06": {
+          "Open": 555.95,
+          "High": 557.65,
+          "Low": 546.0,
+          "Close": 548.85,
+          "Volume": 631362
+        },
+        "2026-07-07": {
+          "Open": 548.0,
+          "High": 549.6,
+          "Low": 542.5,
+          "Close": 543.55,
+          "Volume": 684914
+        },
+        "2026-07-08": {
+          "Open": 543.0,
+          "High": 544.3,
+          "Low": 528.0,
+          "Close": 530.6,
+          "Volume": 1257694
+        },
+        "2026-07-09": {
+          "Open": 531.5,
+          "High": 542.75,
+          "Low": 531.5,
+          "Close": 539.8,
+          "Volume": 769495
+        },
+        "2026-07-10": {
+          "Open": 541.0,
+          "High": 553.7,
+          "Low": 541.0,
+          "Close": 549.15,
+          "Volume": 1462462
+        },
+        "2026-07-13": {
+          "Open": 546.25,
+          "High": 554.9,
+          "Low": 543.05,
+          "Close": 551.9,
+          "Volume": 1885782
+        },
+        "2026-07-14": {
+          "Open": 549.5,
+          "High": 553.7,
+          "Low": 543.35,
+          "Close": 549.6,
+          "Volume": 1622604
+        },
+        "2026-07-15": {
+          "Open": 552.0,
+          "High": 563.0,
+          "Low": 549.2,
+          "Close": 550.15,
+          "Volume": 1624750
+        },
+        "2026-07-16": {
+          "Open": 551.95,
+          "High": 553.25,
+          "Low": 545.3,
+          "Close": 546.75,
+          "Volume": 1117938
+        },
+        "2026-07-17": {
+          "Open": 547.9,
+          "High": 551.9,
+          "Low": 543.5,
+          "Close": 549.9,
+          "Volume": 698630
+        },
+        "2026-07-20": {
+          "Open": 548.0,
+          "High": 554.45,
+          "Low": 546.55,
+          "Close": 552.45,
+          "Volume": 2352852
+        },
+        "2026-07-21": {
+          "Open": 553.95,
+          "High": 554.35,
+          "Low": 547.0,
+          "Close": 548.6,
+          "Volume": 345009
+        },
+        "2026-07-22": {
+          "Open": 548.6,
+          "High": 550.0,
+          "Low": 537.55,
+          "Close": 538.6,
+          "Volume": 616187
+        },
+        "2026-07-23": {
+          "Open": 537.1,
+          "High": 539.7,
+          "Low": 531.65,
+          "Close": 533.7,
+          "Volume": 609442
+        },
+        "2026-07-24": {
+          "Open": 530.15,
+          "High": 542.15,
+          "Low": 529.25,
+          "Close": 538.95,
+          "Volume": 516519
+        },
+        "2026-07-27": {
+          "Open": 542.4,
+          "High": 553.5,
+          "Low": 541.1,
+          "Close": 551.75,
+          "Volume": 763125
+        },
+        "2026-07-28": {
+          "Open": 551.0,
+          "High": 554.45,
+          "Low": 543.25,
+          "Close": 545.7,
+          "Volume": 560719
+        },
+        "2026-07-29": {
+          "Open": 550.0,
+          "High": 556.9,
+          "Low": 546.6,
+          "Close": 553.45,
+          "Volume": 1485850
+        },
+        "2026-07-30": {
+          "Open": 553.4,
+          "High": 553.4,
+          "Low": 536.4,
+          "Close": 540.9,
+          "Volume": 1512548
+        },
+        "2026-07-31": {
+          "Open": 537.5,
+          "High": 540.2,
+          "Low": 521.5,
+          "Close": 523.1,
+          "Volume": 4188796
+        },
+        "2026-08-03": {
+          "Open": 525.5,
+          "High": 527.0,
+          "Low": 515.1,
+          "Close": 519.0,
+          "Volume": 2191300
+        },
+        "2026-08-04": {
+          "Open": 516.95,
+          "High": 518.6,
+          "Low": 509.35,
+          "Close": 512.0,
+          "Volume": 1388121
+        },
+        "2026-08-05": {
+          "Open": 514.6,
+          "High": 516.85,
+          "Low": 510.05,
+          "Close": 512.05,
+          "Volume": 1022787
+        },
+        "2026-08-06": {
+          "Open": 513.5,
+          "High": 515.0,
+          "Low": 504.8,
+          "Close": 505.0,
+          "Volume": 2575192
+        },
+        "2026-08-07": {
+          "Open": 507.35,
+          "High": 507.9,
+          "Low": 502.7,
+          "Close": 504.25,
+          "Volume": 1604722
+        },
+        "2026-08-10": {
+          "Open": 504.9,
+          "High": 506.9,
+          "Low": 500.0,
+          "Close": 500.0,
+          "Volume": 1388633
+        },
+        "2026-08-11": {
+          "Open": 502.0,
+          "High": 504.6,
+          "Low": 499.2,
+          "Close": 502.0,
+          "Volume": 1493009
+        },
+        "2026-08-12": {
+          "Open": 502.95,
+          "High": 508.0,
+          "Low": 499.45,
+          "Close": 508.0,
+          "Volume": 1559589
+        },
+        "2026-08-13": {
+          "Open": 509.0,
+          "High": 509.0,
+          "Low": 500.45,
+          "Close": 502.0,
+          "Volume": 1372938
+        },
+        "2026-08-14": {
+          "Open": 502.0,
+          "High": 502.1,
+          "Low": 498.0,
+          "Close": 500.0,
+          "Volume": 874975
+        },
+        "2026-08-17": {
+          "Open": 500.0,
+          "High": 500.05,
+          "Low": 496.25,
+          "Close": 498.25,
+          "Volume": 2838836
+        },
+        "2026-08-18": {
+          "Open": 500.0,
+          "High": 501.8,
+          "Low": 495.9,
+          "Close": 498.8,
+          "Volume": 1854138
+        },
+        "2026-08-19": {
+          "Open": 501.0,
+          "High": 501.25,
+          "Low": 496.7,
+          "Close": 497.0,
+          "Volume": 971490
+        },
+        "2026-08-20": {
+          "Open": 500.0,
+          "High": 511.45,
+          "Low": 498.2,
+          "Close": 508.05,
+          "Volume": 2938868
+        },
+        "2026-08-21": {
+          "Open": 500.0,
+          "High": 500.8,
+          "Low": 491.0,
+          "Close": 497.0,
+          "Volume": 3123216
+        },
+        "2026-08-24": {
+          "Open": 496.8,
+          "High": 499.95,
+          "Low": 485.45,
+          "Close": 491.4,
+          "Volume": 4349249
+        },
+        "2026-08-25": {
+          "Open": 490.0,
+          "High": 506.4,
+          "Low": 489.15,
+          "Close": 506.0,
+          "Volume": 3617182
+        },
+        "2026-08-26": {
+          "Open": 506.0,
+          "High": 526.9,
+          "Low": 506.0,
+          "Close": 524.4,
+          "Volume": 6509187
+        }
+      },
+      "error": null
+    }
+  ],
+  "combined_signals": [
+    {
+      "symbol": "LICHSGFIN",
+      "llm_action": "SELL_SIGNAL",
+      "llm_reason": "As a dissenting creditor, LIC Housing Finance is set to recover only \u20b938,09,294 (0.028%) against an admitted claim of \u20b91,322.39 crore from Subhash Chandra's insolvency settlement, indicating a significant write-down.",
+      "ml_direction": "DOWN",
+      "ml_confidence": 0.6125144362449646,
+      "recommendation": "HOLD",
+      "latest_price": 524.4
+    }
+  ]
+}
